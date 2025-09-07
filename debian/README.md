@@ -12,7 +12,7 @@
     apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian/xfce/bootstrap.sh && sh bootstrap.sh && rm bootstrap.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
-    sudo apt update && sudo apt install firefox vlc thunderbird atril ristretto galculator libheif1 xarchiver webp-pixbuf-loader fonts-liberation p7zip mousepad -y && apt clean
+    sudo apt update && sudo apt install firefox vlc thunderbird atril ristretto galculator libheif1 xarchiver webp-pixbuf-loader fonts-liberation p7zip mousepad && apt clean
 
 #### Remove (rootfs only)
     apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian/xfce/remove-rootfs.sh && sh remove-rootfs.sh && rm remove-rootfs.sh
@@ -31,7 +31,7 @@
     apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian/lxqt/bootstrap.sh && sh bootstrap.sh && rm bootstrap.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
-    sudo apt update && sudo apt install firefox vlc thunderbird lximage-qt kcalc lxqt-archiver qpdfview libheif1 webp-pixbuf-loader fonts-liberation p7zip featherpad -y && apt clean
+    sudo apt update && sudo apt install firefox vlc thunderbird lximage-qt kcalc lxqt-archiver qpdfview libheif1 webp-pixbuf-loader fonts-liberation p7zip featherpad && apt clean
 
 #### Remove (rootfs only)
     apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian/lxqt/remove-rootfs.sh && sh remove-rootfs.sh && rm remove-rootfs.sh
@@ -50,7 +50,7 @@
     apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian/mate/bootstrap.sh && sh bootstrap.sh && rm bootstrap.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
-    sudo apt update && sudo apt install firefox vlc thunderbird engrampa atril eom mate-calc pluma libheif1 webp-pixbuf-loader fonts-liberation p7zip -y && apt clean
+    sudo apt update && sudo apt install firefox vlc thunderbird engrampa atril eom mate-calc pluma libheif1 webp-pixbuf-loader fonts-liberation p7zip && apt clean
 
 #### Remove (rootfs only)
     apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian/mate/remove-rootfs.sh && sh remove-rootfs.sh && rm remove-rootfs.sh
@@ -69,7 +69,7 @@
     apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian/lxde/bootstrap.sh && sh bootstrap.sh && rm bootstrap.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
-    sudo apt update && sudo apt install firefox vlc thunderbird xarchiver atril mousepad galculator gpicview libheif1 webp-pixbuf-loader fonts-liberation p7zip -y && apt clean
+    sudo apt update && sudo apt install firefox vlc thunderbird xarchiver atril mousepad galculator gpicview libheif1 webp-pixbuf-loader fonts-liberation p7zip && apt clean
 
 #### Remove (rootfs only)
     apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian/lxde/remove-rootfs.sh && sh remove-rootfs.sh && rm remove-rootfs.sh
@@ -88,7 +88,7 @@
     apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian/cinnamon/bootstrap.sh && sh bootstrap.sh && rm bootstrap.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
-    sudo apt update && sudo apt install firefox vlc thunderbird engrampa atril eom mate-calc pluma libheif1 webp-pixbuf-loader fonts-liberation p7zip -y && apt clean
+    sudo apt update && sudo apt install firefox vlc thunderbird engrampa atril eom mate-calc pluma libheif1 webp-pixbuf-loader fonts-liberation p7zip && apt clean
 #### Remove (rootfs only)
     apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian/cinnamon/remove-rootfs.sh && sh remove-rootfs.sh && rm remove-rootfs.sh
 #### Remove (full)
@@ -105,7 +105,7 @@
     apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian/kde/bootstrap.sh && sh bootstrap.sh && rm bootstrap.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
-    sudo apt update && sudo apt install firefox vlc thunderbird okular gwenview kcalc ark kate libheif1 webp-pixbuf-loader fonts-liberation p7zip -y && apt clean
+    sudo apt update && sudo apt install firefox vlc thunderbird okular gwenview kcalc ark kate libheif1 webp-pixbuf-loader fonts-liberation p7zip && apt clean
 
 
 #### Remove (rootfs only)
