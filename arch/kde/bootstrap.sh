@@ -40,7 +40,7 @@ chmod +x /data/data/com.termux/files/usr/bin/arch-kde*
 proot-distro install archlinux --override-alias arch-kde
 
 # Setup arch-kde
-proot-distro login arch-kde -- /bin/sh -c 'apt update && apt install wget -y'
+proot-distro login arch-kde -- /bin/sh -c 'pacman -Sy --noconfirm wget'
 
 proot-distro login arch-kde -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/arch/kde/install.sh -O install.sh && chmod +x install.sh && ./install.sh && rm install.sh'
 

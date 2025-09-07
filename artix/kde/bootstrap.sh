@@ -40,7 +40,7 @@ chmod +x /data/data/com.termux/files/usr/bin/artix-kde*
 proot-distro install artixlinux --override-alias artix-kde
 
 # Setup artix-kde
-proot-distro login artix-kde -- /bin/sh -c 'apt update && apt install wget -y'
+proot-distro login artix-kde -- /bin/sh -c 'pacman -Sy --noconfirm wget'
 
 proot-distro login artix-kde -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/arch/kde/install.sh -O install.sh && chmod +x install.sh && ./install.sh && rm install.sh'
 

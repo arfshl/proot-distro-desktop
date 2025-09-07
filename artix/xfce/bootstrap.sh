@@ -40,7 +40,7 @@ chmod +x /data/data/com.termux/files/usr/bin/artix-xfce*
 proot-distro install artixlinux --override-alias artix-xfce
 
 # Setup artix-xfce
-proot-distro login artix-xfce -- /bin/sh -c 'apt update && apt install wget -y'
+proot-distro login artix-xfce -- /bin/sh -c 'pacman -Sy --noconfirm wget'
 
 proot-distro login artix-xfce -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/arch/xfce/install.sh -O install.sh && chmod +x install.sh && ./install.sh && rm install.sh'
 

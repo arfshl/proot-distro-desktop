@@ -40,7 +40,7 @@ chmod +x /data/data/com.termux/files/usr/bin/arch-xfce*
 proot-distro install archlinux --override-alias arch-xfce
 
 # Setup arch-xfce
-proot-distro login arch-xfce -- /bin/sh -c 'apt update && apt install wget -y'
+proot-distro login arch-xfce -- /bin/sh -c 'pacman -Sy --noconfirm wget'
 
 proot-distro login arch-xfce -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/arch/xfce/install.sh -O install.sh && chmod +x install.sh && ./install.sh && rm install.sh'
 

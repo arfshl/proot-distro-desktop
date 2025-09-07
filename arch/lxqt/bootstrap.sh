@@ -40,7 +40,7 @@ chmod +x /data/data/com.termux/files/usr/bin/arch-lxqt*
 proot-distro install archlinux --override-alias arch-lxqt
 
 # Setup arch-lxqt
-proot-distro login arch-lxqt -- /bin/sh -c 'apt update && apt install wget -y'
+proot-distro login arch-lxqt -- /bin/sh -c 'pacman -Sy --noconfirm wget'
 
 proot-distro login arch-lxqt -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/arch/lxqt/install.sh -O install.sh && chmod +x install.sh && ./install.sh && rm install.sh'
 

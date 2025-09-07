@@ -40,7 +40,7 @@ chmod +x /data/data/com.termux/files/usr/bin/arch-mate*
 proot-distro install archlinux --override-alias arch-mate
 
 # Setup arch-mate
-proot-distro login arch-mate -- /bin/sh -c 'apt update && apt install wget -y'
+proot-distro login arch-mate -- /bin/sh -c 'pacman -Sy --noconfirm wget'
 
 proot-distro login arch-mate -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/arch/mate/install.sh -O install.sh && chmod +x install.sh && ./install.sh && rm install.sh'
 
