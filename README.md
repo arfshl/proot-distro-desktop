@@ -13,7 +13,7 @@ Collection of script for easy desktop environment installation on PRoot Distro m
 |------------------|------------|
 | Adelie Linux     |    |
 | Alpine Linux     |    |
-| Arch Linux (ARM) |    |
+| [Arch Linux (ARM)](https://github.com/arfshl/proot-distro-desktop/tree/main/arch) |    |
 | Artix Linux      |    | 
 | Chimera Linux    |    | 
 | [Debian](https://github.com/arfshl/proot-distro-desktop/tree/main/debian) | XFCE LXQt MATE LXDE Cinnamon KDE |
