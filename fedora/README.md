@@ -12,7 +12,7 @@
     apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/fedora/xfce/bootstrap.sh && sh bootstrap.sh && rm bootstrap.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
-    sudo apt update && sudo apt install firefox vlc thunderbird atril ristretto galculator libheif xarchiver webp-pixbuf-loader p7zip mousepad && apt clean
+    sudo dnf update && sudo dnf install firefox vlc thunderbird atril ristretto galculator libheif xarchiver webp-pixbuf-loader p7zip mousepad && apt clean
 
 #### Remove (rootfs only)
     apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/fedora/xfce/remove-rootfs.sh && sh remove-rootfs.sh && rm remove-rootfs.sh
@@ -31,7 +31,7 @@
     apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/fedora/lxqt/bootstrap.sh && sh bootstrap.sh && rm bootstrap.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
-    sudo apt update && sudo apt install firefox vlc thunderbird lximage-qt kcalc lxqt-archiver qpdf libheif webp-pixbuf-loader p7zip featherpad && apt clean
+    sudo dnf update && sudo dnf install firefox vlc thunderbird lximage-qt kcalc lxqt-archiver qpdf libheif webp-pixbuf-loader p7zip featherpad && apt clean
 
 #### Remove (rootfs only)
     apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/fedora/lxqt/remove-rootfs.sh && sh remove-rootfs.sh && rm remove-rootfs.sh
@@ -50,7 +50,7 @@
     apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/fedora/mate/bootstrap.sh && sh bootstrap.sh && rm bootstrap.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
-    sudo apt update && sudo apt install firefox vlc thunderbird engrampa atril eom mate-calc pluma libheif webp-pixbuf-loader p7zip && apt clean
+    sudo dnf update && sudo dnf install firefox vlc thunderbird engrampa atril eom mate-calc pluma libheif webp-pixbuf-loader p7zip && apt clean
 
 #### Remove (rootfs only)
     apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/fedora/mate/remove-rootfs.sh && sh remove-rootfs.sh && rm remove-rootfs.sh
@@ -69,7 +69,7 @@
     apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/fedora/lxde/bootstrap.sh && sh bootstrap.sh && rm bootstrap.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
-    sudo apt update && sudo apt install firefox vlc thunderbird xarchiver atril mousepad galculator gpicview libheif webp-pixbuf-loader p7zip && apt clean
+    sudo dnf update && sudo dnf install firefox vlc thunderbird xarchiver atril mousepad galculator gpicview libheif webp-pixbuf-loader p7zip && apt clean
 
 #### Remove (rootfs only)
     apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/fedora/lxde/remove-rootfs.sh && sh remove-rootfs.sh && rm remove-rootfs.sh
@@ -88,7 +88,7 @@
     apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/fedora/cinnamon/bootstrap.sh && sh bootstrap.sh && rm bootstrap.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
-    sudo apt update && sudo apt install firefox vlc thunderbird engrampa atril eom mate-calc pluma libheif webp-pixbuf-loader p7zip && apt clean
+    sudo dnf update && sudo dnf install firefox vlc thunderbird engrampa atril eom mate-calc pluma libheif webp-pixbuf-loader p7zip && apt clean
 #### Remove (rootfs only)
     apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/fedora/cinnamon/remove-rootfs.sh && sh remove-rootfs.sh && rm remove-rootfs.sh
 #### Remove (full)
