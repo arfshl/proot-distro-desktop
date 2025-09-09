@@ -1,4 +1,4 @@
-# fedora Stable 
+# Fedora
 
 ## XFCE
 - proot-distro aliases: fedora-xfce
