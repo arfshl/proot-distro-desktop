@@ -7,8 +7,6 @@ Collection of script for easy desktop environment installation on PRoot Distro m
 - [VNC Viewer](https://play.google.com/store/apps/details?id=com.realvnc.viewer.android)
 
 
-
-
 | Distribution     | Desktop   |
 |------------------|------------|
 | Adelie Linux     |    |
@@ -22,3 +20,7 @@ Collection of script for easy desktop environment installation on PRoot Distro m
 | [Rocky Linux](https://github.com/arfshl/proot-distro-desktop/tree/main/el/rocky) | XFCE MATE KDE    |
 | [Ubuntu](https://github.com/arfshl/proot-distro-desktop/tree/main/ubuntu) (Recommended for beginners) | XFCE LXQt MATE LXDE Cinnamon KDE  
 | Void Linux       |    |
+
+## We also have Native Termux desktop version without proot-distro here!
+
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=arfshl&repo=termux-desktop&theme=transparent)](https://github.com/arfshl/termux-desktop)
