@@ -13,7 +13,7 @@ Collection of script for easy desktop environment installation on PRoot Distro m
 | [Artix Linux](https://github.com/arfshl/proot-distro-desktop/tree/main/artix)     | XFCE LXQt MATE LXDE Cinnamon KDE | 
 | [Debian](https://github.com/arfshl/proot-distro-desktop/tree/main/debian) (Recommended for beginners) | XFCE LXQt MATE LXDE Cinnamon KDE |
 | [Fedora](https://github.com/arfshl/proot-distro-desktop/tree/main/fedora) (Fedora is not on Android 15+) | XFCE LXQt MATE LXDE Cinnamon |
-| [OpenSUSE Tumbleweed](https://github.com/arfshl/proot-distro-desktop/tree/main/el/rocky)     |  XFCE LXQt MATE LXDE Cinnamon KDE   |
+| [OpenSUSE](https://github.com/arfshl/proot-distro-desktop/tree/main/el/rocky)     |  XFCE LXQt MATE LXDE Cinnamon KDE   |
 | [Rocky Linux](https://github.com/arfshl/proot-distro-desktop/tree/main/el/rocky) | XFCE MATE KDE    |
 | [Ubuntu](https://github.com/arfshl/proot-distro-desktop/tree/main/ubuntu) | XFCE LXQt MATE LXDE Cinnamon
 
