@@ -16,36 +16,36 @@ apt install curl wget nano proot-distro termux-x11 pulseaudio vulkan-loader-andr
 echo '#!/bin/sh
 LD_PRELOAD=/system/lib64/libskcodec.so
 pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" --exit-idle-time=-1
-proot-distro login tumbleweed-kde --user opensuse-kde' >> /data/data/com.termux/files/usr/bin/tumbleweed-kde
+proot-distro login opensuse-kde --user opensuse-kde' >> /data/data/com.termux/files/usr/bin/opensuse-kde
 
 # for X11 session
-cat <<'EOF' > /data/data/com.termux/files/usr/bin/tumbleweed-kde-x11
+cat <<'EOF' > /data/data/com.termux/files/usr/bin/opensuse-kde-x11
 #!/bin/sh
 LD_PRELOAD=/system/lib64/libskcodec.so
 pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" --exit-idle-time=-1
 export XDG_RUNTIME_DIR=${TMPDIR}
 kill -9 $(pgrep -f "termux.x11") 2>/dev/null
 kill -9 $(pgrep -f "virgl") 2>/dev/null
-proot-distro login tumbleweed-kde --shared-tmp -- /bin/sh -c 'kill -9 $(pgrep -f "x11") 2>/dev/null'
+proot-distro login opensuse-kde --shared-tmp -- /bin/sh -c 'kill -9 $(pgrep -f "x11") 2>/dev/null'
 virgl_test_server_android &
 termux-x11 :0 >/dev/null &
 sleep 3
-proot-distro login tumbleweed-kde --shared-tmp -- /bin/sh -c 'export PULSE_SERVER=127.0.0.1 && export XDG_RUNTIME_DIR=${TMPDIR} && su - opensuse-kde -c "DISPLAY=:0 XDG_SESSION_TYPE=x11 dbus-launch --exit-with-session startplasma-x11"'
+proot-distro login opensuse-kde --shared-tmp -- /bin/sh -c 'export PULSE_SERVER=127.0.0.1 && export XDG_RUNTIME_DIR=${TMPDIR} && su - opensuse-kde -c "DISPLAY=:0 XDG_SESSION_TYPE=x11 dbus-launch --exit-with-session startplasma-x11"'
 EOF
 
 # Make all of them executable
-chmod +x /data/data/com.termux/files/usr/bin/tumbleweed-kde*
+chmod +x /data/data/com.termux/files/usr/bin/opensuse-kde*
 
 # Install rootfs under aliases
-proot-distro install opensuse --override-alias tumbleweed-kde
+proot-distro install opensuse --override-alias opensuse-kde
 
-# Setup tumbleweed-kde
-proot-distro login tumbleweed-kde -- /bin/sh -c 'zypper refresh && zypper -n dup && zypper -n in wget'
+# Setup opensuse-kde
+proot-distro login opensuse-kde -- /bin/sh -c 'zypper refresh && zypper -n dup && zypper -n in wget'
 
-proot-distro login tumbleweed-kde -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/opensuse/install-kde.sh -O install-kde.sh && chmod +x install-kde.sh && ./install-kde.sh && rm install-kde.sh'
+proot-distro login opensuse-kde -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/opensuse/kde/install-kde.sh -O install-kde.sh && chmod +x install-kde.sh && ./install-kde.sh && rm install-kde.sh'
 
-echo 'To start command line session: tumbleweed-kde'
-echo 'To start X11 session: tumbleweed-kde-x11'
+echo 'To start command line session: opensuse-kde'
+echo 'To start X11 session: opensuse-kde-x11'
 echo 'To start VNC server: startvnc'
 echo 'To stop VNC server: stopvnc'
 echo 'To restart VNC server: restartvnc'

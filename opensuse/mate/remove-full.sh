@@ -1,8 +1,8 @@
 #!/bin/sh
-proot-distro remove tumbleweed-lxqt
+proot-distro remove opensuse-mate
 
-rm /data/data/com.termux/files/usr/bin/tumbleweed-lxqt
-rm /data/data/com.termux/files/usr/bin/tumbleweed-lxqt-x11
+rm /data/data/com.termux/files/usr/bin/opensuse-mate
+rm /data/data/com.termux/files/usr/bin/opensuse-mate-x11
 
 apt remove proot-distro termux-x11 pulseaudio vulkan-loader-android mesa-zink virglrenderer-mesa-zink virglrenderer-android -y && apt autoremove -y
 
