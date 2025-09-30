@@ -1,5 +1,11 @@
 # PRoot Distro Desktop
-Collection of script for easy desktop environment installation on PRoot Distro minimal rootfs, with preconfigured sound and partial 3D acceleration 
+Collection of script for easy desktop environment installation on PRoot Distro minimal rootfs
+
+Supported Desktop Environment:
+
+- XFCE, MATE, LXQt, LXDE (stable and worked well)
+- Cinnamon (A bit slow)
+- KDE (A bit slow, doesn't available on Ubuntu)
 
 ## You Need
 - [Termux App](https://github.com/termux/termux-app/releases)
