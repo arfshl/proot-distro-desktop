@@ -1,6 +1,6 @@
 # Ubuntu LTS 
 
-## XFCE
+## XFCE (Recommended for beginners)
 - proot-distro aliases: ubuntu-xfce
 - Username: ubuntu-xfce
 - `sudo` Password: 123
