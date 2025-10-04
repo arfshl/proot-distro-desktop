@@ -1,33 +1,4 @@
 #!/bin/sh
-# Remove mozillateam beta repository
-apt-add-repository ppa:mozillateam/firefox-next -r -y
-apt-add-repository ppa:mozillateam/thunderbird-next -r -y
-
-# Add mozilla official repository 
-apt install sudo -y
-echo 'Adding Mozilla Repository...'
-wget -q https://packages.mozilla.org/apt/repo-signing-key.gpg -O- | sudo tee /etc/apt/keyrings/packages.mozilla.org.asc > /dev/null
-sudo echo 'deb [signed-by=/etc/apt/keyrings/packages.mozilla.org.asc] https://packages.mozilla.org/apt mozilla main' >> /etc/apt/sources.list.d/mozilla.list
-echo 'Adding Mozillateam PPA...'
-sudo add-apt-repository ppa:mozillateam/ppa -y
-echo 'Configuring APT Pinning...'
-sudo echo 'Package: *
-Pin: origin packages.mozilla.org
-Pin-Priority: 1001
-
-Package: *
-Pin: release o=LP-PPA-mozillateam
-Pin-Priority: 1000
-
-Package: firefox
-Pin: release o=Ubuntu
-Pin-Priority: -1
-
-Package: thunderbird
-Pin: release o=Ubuntu
-Pin-Priority: -1' >> /etc/apt/preferences.d/mozilla
-echo 'Done'
-
 # Update and upgrade system
 apt update && apt upgrade -y && apt autoremove -y
 
