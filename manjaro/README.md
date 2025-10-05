@@ -115,4 +115,4 @@
     apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/manjaro/kde/remove-full.sh && sh remove-full.sh && rm remove-full.sh
 
 ## Installing Chromium
-    sudo su && wget https://github.com/arfshl/proot-distro-desktop/raw/refs/heads/main/manjaro/install-chromium.sh && sh install-chromium.sh && rm install-chromium.sh
+    sudo su && wget https://github.com/arfshl/proot-distro-desktop/raw/refs/heads/main/arch/install-chromium.sh && sh install-chromium.sh && rm install-chromium.sh
