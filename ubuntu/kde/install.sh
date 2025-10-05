@@ -3,6 +3,9 @@
 # Update and upgrade system
 apt update && apt upgrade -y && apt autoremove -y
 
+# Install X11 Support for Quokka and Higher
+# apt install plasma-session-x11 -y
+
 # Install Desktop, VNC, and basic utility
 apt update && apt upgrade -y && apt install kde-plasma-desktop kubuntu-settings-desktop kubuntu-wallpapers libkubuntu1 dbus-x11 pulseaudio nano wget curl sudo adduser pavucontrol-qt tigervnc-standalone-server -y && apt remove firefox-esr konqueror ksysguard plasma-discover partitionmanager kdeconnect termit kwalletmanager -y && apt autoremove -y && apt clean
 kwriteconfig5 --file kscreensaverrc --group Daemon --key Autolock false
