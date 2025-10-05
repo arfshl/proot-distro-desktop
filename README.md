@@ -36,3 +36,5 @@ Supported Desktop Environment:
 [andronixapp/andronixorigin](https://github.com/AndronixApp/AndronixOrigin) Inspiration for making this project, VNC startup mechanism, Licensed under MIT License.
 
 [linuxmasterdroid/termux-desktops](https://github.com/LinuxDroidMaster/Termux-Desktops) Pulseaudio and Termux:X11 startup mechanism, Licensed under GPLv3.
+
+[Pulseaudio fix for One UI](https://github.com/termux/termux-packages/issues/19623)
