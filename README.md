@@ -15,7 +15,7 @@ Supported Desktop Environment:
 
 | Distribution     | Desktop   |
 |------------------|------------|
-| [Alpine Linux](https://github.com/arfshl/proot-distro-desktop/tree/main/alpine) | XFCE
+| [Alpine Linux (Planned)](https://github.com/arfshl/proot-distro-desktop/tree/main/alpine) | XFCE
 | [Arch Linux (ARM)](https://github.com/arfshl/proot-distro-desktop/tree/main/arch) | XFCE LXQt MATE LXDE Cinnamon KDE |
 | [Artix Linux](https://github.com/arfshl/proot-distro-desktop/tree/main/artix) | XFCE LXQt MATE LXDE Cinnamon KDE | 
 | [Debian](https://github.com/arfshl/proot-distro-desktop/tree/main/debian) | XFCE LXQt MATE LXDE Cinnamon KDE |
@@ -24,7 +24,7 @@ Supported Desktop Environment:
 | [OpenSUSE](https://github.com/arfshl/proot-distro-desktop/tree/main/opensuse/)     |  XFCE LXQt MATE LXDE Cinnamon KDE   |
 | [Rocky Linux](https://github.com/arfshl/proot-distro-desktop/tree/main/el/rocky) | XFCE MATE KDE   |
 | [Ubuntu](https://github.com/arfshl/proot-distro-desktop/tree/main/ubuntu) (Recommended for beginners) | XFCE LXQt MATE LXDE Cinnamon
-| [Void Linux](https://github.com/arfshl/proot-distro-desktop/tree/main/void) | XFCE
+| [Void Linux (Planned)](https://github.com/arfshl/proot-distro-desktop/tree/main/void) | XFCE
 
 ## We also have Native Termux desktop version without proot-distro here!
 
