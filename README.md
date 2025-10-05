@@ -30,3 +30,9 @@ Supported Desktop Environment:
 ## We also have Native Termux desktop version without proot-distro here!
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=arfshl&repo=termux-desktop&theme=transparent)](https://github.com/arfshl/termux-desktop)
+
+# Credits
+
+[andronixapp/andronixorigin](https://github.com/AndronixApp/AndronixOrigin) Inspiration for making this project, VNC startup mechanism, Licensed under MIT License.
+
+[linuxmasterdroid/termux-desktops](https://github.com/LinuxDroidMaster/Termux-Desktops) Pulseaudio and Termux:X11 startup mechanism, Licensed under GPLv3.
