@@ -4,7 +4,7 @@
 xbps-install -Su
 
 # Install Desktop, VNC, and basic utility
-xbps-install -S xfce4 xfce4-terminal dbus-x11 pulseaudio nano wget curl sudo adduser xdg-user-dirs xdg-user-dirs-gtk xfce4-whiskermenu-plugin tigervnc xorg -y && apt clean
+xbps-install -S xfce4 xfce4-terminal dbus-x11 pulseaudio nano wget curl sudo adduser xdg-user-dirs xdg-user-dirs-gtk xfce4-whiskermenu-plugin tigervnc pavucontrol xorg -y
 
 # Adding user and password
 sudo useradd -m void-xfce && echo 'void-xfce:123' | chpasswd && echo 'void-xfce ALL=(ALL:ALL) ALL' >> /etc/sudoers.d/user
