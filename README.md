@@ -4,8 +4,7 @@ Collection of script for easy desktop environment installation on PRoot Distro m
 Supported Desktop Environment:
 
 - XFCE, MATE, LXQt, LXDE (stable and worked well)
-- Cinnamon (A bit slow)
-- KDE (A bit slow, doesn't available on Ubuntu)
+- Cinnamon and KDE (A bit slow)
 
 ## You Need
 - [Termux App](https://github.com/termux/termux-app/releases)
