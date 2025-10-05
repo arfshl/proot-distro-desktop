@@ -37,4 +37,4 @@ Supported Desktop Environment:
 
 [linuxmasterdroid/termux-desktops](https://github.com/LinuxDroidMaster/Termux-Desktops) Pulseaudio and Termux:X11 startup mechanism, Licensed under GPLv3.
 
-[Pulseaudio fix for One UI](https://github.com/termux/termux-packages/issues/19623)
+Pulseaudio fix for One UI, [Issue #19623 on termux-packages](https://github.com/termux/termux-packages/issues/19623)
