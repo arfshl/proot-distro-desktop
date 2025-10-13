@@ -2,7 +2,7 @@
 
 # Install Desktop, VNC, and basic utility
 pacman -Syu
-pacman -S --needed --noconfirm plasma dbus tigervnc wget curl sudo nano pulseaudio pavucontrol-qt xdg-user-dirs
+pacman -S --needed --noconfirm plasma-desktop dbus tigervnc wget curl sudo nano pulseaudio pavucontrol-qt xdg-user-dirs plasma-x11-session
 
 # Generate dbus machine id
 dbus-uuidgen --ensure
