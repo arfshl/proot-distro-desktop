@@ -1,6 +1,6 @@
-# Ubuntu LTS 
+# Ubuntu Regular Release
 
-## XFCE (Recommended for beginners)
+## XFCE
 - proot-distro aliases: ubuntu-xfce
 - Username: ubuntu-xfce
 - `sudo` Password: 123
@@ -17,7 +17,7 @@
 #### Remove (rootfs only)
     apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/ubuntu/xfce/remove-rootfs.sh && sh remove-rootfs.sh && rm remove-rootfs.sh
 #### Remove (full)
-    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/ubuntu/xfce/remove-full.sh && sh remove-full.sh && rm remove-full.sh    
+    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/ubuntu/xfce/remove-full.sh && sh remove-full.sh && rm remove-full.sh
 
 ## LXQt
 - proot-distro aliases: ubuntu-lxqt

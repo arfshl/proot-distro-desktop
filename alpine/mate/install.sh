@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Install Desktop, VNC, and basic utility
-apk add mate-desktop-environment mate-terminal dbus-x11 pulseaudio nano wget curl sudo adduser xdg-user-dirs xdg-user-dirs-gtk tigervnc xorg pavucontrol -y
+apk add mate-desktop-environment mate-tweak mate-terminal dbus-x11 pulseaudio nano wget curl sudo adduser xdg-user-dirs xdg-user-dirs-gtk tigervnc xorg pavucontrol -y
 
 # Adding user and password
 sudo adduser --disabled-password --gecos "alpine-mate" alpine-mate && echo 'alpine-mate:123' | chpasswd && echo 'alpine-mate ALL=(ALL:ALL) ALL' >> /etc/sudoers.d/user
