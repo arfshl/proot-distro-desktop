@@ -1,7 +1,7 @@
 # Ubuntu LTS
 
 ## XFCE (Recomendded for Beginners)
-- proot-distro aliases: ubuntu-xfce
+- proot-distro aliases: ubuntu-lts-xfce
 - Username: ubuntu-xfce
 - `sudo` Password: 123
 - VNC Server Address: 127.0.0.1:5900
