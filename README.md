@@ -24,7 +24,7 @@ Supported Desktop Environment:
 | [OpenSUSE](https://github.com/arfshl/proot-distro-desktop/tree/main/opensuse/)     |  XFCE LXQt MATE LXDE Cinnamon KDE   |
 | [Rocky Linux](https://github.com/arfshl/proot-distro-desktop/tree/main/el/rocky) | XFCE MATE KDE   |
 | [Ubuntu Regular Release](https://github.com/arfshl/proot-distro-desktop/tree/main/ubuntu) | XFCE LXQt MATE LXDE Cinnamon KDE
-| [Ubuntu LTS](https://github.com/arfshl/proot-distro-desktop/tree/main/ubuntu) (Recommended for beginners) | XFCE
+| [Ubuntu LTS](https://github.com/arfshl/proot-distro-desktop/tree/main/ubuntu-lts) (Recommended for beginners) | XFCE
 | [Void Linux](https://github.com/arfshl/proot-distro-desktop/tree/main/void) | XFCE LXQt MATE LXDE Cinnamon KDE |
 
 ## We also have Native Termux desktop version without proot-distro here!
