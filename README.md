@@ -27,8 +27,8 @@ Supported Desktop Environment:
 | [Ubuntu LTS](https://github.com/arfshl/proot-distro-desktop/tree/main/ubuntu-lts) (Recommended for beginners) | XFCE
 | [Void Linux](https://github.com/arfshl/proot-distro-desktop/tree/main/void) | XFCE LXQt MATE LXDE Cinnamon KDE |
 
-## Custom rootfs build repo (for distro version who doesn`t supported by termux)\
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=arfshl&repo=termux-desktop&theme=transparent)](https://github.com/arfshl/pd-custom-rootfs)
+## Custom rootfs build repo (for distro version who doesn`t supported by termux, arm64/aarch64 only)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=arfshl&repo=pd-custom-rootfs&theme=transparent)](https://github.com/arfshl/pd-custom-rootfs)
 
 ## We also have Native Termux desktop version without proot-distro here!
 
