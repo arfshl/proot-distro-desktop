@@ -37,7 +37,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/ubuntu-lts-xfce*
 
 # Install ubuntu under aliases
-PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/ubuntu-lts-latest/ubuntu-lts-latest-arm64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="6db3c0d14b52bf2d78380631593774b779396893f8e25fc8a5ead4d3d68c2562" proot-distro install ubuntu --override-alias ubuntu-lts-xfce
+PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/ubuntu-lts-latest/ubuntu-lts-latest-arm64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install ubuntu --override-alias ubuntu-lts-xfce
 
 # Setup ubuntu-xfce
 proot-distro login ubuntu-lts-xfce -- /bin/sh -c 'apt update && apt install wget -y'
