@@ -45,7 +45,7 @@ proot-distro login ubuntu-lts-xfce -- /bin/sh -c 'apt update && apt install wget
 proot-distro login ubuntu-lts-xfce -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/ubuntu/xfce/install.sh -O install.sh && chmod +x install.sh && ./install.sh && rm install.sh'
 
 echo 'To start command line session: ubuntu-lts-xfce'
-echo 'To start X11 session: ubuntu-xfce-lts-x11'
+echo 'To start X11 session: ubuntu-lts-xfce-x11'
 echo 'To start VNC server: startvnc'
 echo 'To stop VNC server: stopvnc'
 echo 'To restart VNC server: restartvnc'
