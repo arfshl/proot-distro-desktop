@@ -18,10 +18,13 @@ Supported Desktop Environment:
 | [Arch Linux (ARM)](https://github.com/arfshl/proot-distro-desktop/tree/main/arch) | XFCE LXQt MATE LXDE Cinnamon KDE |
 | [Artix Linux](https://github.com/arfshl/proot-distro-desktop/tree/main/artix) | XFCE LXQt MATE LXDE Cinnamon KDE | 
 | [Debian](https://github.com/arfshl/proot-distro-desktop/tree/main/debian) | XFCE LXQt MATE LXDE Cinnamon KDE |
+| [Debian Sid planned](https://github.com/arfshl/proot-distro-desktop/tree/main/debian-sid) | XFCE LXQt MATE LXDE Cinnamon KDE |
+| [Debian Testing planned](https://github.com/arfshl/proot-distro-desktop/tree/main/debian-testing) | XFCE LXQt MATE LXDE Cinnamon KDE |
 | [Fedora](https://github.com/arfshl/proot-distro-desktop/tree/main/fedora) (Fedora is not worked on Android 15+) | XFCE LXQt MATE LXDE Cinnamon KDE |
 | [Linux Mint](https://github.com/arfshl/proot-distro-desktop/tree/main/linuxmint) (x86_64 with QEMU, Beta testing) | Cinnamon
 | [Manjaro](https://github.com/arfshl/proot-distro-desktop/tree/main/manjaro) | XFCE LXQt MATE LXDE Cinnamon KDE | 
 | [OpenSUSE](https://github.com/arfshl/proot-distro-desktop/tree/main/opensuse/)     |  XFCE LXQt MATE LXDE Cinnamon KDE   |
+| [OpenSUSE Tumbleweed](https://github.com/arfshl/proot-distro-desktop/tree/main/opensuse-tumbleweed/)     |  XFCE LXQt MATE LXDE Cinnamon KDE   |
 | [Rocky Linux](https://github.com/arfshl/proot-distro-desktop/tree/main/el/rocky) | XFCE MATE KDE   |
 | [Ubuntu Regular Release](https://github.com/arfshl/proot-distro-desktop/tree/main/ubuntu) | XFCE LXQt MATE LXDE Cinnamon KDE
 | [Ubuntu LTS](https://github.com/arfshl/proot-distro-desktop/tree/main/ubuntu-lts) (Recommended for beginners) | XFCE
