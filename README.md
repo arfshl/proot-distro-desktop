@@ -27,7 +27,7 @@ Supported Desktop Environment:
 | [OpenSUSE Tumbleweed planned](https://github.com/arfshl/proot-distro-desktop/tree/main/opensuse-tumbleweed/)     |  XFCE LXQt MATE LXDE Cinnamon KDE   |
 | [Rocky Linux](https://github.com/arfshl/proot-distro-desktop/tree/main/el/rocky) | XFCE MATE KDE   |
 | [Ubuntu Regular Release](https://github.com/arfshl/proot-distro-desktop/tree/main/ubuntu) | XFCE LXQt MATE LXDE Cinnamon KDE
-| [Ubuntu LTS](https://github.com/arfshl/proot-distro-desktop/tree/main/ubuntu-lts) (Recommended for beginners) | XFCE
+| [Ubuntu LTS](https://github.com/arfshl/proot-distro-desktop/tree/main/ubuntu-lts) (Recommended for beginners) | CLI XFCE
 | [Void Linux](https://github.com/arfshl/proot-distro-desktop/tree/main/void) | XFCE LXQt MATE LXDE Cinnamon KDE |
 
 ## Custom rootfs build repo (for distro version who doesn`t supported by termux, arm64/aarch64 only)
