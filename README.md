@@ -44,7 +44,7 @@ apt remove proot-distro termux-x11 pulseaudio vulkan-loader-android mesa-zink vi
 apt remove x11-repo tur-repo -y && apt update
 
 
-- Full Uninstall
+- Full Uninstall, including in-termux dependency
 #!/bin/sh
 proot-distro remove [distro aliases]
 
