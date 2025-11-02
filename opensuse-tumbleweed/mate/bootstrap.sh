@@ -42,7 +42,7 @@ PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/dow
 # Setup opensuse-tumbleweed-mate
 proot-distro login opensuse-tumbleweed-mate -- /bin/sh -c 'zypper refresh && zypper -n dup && zypper -n in wget'
 
-proot-distro login opensuse-tumbleweed-mate -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/opensuse-tumbleweed/mate/install-mate.sh -O install-mate.sh && chmod +x install-mate.sh && ./install-mate.sh && rm install-mate.sh'
+proot-distro login opensuse-tumbleweed-mate -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/opensuse/mate/install-mate.sh -O install-mate.sh && chmod +x install-mate.sh && ./install-mate.sh && rm install-mate.sh'
 
 echo 'To start command line session: opensuse-tumbleweed-mate'
 echo 'To start X11 session: opensuse-tumbleweed-mate-x11'
