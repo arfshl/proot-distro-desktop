@@ -31,8 +31,8 @@ Supported Desktop Environment:
 | [Void Linux](https://github.com/arfshl/proot-distro-desktop/tree/main/void) | XFCE LXQt MATE LXDE Cinnamon KDE |
 
 ## Uninstalling
-- Rootfs-only uninstall
 ```
+- Rootfs-only uninstall
 #!/bin/sh
 proot-distro remove [distro aliases]
 
@@ -42,6 +42,7 @@ rm /data/data/com.termux/files/usr/bin/[distro aliases]-x11
 apt remove proot-distro termux-x11 pulseaudio vulkan-loader-android mesa-zink virglrenderer-mesa-zink virglrenderer-android -y && apt autoremove -y
 
 apt remove x11-repo tur-repo -y && apt update
+
 
 - Full Uninstall
 #!/bin/sh
