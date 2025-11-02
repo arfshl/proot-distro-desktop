@@ -1,5 +1,11 @@
 # Ubuntu LTS
 
+## CLI-only (without Desktop)
+- proot-distro aliases: ubuntu-lts
+
+    PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/ubuntu-lts-latest/ubuntu-lts-latest-arm64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install ubuntu --override-alias ubuntu-lts
+
+
 ## XFCE
 - proot-distro aliases: ubuntu-lts-xfce
 - Username: ubuntu-xfce

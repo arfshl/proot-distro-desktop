@@ -24,7 +24,7 @@ Supported Desktop Environment:
 | [Linux Mint](https://github.com/arfshl/proot-distro-desktop/tree/main/linuxmint) (x86_64 with QEMU, Beta testing) | Cinnamon
 | [Manjaro](https://github.com/arfshl/proot-distro-desktop/tree/main/manjaro) | XFCE LXQt MATE LXDE Cinnamon KDE | 
 | [OpenSUSE](https://github.com/arfshl/proot-distro-desktop/tree/main/opensuse/)     |  XFCE LXQt MATE LXDE Cinnamon KDE   |
-| [OpenSUSE Tumbleweed planned](https://github.com/arfshl/proot-distro-desktop/tree/main/opensuse-tumbleweed/)     |  CLI XFCE LXQt MATE LXDE Cinnamon KDE   |
+| [OpenSUSE Tumbleweed](https://github.com/arfshl/proot-distro-desktop/tree/main/opensuse-tumbleweed/)     |  CLI XFCE LXQt MATE LXDE Cinnamon KDE   |
 | [Rocky Linux](https://github.com/arfshl/proot-distro-desktop/tree/main/el/rocky) | XFCE MATE KDE   |
 | [Ubuntu Regular Release](https://github.com/arfshl/proot-distro-desktop/tree/main/ubuntu) | XFCE LXQt MATE LXDE Cinnamon KDE
 | [Ubuntu LTS](https://github.com/arfshl/proot-distro-desktop/tree/main/ubuntu-lts) (Recommended for beginners) | CLI XFCE LXQt MATE LXDE Cinnamon KDE
