@@ -1,7 +1,9 @@
 # OpenSUSE Tumbleweed
 
 ## CLI-only (without desktop
+- proot-distro aliases: opensuse-tumbleweed
     PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/opensuse-tumbleweed/opensuse-tumbleweed-arm64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install opensuse --override-alias opensuse-tumbleweed
+
 ## XFCE
 - proot-distro aliases: opensuse-tumbleweed-xfce
 - Username: opensuse-xfce
