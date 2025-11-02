@@ -41,7 +41,7 @@ PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/dow
 # Setup ubuntu-lts-lxqt
 proot-distro login ubuntu-lts-lxqt -- /bin/sh -c 'apt update && apt install wget -y'
 
-proot-distro login ubuntu-lts-lxqt -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/ubuntu-lts/lxqt/install.sh -O install.sh && chmod +x install.sh && ./install.sh && rm install.sh'
+proot-distro login ubuntu-lts-lxqt -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/ubuntu/lxqt/install.sh -O install.sh && chmod +x install.sh && ./install.sh && rm install.sh'
 
 echo 'To start command line session: ubuntu-lts-lxqt'
 echo 'To start X11 session: ubuntu-lts-lxqt-x11'
