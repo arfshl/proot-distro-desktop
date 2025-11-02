@@ -2,8 +2,8 @@
 
 ## CLI-Only (without Desktop)
 - proot-distro aliases: debian-testing
-  
- PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/debian-testing-latest/debian-testing-arm64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install debian --override-alias debian-testing
+
+      PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/debian-testing-latest/debian-testing-arm64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install debian --override-alias debian-testing
 
 ## XFCE
 - proot-distro aliases: debian-testing-xfce
