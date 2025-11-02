@@ -9,7 +9,7 @@ apt update
 apt upgrade -y -o Dpkg::Options::="--force-confold"
 
 # Install depedency
-apt install curl wget nano proot-distro termux-x11 pulseaudio vulkan-loader-android mesa-zink virglrenderer-mesa-zink virglrenderer-android -y
+apt install curl wget nano proot-distro termux-x11 pulseaudio vulkan-loader-android mesa-zink virglrenderer-mesa-zink virglrenderer-android qemu-user-x86-64 -y
 
 # for CLI session
 echo '#!/bin/sh
