@@ -39,7 +39,7 @@ PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/dow
 # Setup ubuntu-lts-cinnamon
 proot-distro login ubuntu-lts-cinnamon -- /bin/sh -c 'apt update && apt install wget -y'
 
-proot-distro login ubuntu-lts-cinnamon -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/ubuntu-lts/cinnamon/install.sh -O install.sh && chmod +x install.sh && ./install.sh && rm install.sh'
+proot-distro login ubuntu-lts-cinnamon -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/ubuntu/cinnamon/install.sh -O install.sh && chmod +x install.sh && ./install.sh && rm install.sh'
 
 echo 'To start command line session: ubuntu-lts-cinnamon'
 echo 'To start X11 session: ubuntu-lts-cinnamon-x11'
