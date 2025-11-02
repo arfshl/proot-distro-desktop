@@ -42,7 +42,7 @@ PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/dow
 # Setup opensuse-tumbleweed-lxqt
 proot-distro login opensuse-tumbleweed-lxqt -- /bin/sh -c 'zypper refresh && zypper -n dup && zypper -n in wget'
 
-proot-distro login opensuse-tumbleweed-lxqt -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/opensuse-tumbleweed/lxqt/install-lxqt.sh -O install-lxqt.sh && chmod +x install-lxqt.sh && ./install-lxqt.sh && rm install-lxqt.sh'
+proot-distro login opensuse-tumbleweed-lxqt -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/opensuse/lxqt/install-lxqt.sh -O install-lxqt.sh && chmod +x install-lxqt.sh && ./install-lxqt.sh && rm install-lxqt.sh'
 
 echo 'To start command line session: opensuse-tumbleweed-lxqt'
 echo 'To start X11 session: opensuse-tumbleweed-lxqt-x11'
