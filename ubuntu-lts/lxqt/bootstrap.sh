@@ -36,7 +36,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/ubuntu-lts-lxqt*
 
 # Install ubuntu-lts under aliases
-PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/ubuntu-lts-latest/ubuntu-lts-latest-arm64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install ubuntu --override-alias ubuntu-lts-lxqt
+PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/ubuntu-lts/ubuntu-lts-aarch64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install ubuntu --override-alias ubuntu-lts-lxqt
 
 # Setup ubuntu-lts-lxqt
 proot-distro login ubuntu-lts-lxqt -- /bin/sh -c 'apt update && apt install wget -y'
