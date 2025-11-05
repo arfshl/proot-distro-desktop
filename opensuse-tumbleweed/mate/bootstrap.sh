@@ -37,7 +37,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/opensuse-tumbleweed-mate*
 
 # Install rootfs under aliases
-PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/opensuse-tumbleweed-tumbleweed/opensuse-tumbleweed-tumbleweed-arm64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install opensuse-tumbleweed --override-alias opensuse-tumbleweed-mate
+PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/opensuse-tumbleweed-tumbleweed/opensuse-tumbleweed-tumbleweed-aarch64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install opensuse-tumbleweed --override-alias opensuse-tumbleweed-mate
 
 # Setup opensuse-tumbleweed-mate
 proot-distro login opensuse-tumbleweed-mate -- /bin/sh -c 'zypper refresh && zypper -n dup && zypper -n in wget'
