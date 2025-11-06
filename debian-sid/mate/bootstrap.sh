@@ -36,7 +36,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/debian-sid-mate*
 
 # Install debian under aliases
-PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/debian-sid-latest/debian-sid-arm64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install debian --override-alias debian-sid-mate
+PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/debian-sid/debian-sid-aarch64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install debian --override-alias debian-sid-mate
 
 # Setup debian-sid-mate
 proot-distro login debian-sid-mate -- /bin/sh -c 'apt update && apt install wget -y'
