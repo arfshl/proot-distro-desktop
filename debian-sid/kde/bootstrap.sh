@@ -34,7 +34,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/debian-sid-kde*
 
 # Install debian under aliases
-PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/debian-sid-latest/debian-sid-arm64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install debian --override-alias debian-sid-kde
+PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/debian-sid/debian-sid-aarch64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install debian --override-alias debian-sid-kde
 
 # Setup debian-sid-kde
 proot-distro login debian-sid-kde -- /bin/sh -c 'apt update && apt install wget -y'
