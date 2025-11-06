@@ -36,7 +36,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/debian-sid-lxqt*
 
 # Install debian under aliases
-PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/debian-sid-latest/debian-sid-arm64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install debian --override-alias debian-sid-lxqt
+PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/debian-sid/debian-sid-aarch64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install debian --override-alias debian-sid-lxqt
 
 # Setup debian-sid-lxqt
 proot-distro login debian-sid-lxqt -- /bin/sh -c 'apt update && apt install wget -y'
