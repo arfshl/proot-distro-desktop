@@ -34,7 +34,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/debian-testing-kde*
 
 # Install debian-testing under aliases
-PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/debian-testing-latest/debian-testing-arm64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install debian --override-alias debian-testing-kde
+PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/debian-testing/debian-testing-aarch64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install debian --override-alias debian-testing-kde
 
 # Setup debian-testing-kde
 proot-distro login debian-testing-kde -- /bin/sh -c 'apt update && apt install wget -y'
