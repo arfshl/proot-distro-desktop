@@ -36,7 +36,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/debian-testing-mate*
 
 # Install debian-testing under aliases
-PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/debian-testing-latest/debian-testing-arm64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install debian --override-alias debian-testing-mate
+PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/debian-testing/debian-testing-aarch64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install debian --override-alias debian-testing-mate
 
 # Setup debian-testing-mate
 proot-distro login debian-testing-mate -- /bin/sh -c 'apt update && apt install wget -y'
