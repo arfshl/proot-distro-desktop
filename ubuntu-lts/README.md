@@ -6,7 +6,7 @@
       PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/ubuntu-lts/ubuntu-lts-aarch64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install ubuntu --override-alias ubuntu-lts
 
 
-## XFCE
+## XFCE (Reccomended for beginners)
 - proot-distro aliases: ubuntu-lts-xfce
 - Username: ubuntu-xfce
 - `sudo` Password: 123
