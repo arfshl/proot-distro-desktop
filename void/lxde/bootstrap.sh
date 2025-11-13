@@ -26,7 +26,7 @@ pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth
 export XDG_RUNTIME_DIR=${TMPDIR}
 kill -9 $(pgrep -f "termux.x11") 2>/dev/null
 kill -9 $(pgrep -f "virgl") 2>/dev/null
-proot-distro login void-lxde --shared-tmp -- /bin/sh -c 'kill -9 $(pgrep -f "x11") 2>/dev/null'
+proot-distro login void-lxde --shared-tmp -- /bin/sh -c 'pkill -x -9 x11 2>/dev/null'
 virgl_test_server_android &
 termux-x11 :0 >/dev/null &
 sleep 3
