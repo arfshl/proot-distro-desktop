@@ -17,6 +17,12 @@
 #### Install
     apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/ubuntu-lts/xfce/bootstrap.sh && sh bootstrap.sh && rm bootstrap.sh
 
+#### Alternative install
+
+- Try to use this if you have problem with `unpacking icon theme` which run too slow or even hangs
+
+    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/ubuntu-lts/xfce/bootstrap-alt.sh && sh bootstrap-alt.sh && rm bootstrap-alt.sh
+
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo apt update && sudo apt install firefox vlc thunderbird atril ristretto galculator libheif1 xarchiver webp-pixbuf-loader fonts-liberation p7zip mousepad && apt clean
 
