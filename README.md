@@ -15,9 +15,7 @@ Supported Desktop Environment:
 | Distribution     | Desktop   |
 |------------------|------------|
 | [Alpine Linux](https://github.com/arfshl/proot-distro-desktop/tree/main/alpine) | XFCE LXQt MATE LXDE Cinnamon KDE |
-| [Arch Linux (ARM)](https://github.com/arfshl/proot-distro-desktop/tree/main/arch) | XFCE LXQt MATE LXDE Cinnamon KDE |
-# | [Artix Linux](https://github.com/arfshl/proot-distro-desktop/tree/main/artix) | XFCE LXQt MATE LXDE Cinnamon KDE | 
-| [Debian](https://github.com/arfshl/proot-distro-desktop/tree/main/debian) | XFCE LXQt MATE LXDE Cinnamon KDE |
+| [Arch Linux (ARM)](https://github.com/arfshl/proot-distro-desktop/tree/main/arch) | XFCE LXQt MATE LXDE Cinnamon KDE | [Debian](https://github.com/arfshl/proot-distro-desktop/tree/main/debian) | XFCE LXQt MATE LXDE Cinnamon KDE |
 | [Debian Sid (ARM64 Only)](https://github.com/arfshl/proot-distro-desktop/tree/main/debian-sid) | CLI XFCE LXQt MATE LXDE Cinnamon KDE |
 | [Debian Testing (ARM64 Only)](https://github.com/arfshl/proot-distro-desktop/tree/main/debian-testing) | CLI XFCE LXQt MATE LXDE Cinnamon KDE |
 | [Fedora](https://github.com/arfshl/proot-distro-desktop/tree/main/fedora) (Fedora is not worked on Android 15+) | XFCE LXQt MATE LXDE Cinnamon KDE |
