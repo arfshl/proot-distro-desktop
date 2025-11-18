@@ -11,10 +11,7 @@ apt upgrade -y -o Dpkg::Options::="--force-confold"
 # Install depedency
 apt install curl wget nano proot-distro termux-x11 pulseaudio vulkan-loader-android mesa-zink virglrenderer-mesa-zink virglrenderer-android -y
 
-# Install ubuntu under aliases, fix old broken install
-pd remove ubuntu-lts-xfce
-
-rm /data/data/com.termux/files/usr/bin/ubuntu-lts-xfce*
+# Install ubuntu under aliases
 
 PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/ubuntu-lts/ubuntu-lts-xfce-aarch64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install ubuntu --override-alias ubuntu-lts-xfce
 
