@@ -11,6 +11,10 @@ apt upgrade -y -o Dpkg::Options::="--force-confold"
 # Install depedency
 apt install curl wget nano proot-distro termux-x11 pulseaudio vulkan-loader-android mesa-zink virglrenderer-mesa-zink virglrenderer-android -y
 
+# Install ubuntu under aliases
+
+PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/ubuntu-lts/ubuntu-lts-cinnamon-aarch64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install ubuntu --override-alias ubuntu-lts-cinnamon
+
 # for CLI session
 echo '#!/bin/sh
 LD_PRELOAD=/system/lib64/libskcodec.so
@@ -32,14 +36,6 @@ EOF
 
 # Make all of them executable
 chmod +x /data/data/com.termux/files/usr/bin/ubuntu-lts-cinnamon*
-
-# Install ubuntu-lts under aliases
-PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/ubuntu-lts/ubuntu-lts-aarch64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install ubuntu --override-alias ubuntu-lts-cinnamon
-
-# Setup ubuntu-lts-cinnamon
-proot-distro login ubuntu-lts-cinnamon -- /bin/sh -c 'apt update && apt install wget -y'
-
-proot-distro login ubuntu-lts-cinnamon -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/ubuntu/cinnamon/install.sh -O install.sh && chmod +x install.sh && ./install.sh && rm install.sh'
 
 echo 'To start command line session: ubuntu-lts-cinnamon'
 echo 'To start X11 session: ubuntu-lts-cinnamon-x11'
