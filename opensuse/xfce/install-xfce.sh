@@ -1,6 +1,8 @@
 #!/bin/sh
 
 # Install Desktop, VNC, and basic utility
+zypper refresh
+zypper -n dup
 zypper -n in -t pattern xfce
 zypper -n in dbus-1 xorg-x11-Xvnc xdg-user-dirs xdg-user-dirs-gtk dbus-1-daemon pulseaudio xfce4-*-plugin pavucontrol elementary-xfce-icon-theme tigervnc wget nano curl sudo xfce4-terminal
 
