@@ -45,4 +45,4 @@ chmod +x startvnc
 chmod +x stopvnc
 chmod +x restartvnc
 cd
-chmod +x /home/opensuse-cinnamon/.vnc/xstartup
+# chmod +x /home/opensuse-cinnamon/.vnc/xstartup
