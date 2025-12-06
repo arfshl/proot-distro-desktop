@@ -2,7 +2,7 @@
 
 # Install Desktop, VNC, and basic utility
 zypper -n in -t pattern cinnamon
-zypper -n in dbus-1 xdg-user-dirs xdg-user-dirs-gtk dbus-1-daemon pulseaudio pavucontrol tigervnc wget nano curl sudo mate-terminal
+zypper -n in xorg-x11-Xvnc dbus-1 xdg-user-dirs xdg-user-dirs-gtk dbus-1-daemon pulseaudio pavucontrol tigervnc wget nano curl sudo mate-terminal
 
 # Generate dbus machine id
 dbus-uuidgen --ensure
