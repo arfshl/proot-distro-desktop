@@ -1,6 +1,8 @@
 #!/bin/sh
 
 # Install Desktop, VNC, and basic utility
+zypper refresh
+zypper -n dup
 zypper -n in -t pattern mate
 zypper -n in dbus-1 xorg-x11-Xvnc xdg-user-dirs xdg-user-dirs-gtk dbus-1-daemon pulseaudio mate-media pavucontrol tigervnc wget nano curl sudo mate-terminal
 
