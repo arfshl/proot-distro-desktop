@@ -1,6 +1,8 @@
 #!/bin/sh
 
 # Install Desktop, VNC, and basic utility
+zypper refresh
+zypper -n dup
 zypper -n in -t pattern kde
 zypper -n in dbus-1 xorg-x11-Xvnc xdg-user-dirs dbus-1-daemon pulseaudio pavucontrol-qt tigervnc wget nano curl sudo konsole
 
