@@ -46,4 +46,4 @@ chmod +x startvnc
 chmod +x stopvnc
 chmod +x restartvnc
 cd
-chmod +x /home/opensuse-kde/.vnc/xstartup
+# chmod +x /home/opensuse-kde/.vnc/xstartup
