@@ -2,7 +2,7 @@
 
 # Install Desktop, VNC, and basic utility
 pacman -Syu
-pacman -S --needed --noconfirm mate mate-terminal mate-media mate-applets mate-applet-dock mate-applet-streamer mate-desktop dbus tigervnc wget curl sudo nano pulseaudio pavucontrol xdg-user-dirs xdg-user-dirs-gtk
+pacman -S --needed --noconfirm mate mate-terminal mate-media mate-applets mate-applet-dock mate-desktop dbus tigervnc wget curl sudo nano pulseaudio pavucontrol xdg-user-dirs xdg-user-dirs-gtk
 
 # Generate dbus machine id
 dbus-uuidgen --ensure
