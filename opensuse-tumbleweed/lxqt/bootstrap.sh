@@ -37,12 +37,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/opensuse-tumbleweed-lxqt*
 
 # Install rootfs under aliases
-PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/opensuse-tumbleweed/opensuse-tumbleweed-aarch64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install opensuse --override-alias opensuse-tumbleweed-lxqt
-
-# Setup opensuse-tumbleweed-lxqt
-proot-distro login opensuse-tumbleweed-lxqt -- /bin/sh -c 'zypper refresh && zypper -n dup && zypper -n in wget'
-
-proot-distro login opensuse-tumbleweed-lxqt -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/opensuse/lxqt/install-lxqt.sh -O install-lxqt.sh && chmod +x install-lxqt.sh && ./install-lxqt.sh && rm install-lxqt.sh'
+PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/opensuse-tumbleweed/opensuse-tumbleweed-lxqt-aarch64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install opensuse --override-alias opensuse-tumbleweed-lxqt
 
 echo 'To start command line session: opensuse-tumbleweed-lxqt'
 echo 'To start X11 session: opensuse-tumbleweed-lxqt-x11'
