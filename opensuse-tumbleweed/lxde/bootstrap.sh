@@ -37,12 +37,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/opensuse-tumbleweed-lxde*
 
 # Install rootfs under aliases
-PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/opensuse-tumbleweed/opensuse-tumbleweed-aarch64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install opensuse --override-alias opensuse-tumbleweed-lxde
-
-# Setup opensuse-tumbleweed-lxde
-proot-distro login opensuse-tumbleweed-lxde -- /bin/sh -c 'zypper refresh && zypper -n dup && zypper -n in wget'
-
-proot-distro login opensuse-tumbleweed-lxde -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/opensuse/lxde/install-lxde.sh -O install-lxde.sh && chmod +x install-lxde.sh && ./install-lxde.sh && rm install-lxde.sh'
+PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/opensuse-tumbleweed/opensuse-tumbleweed-lxde-aarch64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install opensuse --override-alias opensuse-tumbleweed-lxde
 
 echo 'To start command line session: opensuse-tumbleweed-lxde'
 echo 'To start X11 session: opensuse-tumbleweed-lxde-x11'
