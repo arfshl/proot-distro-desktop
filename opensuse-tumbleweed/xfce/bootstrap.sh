@@ -37,12 +37,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/opensuse-tumbleweed-xfce*
 
 # Install rootfs under aliases
-PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/opensuse-tumbleweed/opensuse-tumbleweed-aarch64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install opensuse --override-alias opensuse-tumbleweed-xfce
-
-# Setup opensuse-tumbleweed-xfce
-proot-distro login opensuse-tumbleweed-xfce -- /bin/sh -c 'zypper refresh && zypper -n dup && zypper -n in wget'
-
-proot-distro login opensuse-tumbleweed-xfce -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/opensuse/xfce/install-xfce.sh -O install-xfce.sh && chmod +x install-xfce.sh && ./install-xfce.sh && rm install-xfce.sh'
+PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/opensuse-tumbleweed/opensuse-tumbleweed-xfce-aarch64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install opensuse --override-alias opensuse-tumbleweed-xfce
 
 echo 'To start command line session: opensuse-tumbleweed-xfce'
 echo 'To start X11 session: opensuse-tumbleweed-xfce-x11'
