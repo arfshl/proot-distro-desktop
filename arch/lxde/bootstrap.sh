@@ -37,12 +37,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/arch-lxde*
 
 # Install rootfs under aliases
-proot-distro install archlinux --override-alias arch-lxde
-
-# Setup arch-lxde
-proot-distro login arch-lxde -- /bin/sh -c 'pacman -Sy --noconfirm wget'
-
-proot-distro login arch-lxde -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/arch/lxde/install.sh -O install.sh && chmod +x install.sh && ./install.sh && rm install.sh'
+PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/archlinux/archlinux-lxde-aarch64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install archlinux --override-alias arch-lxde
 
 echo 'To start command line session: arch-lxde'
 echo 'To start X11 session: arch-lxde-x11'

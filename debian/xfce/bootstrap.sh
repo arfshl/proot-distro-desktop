@@ -37,12 +37,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/debian-xfce*
 
 # Install rootfs under aliases
-proot-distro install debian --override-alias debian-xfce
-
-# Setup debian-xfce
-proot-distro login debian-xfce -- /bin/sh -c 'apt update && apt install wget -y'
-
-proot-distro login debian-xfce -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian/xfce/install.sh -O install.sh && chmod +x install.sh && ./install.sh && rm install.sh'
+PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/debian-stable/debian-stable-xfce-aarch64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install debian --override-alias debian-xfce
 
 echo 'To start command line session: debian-xfce'
 echo 'To start X11 session: debian-xfce-x11'

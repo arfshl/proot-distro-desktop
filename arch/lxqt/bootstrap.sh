@@ -37,12 +37,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/arch-lxqt*
 
 # Install rootfs under aliases
-proot-distro install archlinux --override-alias arch-lxqt
-
-# Setup arch-lxqt
-proot-distro login arch-lxqt -- /bin/sh -c 'pacman -Sy --noconfirm wget'
-
-proot-distro login arch-lxqt -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/arch/lxqt/install.sh -O install.sh && chmod +x install.sh && ./install.sh && rm install.sh'
+PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/archlinux/archlinux-lxqt-aarch64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install archlinux --override-alias arch-lxqt
 
 echo 'To start command line session: arch-lxqt'
 echo 'To start X11 session: arch-lxqt-x11'

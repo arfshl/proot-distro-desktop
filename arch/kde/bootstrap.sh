@@ -37,12 +37,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/arch-kde*
 
 # Install rootfs under aliases
-proot-distro install archlinux --override-alias arch-kde
-
-# Setup arch-kde
-proot-distro login arch-kde -- /bin/sh -c 'pacman -Sy --noconfirm wget'
-
-proot-distro login arch-kde -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/arch/kde/install.sh -O install.sh && chmod +x install.sh && ./install.sh && rm install.sh'
+PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/archlinux/archlinux-kde-aarch64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install archlinux --override-alias arch-kde
 
 echo 'To start command line session: arch-kde'
 echo 'To start X11 session: arch-kde-x11'

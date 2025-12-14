@@ -36,12 +36,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/debian-lxde*
 
 # Install debian under aliases
-proot-distro install debian --override-alias debian-lxde
-
-# Setup debian-lxde
-proot-distro login debian-lxde-- /bin/sh -c 'apt update && apt install wget -y'
-
-proot-distro login debian-lxde -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian/lxde/install.sh -O install.sh && chmod +x install.sh && ./install.sh && rm install.sh'
+PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/debian-stable/debian-stable-lxde-aarch64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install debian --override-alias debian-lxde
 
 echo 'To start command line session: debian-lxde'
 echo 'To start X11 session: debian-lxde-x11'

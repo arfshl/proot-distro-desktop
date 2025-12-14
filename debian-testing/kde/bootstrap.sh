@@ -34,12 +34,8 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/debian-testing-kde*
 
 # Install debian-testing under aliases
-PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/debian-testing/debian-testing-aarch64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install debian --override-alias debian-testing-kde
+PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/debian-testing/debian-testing-kde-aarch64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install debian --override-alias debian-testing-kde
 
-# Setup debian-testing-kde
-proot-distro login debian-testing-kde -- /bin/sh -c 'apt update && apt install wget -y'
-
-proot-distro login debian-testing-kde -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian-testing/kde/install.sh -O install.sh && chmod +x install.sh && ./install.sh && rm install.sh'
 
 echo 'To start command line session: debian-testing-kde'
 echo 'To start X11 session: debian-testing-kde-x11'
