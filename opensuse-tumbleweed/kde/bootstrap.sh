@@ -37,12 +37,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/opensuse-tumbleweed-kde*
 
 # Install rootfs under aliases
-PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/opensuse-tumbleweed/opensuse-tumbleweed-aarch64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install opensuse --override-alias opensuse-tumbleweed-kde
-
-# Setup opensuse-tumbleweed-kde
-proot-distro login opensuse-tumbleweed-kde -- /bin/sh -c 'zypper refresh && zypper -n dup && zypper -n in wget'
-
-proot-distro login opensuse-tumbleweed-kde -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/opensuse/kde/install-kde.sh -O install-kde.sh && chmod +x install-kde.sh && ./install-kde.sh && rm install-kde.sh'
+PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/opensuse-tumbleweed/opensuse-tumbleweed-kde-aarch64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install opensuse --override-alias opensuse-tumbleweed-kde
 
 echo 'To start command line session: opensuse-tumbleweed-kde'
 echo 'To start X11 session: opensuse-tumbleweed-kde-x11'
