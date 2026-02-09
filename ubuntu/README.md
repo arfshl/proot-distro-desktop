@@ -93,3 +93,8 @@
 
 ## Installing Chromium
     sudo su && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/ubuntu/chromium-install.sh && sh chromium-install.sh && rm chromium-install.sh
+
+## Disable apt Pager at Debian 13 or Ubuntu 26.04
+
+      echo 'Binary::apt::Pager "false";' | sudo tee -a  /etc/apt/apt.conf.d/99nopager
+
