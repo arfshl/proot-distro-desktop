@@ -3,7 +3,7 @@
 ## CLI-only (without Desktop)
 - proot-distro aliases: ubuntu-lts
 
-      PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/ubuntu-lts/ubuntu-lts-aarch64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install ubuntu --override-alias ubuntu-lts
+      apt install proot-diatro -y PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/ubuntu-lts/ubuntu-lts-aarch64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install ubuntu --override-alias ubuntu-lts
 
 
 ## XFCE (Reccomended for beginners)
@@ -99,3 +99,7 @@
 
 ## Installing Chromium
     sudo su && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/ubuntu-lts/chromium-install.sh && sh chromium-install.sh && rm chromium-install.sh
+
+## Disable apt Pager at Debian 13 or Ubuntu 26.04
+
+      echo 'Binary::apt::Pager "false";' sudo tee -a  /etc/apt/apt.conf.d/99nopager
