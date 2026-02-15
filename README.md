@@ -50,11 +50,11 @@ Replace [distro aliases] with distro alias you're using, available on installati
 ```
 
 ## Custom rootfs build repo (for distro version who doesn`t supported by termux, arm64/aarch64 only)
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=arfshl&repo=pd-custom-rootfs&theme=transparent)](https://github.com/arfshl/pd-custom-rootfs)
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=arfshl&repo=pd-custom-rootfs&theme=transparent)](https://github.com/arfshl/pd-custom-rootfs)
 
 ## We also have Native Termux desktop version without proot-distro here!
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=arfshl&repo=termux-desktop&theme=transparent)](https://github.com/arfshl/termux-desktop)
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=arfshl&repo=termux-desktop&theme=transparent)](https://github.com/arfshl/termux-desktop)
 
 # Credits
 
