@@ -3,7 +3,7 @@
 ## CLI-only (without Desktop)
 - proot-distro aliases: ubuntu-lts
 
-      apt install proot-diatro -y PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/ubuntu-lts/ubuntu-lts-aarch64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install ubuntu --override-alias ubuntu-lts
+      apt install proot-distro -y && PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/ubuntu-lts/ubuntu-lts-aarch64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install ubuntu --override-alias ubuntu-lts
 
 
 ## XFCE (Reccomended for beginners)
