@@ -1,6 +1,6 @@
 # Install Desktop, VNC, and basic utility
-dnf config-manager --set-enabled ol9_codeready_builder
-dnf -y install oracle-epel-release-el$(rpm -E %{rhel}).x86_64
+dnf config-manager --set-enabled ol10_codeready_builder
+dnf -y install oracle-epel-release-el$(rpm -E %{rhel})
 dnf install --nogpgcheck -y https://mirrors.rpmfusion.org/free/el/rpmfusion-free-release-$(rpm -E %rhel).noarch.rpm https://mirrors.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-$(rpm -E %rhel).noarch.rpm
 dnf install -y --allowerasing @"KDE Plasma Workspaces" @base-x wget curl sudo nano pulseaudio pavucontrol xdg-user-dirs tigervnc rpmfusion-free-release-tainted rpmfusion-nonfree-release-tainted
 
