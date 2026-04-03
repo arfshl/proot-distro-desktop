@@ -2,7 +2,8 @@
 dnf config-manager --set-enabled ol10_codeready_builder
 dnf install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-$(rpm -E %rhel).noarch.rpm
 dnf install --nogpgcheck -y https://mirrors.rpmfusion.org/free/el/rpmfusion-free-release-$(rpm -E %rhel).noarch.rpm https://mirrors.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-$(rpm -E %rhel).noarch.rpm
-dnf install -y --allowerasing @"KDE Plasma Workspaces" @base-x wget curl sudo nano pulseaudio pavucontrol xdg-user-dirs tigervnc rpmfusion-free-release-tainted rpmfusion-nonfree-release-tainted
+dnf install -y --allowerasing @"KDE Plasma Workspaces" xorg-x11-* dbus-x11 wget curl sudo nano pulseaudio pavucontrol xdg-user-dirs tigervnc rpmfusion-free-release-tainted rpmfusion-nonfree-release-tainted
+# dnf install -y --allowerasing @base-x
 
 # Adding user and password
 useradd -m oraclelinux-kde && echo 'oraclelinux-kde:123' | chpasswd && echo 'oraclelinux-kde ALL=(ALL:ALL) ALL' >> /etc/sudoers.d/user

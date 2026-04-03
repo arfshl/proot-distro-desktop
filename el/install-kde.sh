@@ -2,7 +2,8 @@
 dnf config-manager --set-enabled crb
 dnf install epel-release -y
 dnf install --nogpgcheck -y https://mirrors.rpmfusion.org/free/el/rpmfusion-free-release-$(rpm -E %rhel).noarch.rpm https://mirrors.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-$(rpm -E %rhel).noarch.rpm
-dnf install -y --allowerasing @"KDE Plasma Workspaces" @base-x wget curl sudo nano pulseaudio pavucontrol xdg-user-dirs tigervnc rpmfusion-free-release-tainted rpmfusion-nonfree-release-tainted
+dnf install -y --allowerasing @"KDE Plasma Workspaces" wget curl sudo nano pulseaudio pavucontrol xdg-user-dirs tigervnc rpmfusion-free-release-tainted rpmfusion-nonfree-release-tainted xorg-x11-* dbus-x11
+# dnf install -y --allowerasing @base-x
 
 # Adding user and password
 useradd -m el-kde && echo 'el-kde:123' | chpasswd && echo 'el-kde ALL=(ALL:ALL) ALL' >> /etc/sudoers.d/user
