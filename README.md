@@ -19,6 +19,7 @@ Supported Desktop Environment:
 | [Debian Stable](https://github.com/arfshl/proot-distro-desktop/tree/main/debian) | CLI XFCE LXQt MATE LXDE Cinnamon KDE |
 | [Debian Sid (ARM64 Only)](https://github.com/arfshl/proot-distro-desktop/tree/main/debian-sid) | CLI XFCE LXQt MATE LXDE Cinnamon KDE |
 | [Debian Testing (ARM64 Only)](https://github.com/arfshl/proot-distro-desktop/tree/main/debian-testing) | CLI XFCE LXQt MATE LXDE Cinnamon KDE |
+| [Devuan (ARM64 Only)](https://github.com/arfshl/proot-distro-desktop/tree/main/devuan) | CLI XFCE LXQt MATE LXDE Cinnamon KDE |
 | [Fedora](https://github.com/arfshl/proot-distro-desktop/tree/main/fedora) (Fedora is not worked on Android 15+) | XFCE LXQt MATE LXDE Cinnamon KDE |
 | [Manjaro](https://github.com/arfshl/proot-distro-desktop/tree/main/manjaro) | XFCE LXQt MATE LXDE Cinnamon KDE | 
 | [OpenSUSE](https://github.com/arfshl/proot-distro-desktop/tree/main/opensuse/)     |  XFCE LXQt MATE LXDE Cinnamon KDE   |
