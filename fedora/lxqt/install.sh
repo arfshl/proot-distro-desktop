@@ -4,7 +4,15 @@ dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(r
 dnf config-manager setopt fedora-cisco-openh264.enabled=1
 dnf install -y --allowerasing --skip-broken wget curl sudo nano pulseaudio pavucontrol-qt xdg-user-dirs tigervnc tigervnc-server rpmfusion-free-release-tainted rpmfusion-nonfree-release-tainted
 dnf install -y --allowerasing --skip-broken @base-x @lxqt-desktop-environment f$(rpm -E %fedora)-backgrounds-base fedora-release-lxqt fedora-release-identity-lxqt
-dnf config-manager addrepo --id=mozilla --set=baseurl=https://packages.mozilla.org/rpm/firefox --set=gpgkey=https://packages.mozilla.org/rpm/firefox/signing-key.gpg --set=repo_gpgcheck=0
+tee /etc/yum.repos.d/mozilla.repo > /dev/null << EOF
+[mozilla]
+name=Mozilla Packages
+baseurl=https://packages.mozilla.org/rpm/firefox
+enabled=1
+repo_gpgcheck=0
+priority=10
+gpgkey=https://packages.mozilla.org/rpm/firefox/signing-key.gpg
+EOF
 dnf makecache --refresh
 
 # Adding user and password
