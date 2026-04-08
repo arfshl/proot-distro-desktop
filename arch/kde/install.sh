@@ -3,6 +3,9 @@
 # Install Desktop, VNC, and basic utility
 pacman -Syu
 pacman -S --needed --noconfirm plasma-desktop dbus tigervnc wget curl sudo nano pulseaudio pavucontrol-qt xdg-user-dirs plasma-x11-session
+kwriteconfig5 --file kscreensaverrc --group Daemon --key Autolock false
+kwriteconfig5 --file kscreensaverrc --group Daemon --key Lock false
+kwriteconfig5 --file kscreenlockerrc --group Daemon --key Autolock false
 
 # Generate dbus machine id
 dbus-uuidgen --ensure

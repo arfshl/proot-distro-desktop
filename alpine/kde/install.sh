@@ -5,6 +5,9 @@ apk -U upgrade
 
 # Install Desktop, VNC, and basic utility
 apk add plasma-desktop-meta konsole dbus-x11 pulseaudio nano wget curl sudo adduser xdg-user-dirs tigervnc xorg pavucontrol-qt -y
+kwriteconfig5 --file kscreensaverrc --group Daemon --key Autolock false
+kwriteconfig5 --file kscreensaverrc --group Daemon --key Lock false
+kwriteconfig5 --file kscreenlockerrc --group Daemon --key Autolock false
 
 # Adding user and password
 sudo adduser --disabled-password --gecos "alpine-kde" alpine-kde && echo 'alpine-kde:123' | chpasswd && echo 'alpine-kde ALL=(ALL:ALL) ALL' >> /etc/sudoers.d/user

@@ -8,6 +8,9 @@ zypper -n in dbus-1 xorg-x11-Xvnc xdg-user-dirs dbus-1-daemon pulseaudio pavucon
 rpm --import https://packages.mozilla.org/rpm/firefox/signing-key.gpg
 zypper ar -G https://packages.mozilla.org/rpm/firefox mozilla
 zypper refresh
+kwriteconfig5 --file kscreensaverrc --group Daemon --key Autolock false
+kwriteconfig5 --file kscreensaverrc --group Daemon --key Lock false
+kwriteconfig5 --file kscreenlockerrc --group Daemon --key Autolock false
 
 # Generate dbus machine id
 dbus-uuidgen --ensure

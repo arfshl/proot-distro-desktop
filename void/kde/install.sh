@@ -2,6 +2,9 @@
 
 # Install Desktop, VNC, and basic utility
 xbps-install -S kde-plasma dbus-x11 pulseaudio nano wget curl sudo adduser xdg-user-dirs tigervnc pavucontrol-qt xorg -y
+kwriteconfig5 --file kscreensaverrc --group Daemon --key Autolock false
+kwriteconfig5 --file kscreensaverrc --group Daemon --key Lock false
+kwriteconfig5 --file kscreenlockerrc --group Daemon --key Autolock false
 
 # Adding user and password
 sudo useradd -m void-kde && echo 'void-kde:123' | chpasswd && echo 'void-kde ALL=(ALL:ALL) ALL' >> /etc/sudoers.d/user
