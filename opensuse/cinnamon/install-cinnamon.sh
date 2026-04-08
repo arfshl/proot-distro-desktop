@@ -5,6 +5,9 @@ zypper refresh
 zypper -n dup
 zypper -n in -t pattern cinnamon
 zypper -n in xorg-x11-Xvnc dbus-1 xdg-user-dirs xdg-user-dirs-gtk dbus-1-daemon pulseaudio pavucontrol tigervnc wget nano curl sudo mate-terminal
+rpm --import https://packages.mozilla.org/rpm/firefox/signing-key.gpg
+zypper ar -G https://packages.mozilla.org/rpm/firefox mozilla
+zypper refresh
 
 # Generate dbus machine id
 dbus-uuidgen --ensure

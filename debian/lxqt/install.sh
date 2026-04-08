@@ -5,8 +5,6 @@ apt install sudo -y
 echo 'Adding Mozilla Repository...'
 wget -q https://packages.mozilla.org/apt/repo-signing-key.gpg -O- | sudo tee /etc/apt/keyrings/packages.mozilla.org.asc > /dev/null
 sudo echo 'deb [signed-by=/etc/apt/keyrings/packages.mozilla.org.asc] https://packages.mozilla.org/apt mozilla main' >> /etc/apt/sources.list.d/mozilla.list
-echo 'Adding Mozillateam PPA...'
-sudo add-apt-repository ppa:mozillateam/ppa -y
 echo 'Configuring APT Pinning...'
 sudo echo 'Package: *
 Pin: origin packages.mozilla.org

@@ -4,6 +4,8 @@ dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(r
 dnf config-manager setopt fedora-cisco-openh264.enabled=1
 dnf install -y --allowerasing --skip-broken wget curl sudo nano pulseaudio pavucontrol xdg-user-dirs xdg-user-dirs-gtk tigervnc tigervnc-server rpmfusion-free-release-tainted rpmfusion-nonfree-release-tainted
 dnf install -y --allowerasing --skip-broken @base-x @xfce-desktop-environment xfce4-whiskermenu-plugin elementary-xfce-icon-theme f$(rpm -E %fedora)-backgrounds-xfce f$(rpm -E %fedora)-backgrounds-base fedora-release-identity-xfce fedora-release-xfce
+dnf config-manager addrepo --id=mozilla --set=baseurl=https://packages.mozilla.org/rpm/firefox --set=gpgkey=https://packages.mozilla.org/rpm/firefox/signing-key.gpg --set=repo_gpgcheck=0
+dnf makecache --refresh
 
 # Adding user and password
 useradd -m fedora-xfce && echo 'fedora-xfce:123' | chpasswd && echo 'fedora-xfce ALL=(ALL:ALL) ALL' >> /etc/sudoers.d/user

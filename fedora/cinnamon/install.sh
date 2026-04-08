@@ -4,6 +4,8 @@ dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(r
 dnf config-manager setopt fedora-cisco-openh264.enabled=1
 dnf install -y wget curl sudo nano pulseaudio pavucontrol xdg-user-dirs xdg-user-dirs-gtk tigervnc tigervnc-server rpmfusion-free-release-tainted rpmfusion-nonfree-release-tainted
 dnf install -y --allowerasing --skip-broken @base-x @cinnamon-desktop-environment f$(rpm -E %fedora)-backgrounds-gnome f$(rpm -E %fedora)-backgrounds-base fedora-release-identity-cinnamon fedora-release-cinnamon
+dnf config-manager addrepo --id=mozilla --set=baseurl=https://packages.mozilla.org/rpm/firefox --set=gpgkey=https://packages.mozilla.org/rpm/firefox/signing-key.gpg --set=repo_gpgcheck=0
+dnf makecache --refresh
 
 # Adding user and password
 useradd -m fedora-cinnamon && echo 'fedora-cinnamon:123' | chpasswd && echo 'fedora-cinnamon ALL=(ALL:ALL) ALL' >> /etc/sudoers.d/user
