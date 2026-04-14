@@ -16,13 +16,13 @@ Supported Desktop Environment:
 |------------------|------------|
 | [Alpine Linux](https://github.com/arfshl/proot-distro-desktop/tree/main/alpine) | XFCE LXQt MATE LXDE Cinnamon KDE |
 | [Arch Linux (ARM64 Only)](https://github.com/arfshl/proot-distro-desktop/tree/main/arch) | XFCE LXQt MATE LXDE Cinnamon KDE | [Debian](https://github.com/arfshl/proot-distro-desktop/tree/main/debian) | XFCE LXQt MATE LXDE Cinnamon KDE |
-| [Debian Stable](https://github.com/arfshl/proot-distro-desktop/tree/main/debian) | CLI XFCE LXQt MATE LXDE Cinnamon KDE |
+| [Debian Stable (ARM64 Only)](https://github.com/arfshl/proot-distro-desktop/tree/main/debian) | CLI XFCE LXQt MATE LXDE Cinnamon KDE |
 | [Debian Sid (ARM64 Only)](https://github.com/arfshl/proot-distro-desktop/tree/main/debian-sid) | CLI XFCE LXQt MATE LXDE Cinnamon KDE |
 | [Debian Testing (ARM64 Only)](https://github.com/arfshl/proot-distro-desktop/tree/main/debian-testing) | CLI XFCE LXQt MATE LXDE Cinnamon KDE |
 | [Devuan (ARM64 Only)](https://github.com/arfshl/proot-distro-desktop/tree/main/devuan) | CLI XFCE LXQt MATE LXDE Cinnamon KDE |
 | [Fedora](https://github.com/arfshl/proot-distro-desktop/tree/main/fedora) (Fedora is not worked on Android 15+) | XFCE LXQt MATE LXDE Cinnamon KDE |
 | [Manjaro](https://github.com/arfshl/proot-distro-desktop/tree/main/manjaro) | XFCE LXQt MATE LXDE Cinnamon KDE | 
-| [Oracle Linux](https://github.com/arfshl/proot-distro-desktop/blob/main/el/oracle/README.md) | CLI |
+| [Oracle Linux (ARM64 Only)](https://github.com/arfshl/proot-distro-desktop/blob/main/el/oracle/README.md) | CLI |
 | [OpenSUSE](https://github.com/arfshl/proot-distro-desktop/tree/main/opensuse/)     |  XFCE LXQt MATE LXDE Cinnamon KDE   |
 | [OpenSUSE Tumbleweed (ARM64 Only)](https://github.com/arfshl/proot-distro-desktop/tree/main/opensuse-tumbleweed/)     |  CLI XFCE LXQt MATE LXDE Cinnamon KDE   |
 | [Trisquel GNU/Linux Libre](https://github.com/arfshl/proot-distro-desktop/tree/main/trisquel) | XFCE LXQt MATE LXDE Cinnamon KDE
