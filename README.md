@@ -1,5 +1,5 @@
 # PRoot Distro Desktop
-Collection of script for easy desktop environment installation on PRoot Distro minimal rootfs
+Script and custom rootfs images with desktop for PRoot Distro. Also supports additional distros.
 
 Supported Desktop Environment:
 
