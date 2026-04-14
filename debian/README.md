@@ -1,4 +1,10 @@
-# Debian Stable 
+# Debian Stable
+
+## CLI-only (without Desktop)
+Note: The difference between termux-provided and my own here is i have non-free and backports repository enabled by default
+- proot-distro aliases: debian
+
+      apt install proot-distro -y && PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/debian-stable/debian-stable-aarch64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install debian
 
 ## XFCE
 - proot-distro aliases: debian-xfce
