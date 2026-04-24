@@ -52,10 +52,10 @@ apt remove proot-distro termux-x11 pulseaudio vulkan-loader-android mesa-zink vi
 Replace [distro aliases] with distro alias you're using, available on installation page
 ```
 
-## Support for android 5/6 without proot-distro, based on andronixapp/andronixorigin
+## Support for android 5/6 without proot-distro, based on andronixapp/andronixorigin, and running latest distro version
 [![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=arfshl&repo=pd-andronix&theme=transparent)](https://github.com/arfshl/pd-andronix)
 
-## Custom rootfs build repo (for distro version who doesn`t supported by termux, arm64/aarch64 only)
+## Custom rootfs build repo (for distro version who doesn`t supported by termux, aarch64 and armhf only)
 [![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=arfshl&repo=pd-custom-rootfs&theme=transparent)](https://github.com/arfshl/pd-custom-rootfs)
 
 ## We also have Native Termux desktop version without proot-distro here!
