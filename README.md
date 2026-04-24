@@ -53,7 +53,7 @@ Replace [distro aliases] with distro alias you're using, available on installati
 ```
 
 ## Support for android 5/6 without proot-distro, based on andronixapp/andronixorigin
-[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=arfshl&repo=pd-custom-rootfs&theme=transparent)](https://github.com/arfshl/pd-custom-rootfs)
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=arfshl&repo=pd-andronix&theme=transparent)](https://github.com/arfshl/pd-andronix)
 
 ## Custom rootfs build repo (for distro version who doesn`t supported by termux, arm64/aarch64 only)
 [![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=arfshl&repo=pd-custom-rootfs&theme=transparent)](https://github.com/arfshl/pd-custom-rootfs)
