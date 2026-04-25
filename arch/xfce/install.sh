@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Install Desktop, VNC, and basic utility
-pacman -Syu
+pacman -Syu --noconfirm
 pacman -S --needed --noconfirm xfce4 xfce4-terminal xfce4-whiskermenu-plugin xfce4-pulseaudio-plugin dbus tigervnc wget curl sudo nano pulseaudio pavucontrol xdg-user-dirs xdg-user-dirs-gtk
 
 # Generate dbus machine id

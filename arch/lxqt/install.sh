@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Install Desktop, VNC, and basic utility
-pacman -Syu
+pacman -Syu --noconfirm
 pacman -S --needed --noconfirm lxqt dbus tigervnc wget curl sudo nano pulseaudio pavucontrol-qt xdg-user-dirs
 
 # Generate dbus machine id
