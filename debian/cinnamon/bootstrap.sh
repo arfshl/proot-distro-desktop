@@ -11,6 +11,15 @@ apt upgrade -y -o Dpkg::Options::="--force-confold"
 # Install depedency
 apt install curl wget nano proot-distro termux-x11 pulseaudio vulkan-loader-android mesa-zink virglrenderer-mesa-zink virglrenderer-android -y
 
+# Install debian under aliases
+proot-distro install debian --override-alias debian-cinnamon
+
+# Setup ubuntu-kde
+proot-distro login debian-kde -- /bin/sh -c 'apt update && apt install wget -y'
+
+proot-distro login debian-kde -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian/cinnamon/install.sh -O install.sh && chmod +x install.sh && ./install.sh && rm install.sh'
+
+
 # for CLI session
 echo '#!/bin/sh
 LD_PRELOAD=/system/lib64/libskcodec.so
@@ -32,9 +41,6 @@ EOF
 
 # Make all of them executable
 chmod +x /data/data/com.termux/files/usr/bin/debian-cinnamon*
-
-# Install debian under aliases
-PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/debian-stable/debian-stable-cinnamon-aarch64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install debian --override-alias debian-cinnamon
 
 echo 'To start command line session: debian-cinnamon'
 echo 'To start X11 session: debian-cinnamon-x11'

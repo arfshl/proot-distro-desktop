@@ -33,8 +33,12 @@ EOF
 # Make all of them executable
 chmod +x /data/data/com.termux/files/usr/bin/debian-kde*
 
-# Install debian under aliases
-PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/debian-stable/debian-stable-kde-aarch64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install debian --override-alias debian-kde
+proot-distro install debian --override-alias debian-cinnamon
+
+# Setup ubuntu-kde
+proot-distro login debian-kde -- /bin/sh -c 'apt update && apt install wget -y'
+
+proot-distro login debian-kde -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian/kde/install.sh -O install.sh && chmod +x install.sh && ./install.sh && rm install.sh'
 
 echo 'To start command line session: debian-kde'
 echo 'To start X11 session: debian-kde-x11'

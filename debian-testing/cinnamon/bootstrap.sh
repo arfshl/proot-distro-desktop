@@ -11,6 +11,9 @@ apt upgrade -y -o Dpkg::Options::="--force-confold"
 # Install depedency
 apt install curl wget nano proot-distro termux-x11 pulseaudio vulkan-loader-android mesa-zink virglrenderer-mesa-zink virglrenderer-android -y
 
+# Install debian-testing under aliases
+PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/debian-testing/debian-testing-cinnamon-aarch64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install debian --override-alias debian-testing-cinnamon
+
 # for CLI session
 echo '#!/bin/sh
 LD_PRELOAD=/system/lib64/libskcodec.so
@@ -32,9 +35,6 @@ EOF
 
 # Make all of them executable
 chmod +x /data/data/com.termux/files/usr/bin/debian-testing-cinnamon*
-
-# Install debian-testing under aliases
-PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/debian-testing/debian-testing-cinnamon-aarch64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install debian --override-alias debian-testing-cinnamon
 
 echo 'To start command line session: debian-testing-cinnamon'
 echo 'To start X11 session: debian-testing-cinnamon-x11'

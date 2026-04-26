@@ -1,5 +1,22 @@
 #!/bin/sh
 # Install x11 and tur repo
+ARCH=$(uname -m)
+case "$ARCH" in
+    armhf|arm|armv7l) 
+        ARCH="arm" 
+        ;;
+    aarch64|arm64)
+        ARCH="aarch64" 
+        ;;
+    x86_64|amd64)
+        ARCH="x86_64"
+        ;;
+    *)
+        echo "Unsupported architecture: $ARCH"
+        exit 1
+        ;;
+esac
+
 termux-setup-storage
 apt update
 apt install x11-repo tur-repo
@@ -13,7 +30,7 @@ apt install curl wget nano proot-distro termux-x11 pulseaudio vulkan-loader-andr
 
 # Install ubuntu under aliases
 
-PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/ubuntu-lts/ubuntu-lts-kde-aarch64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install ubuntu --override-alias ubuntu-lts-kde
+PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/ubuntu-lts/ubuntu-lts-kde-$ARCH.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install ubuntu --override-alias ubuntu-lts-kde
 
 # for CLI session
 echo '#!/bin/sh
