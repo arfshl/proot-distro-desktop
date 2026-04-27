@@ -37,7 +37,11 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/arch-mate*
 
 # Install rootfs under aliases
-PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/archlinux/archlinux-mate-aarch64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install archlinux --override-alias arch-mate
+proot-distro install archlinux --override-alias arch-mate
+
+proot-distro login arch-mate -- /bin/sh -c 'pacman -Syu --noconfirm && pacman -S --noconfirm wget'
+
+proot-distro login arch-mate -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/arch/mate/install.sh -O install.sh && chmod +x install.sh && ./install.sh && rm install.sh'
 
 echo 'To start command line session: arch-mate'
 echo 'To start X11 session: arch-mate-x11'

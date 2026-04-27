@@ -16,6 +16,7 @@ case "$ARCH" in
         ;;
 esac
 
+# install depedency
 termux-setup-storage
 apt update
 apt install x11-repo tur-repo
@@ -29,6 +30,6 @@ apt install curl wget nano proot-distro termux-x11 pulseaudio vulkan-loader-andr
 
 
 # Install debian under aliases
-PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/debian-stable/debian-testing-$ARCH.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install debian --override-alias debian-testing
+PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/debian-sid/debian-sid-$ARCH.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install debian --override-alias debian-sid
 
-echo 'To start command line session: proot-distro login debian-testing'
+echo 'To start command line session: proot-distro login debian-sid'

@@ -1,5 +1,21 @@
 #!/bin/sh
 # Install x11 and tur repo
+ARCH=$(uname -m)
+case "$ARCH" in
+    armhf|arm|armv7l) 
+        ARCH="arm" 
+        ;;
+    aarch64|arm64)
+        ARCH="aarch64" 
+        ;;
+    x86_64|amd64)
+        ARCH="x86_64"
+        ;;
+    *)
+        echo "Unsupported architecture: $ARCH"
+        exit 1
+        ;;
+esac
 termux-setup-storage
 apt update
 apt install x11-repo tur-repo
@@ -34,7 +50,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/debian-sid-kde*
 
 # Install debian under aliases
-PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/debian-sid/debian-sid-kde-aarch64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install debian --override-alias debian-sid-kde
+PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/debian-sid/debian-sid-kde-$ARCH.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install debian --override-alias debian-sid-kde
 
 echo 'To start command line session: debian-sid-kde'
 echo 'To start X11 session: debian-sid-kde-x11'

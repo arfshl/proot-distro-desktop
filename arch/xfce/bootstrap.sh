@@ -37,7 +37,12 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/arch-xfce*
 
 # Install rootfs under aliases
-PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/archlinux/archlinux-xfce-aarch64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install archlinux --override-alias arch-xfce
+proot-distro install archlinux --override-alias arch-xfce
+
+proot-distro login arch-xfce -- /bin/sh -c 'pacman -Syu --noconfirm && pacman -S --noconfirm wget'
+
+proot-distro login arch-xfce -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/arch/xfce/install.sh -O install.sh && chmod +x install.sh && ./install.sh && rm install.sh'
+
 
 echo 'To start command line session: arch-xfce'
 echo 'To start X11 session: arch-xfce-x11'

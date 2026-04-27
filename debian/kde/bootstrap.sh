@@ -33,9 +33,9 @@ EOF
 # Make all of them executable
 chmod +x /data/data/com.termux/files/usr/bin/debian-kde*
 
-proot-distro install debian --override-alias debian-cinnamon
+# Setup debian-kde
+proot-distro install debian --override-alias debian-kde
 
-# Setup ubuntu-kde
 proot-distro login debian-kde -- /bin/sh -c 'apt update && apt install wget -y'
 
 proot-distro login debian-kde -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian/kde/install.sh -O install.sh && chmod +x install.sh && ./install.sh && rm install.sh'

@@ -3,7 +3,7 @@
 ## CLI-only (without desktop
 - proot-distro aliases: opensuse-tumbleweed
 
-      PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/opensuse-tumbleweed/opensuse-tumbleweed-aarch64.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install opensuse --override-alias opensuse-tumbleweed
+      apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/opensuse-tumbleweed/cli/bootstrap.sh && sh bootstrap.sh && rm bootstrap.sh
 
 ## XFCE
 - proot-distro aliases: opensuse-tumbleweed-xfce

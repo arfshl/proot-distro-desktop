@@ -35,9 +35,9 @@ EOF
 # Make all of them executable
 chmod +x /data/data/com.termux/files/usr/bin/debian-lxde*
 
+# Setup debian-lxde
 proot-distro install debian --override-alias debian-lxde
 
-# Setup ubuntu-lxde
 proot-distro login debian-lxde -- /bin/sh -c 'apt update && apt install wget -y'
 
 proot-distro login debian-lxde -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian/lxde/install.sh -O install.sh && chmod +x install.sh && ./install.sh && rm install.sh'
