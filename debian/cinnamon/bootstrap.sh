@@ -14,7 +14,7 @@ apt install curl wget nano proot-distro termux-x11 pulseaudio vulkan-loader-andr
 # Install debian under aliases
 proot-distro install debian --override-alias debian-cinnamon
 
-# Setup ubuntu-kde
+# Setup debian-kde
 proot-distro login debian-kde -- /bin/sh -c 'apt update && apt install wget -y'
 
 proot-distro login debian-kde -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian/cinnamon/install.sh -O install.sh && chmod +x install.sh && ./install.sh && rm install.sh'

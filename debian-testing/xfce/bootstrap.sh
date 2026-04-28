@@ -52,9 +52,13 @@ EOF
 # Make all of them executable
 chmod +x /data/data/com.termux/files/usr/bin/debian-testing-xfce*
 
-# Install rootfs under aliases
-PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/debian-testing/debian-testing-xfce-$ARCH.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install debian --override-alias debian-testing-xfce
+# Install debian under aliases
+PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/debian-testing/debian-testing-$ARCH.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install debian --override-alias debian-testing-xfce
 
+# Setup debian-testing-xfce
+proot-distro login debian-testing-xfce -- /bin/sh -c 'apt update && apt install wget -y'
+
+proot-distro login debian-testing-xfce -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian/xfce/install.sh -O install.sh && chmod +x install.sh && ./install.sh && rm install.sh'
 
 echo 'To start command line session: debian-testing-xfce'
 echo 'To start X11 session: debian-testing-xfce-x11'

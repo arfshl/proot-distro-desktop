@@ -35,7 +35,7 @@ apt install curl wget nano proot-distro termux-x11 pulseaudio vulkan-loader-andr
 echo '#!/bin/sh
 LD_PRELOAD=/system/lib64/libskcodec.so
 pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" --exit-idle-time=-1
-proot-distro login opensuse-tumbleweed-cinnamon --user opensuse-cinnamon' >> /data/data/com.termux/files/usr/bin/opensuse-tumbleweed-cinnamon
+proot-distro login opensuse-tumbleweed-cinnamon --user opensuse-tumbleweed-cinnamon' >> /data/data/com.termux/files/usr/bin/opensuse-tumbleweed-cinnamon
 
 # for X11 session
 cat <<'EOF' > /data/data/com.termux/files/usr/bin/opensuse-tumbleweed-cinnamon-x11
@@ -49,14 +49,19 @@ proot-distro login opensuse-tumbleweed-cinnamon --shared-tmp -- /bin/sh -c 'pkil
 virgl_test_server_android &
 termux-x11 :0 >/dev/null &
 sleep 3
-proot-distro login opensuse-tumbleweed-cinnamon --shared-tmp -- /bin/sh -c 'export PULSE_SERVER=127.0.0.1 && export XDG_RUNTIME_DIR=${TMPDIR} && su - opensuse-cinnamon -c "DISPLAY=:0 XDG_SESSION_TYPE=x11 dbus-launch --exit-with-session cinnamon-session"'
+proot-distro login opensuse-tumbleweed-cinnamon --shared-tmp -- /bin/sh -c 'export PULSE_SERVER=127.0.0.1 && export XDG_RUNTIME_DIR=${TMPDIR} && su - opensuse-tumbleweed-cinnamon -c "DISPLAY=:0 XDG_SESSION_TYPE=x11 dbus-launch --exit-with-session cinnamon-session"'
 EOF
 
 # Make all of them executable
 chmod +x /data/data/com.termux/files/usr/bin/opensuse-tumbleweed-cinnamon*
 
 # Install rootfs under aliases
-PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/opensuse-tumbleweed/opensuse-tumbleweed-cinnamon-$ARCH.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install opensuse --override-alias opensuse-tumbleweed-cinnamon
+PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/opensuse-tumbleweed/opensuse-tumbleweed-$ARCH.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install opensuse --override-alias opensuse-tumbleweed-cinnamon
+
+# Setup opensuse-tumbleweed-cinnamon
+proot-distro login opensuse-tumbleweed-cinnamon -- /bin/sh -c 'zypper refresh && zypper -n dup && zypper -n in wget'
+
+proot-distro login opensuse-tumbleweed-cinnamon -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/opensuse/cinnamon/install-cinnamon.sh -O install-cinnamon.sh && chmod +x install-cinnamon.sh && ./install-cinnamon.sh && rm install-cinnamon.sh'
 
 echo 'To start command line session: opensuse-tumbleweed-cinnamon'
 echo 'To start X11 session: opensuse-tumbleweed-cinnamon-x11'

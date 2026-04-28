@@ -50,7 +50,12 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/debian-sid-cinnamon*
 
 # Install debian under aliases
-PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/debian-sid/debian-sid-cinnamon-$ARCH.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install debian --override-alias debian-sid-cinnamon
+PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/debian-sid/debian-sid-$ARCH.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install debian --override-alias debian-sid-cinnamon
+
+# Setup debian-sid-cinnamon
+proot-distro login debian-sid-cinnamon -- /bin/sh -c 'apt update && apt install wget -y'
+
+proot-distro login debian-sid-cinnamon -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian/cinnamon/install.sh -O install.sh && chmod +x install.sh && ./install.sh && rm install.sh'
 
 echo 'To start command line session: debian-sid-cinnamon'
 echo 'To start X11 session: debian-sid-cinnamon-x11'
