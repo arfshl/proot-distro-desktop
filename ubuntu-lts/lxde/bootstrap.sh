@@ -29,7 +29,12 @@ apt install curl wget nano proot-distro termux-x11 pulseaudio vulkan-loader-andr
 
 # Install ubuntu under aliases
 
-PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/ubuntu-lts/ubuntu-lts-lxde-$ARCH.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install ubuntu --override-alias ubuntu-lts-lxde
+PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/ubuntu-lts/ubuntu-lts-$ARCH.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install ubuntu --override-alias ubuntu-lts-lxde
+
+# Setup ubuntu-lxde
+proot-distro login ubuntu-lts-lxde -- /bin/sh -c 'apt update && apt install wget -y'
+
+proot-distro login ubuntu-lts-lxde -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/ubuntu/lxde/install.sh -O install.sh && chmod +x install.sh && ./install.sh && rm install.sh'
 
 # for CLI session
 echo '#!/bin/sh
