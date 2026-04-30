@@ -14,7 +14,7 @@ Supported Desktop Environment:
 
 | Distribution     | Flavor/Desktop Environment   |
 |------------------|------------|
-| [Alpine Linux](https://github.com/arfshl/proot-distro-desktop/tree/main/alpine) | XFCE LXQt MATE LXDE Cinnamon KDE |
+| [Alpine Linux](https://github.com/arfshl/proot-distro-desktop/tree/main/alpine) | XFCE LXQt MATE Cinnamon KDE |
 | [Arch Linux](https://github.com/arfshl/proot-distro-desktop/tree/main/arch) | XFCE LXQt MATE LXDE Cinnamon KDE | [Debian](https://github.com/arfshl/proot-distro-desktop/tree/main/debian) | XFCE LXQt MATE LXDE Cinnamon KDE |
 | [Debian Stable](https://github.com/arfshl/proot-distro-desktop/tree/main/debian) (Recommended for beginners) | XFCE LXQt MATE LXDE Cinnamon KDE |
 | [Debian Sid*](https://github.com/arfshl/proot-distro-desktop/tree/main/debian-sid) | CLI XFCE LXQt MATE LXDE Cinnamon KDE |
