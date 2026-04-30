@@ -49,3 +49,4 @@ chmod +x stopvnc
 chmod +x restartvnc
 cd
 chmod +x /home/void-lxqt/.vnc/xstartup
+rm -- "$0"

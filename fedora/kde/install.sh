@@ -64,3 +64,4 @@ chmod +x stopvnc
 chmod +x restartvnc
 cd
 chmod +x /home/fedora-kde/.vnc/xstartup
+rm -- "$0"

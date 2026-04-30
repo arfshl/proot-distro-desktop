@@ -63,6 +63,7 @@ chmod +x stopvnc
 chmod +x restartvnc
 cd
 chmod +x /home/debian-mate/.vnc/xstartup
+rm -- "$0"
 
 
 

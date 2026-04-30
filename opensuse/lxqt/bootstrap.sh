@@ -42,7 +42,7 @@ proot-distro install opensuse --override-alias opensuse-lxqt
 # Setup opensuse-lxqt
 proot-distro login opensuse-lxqt -- /bin/sh -c 'zypper refresh && zypper -n dup && zypper -n in wget'
 
-proot-distro login opensuse-lxqt -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/opensuse/lxqt/install-lxqt.sh -O install-lxqt.sh && chmod +x install-lxqt.sh && ./install-lxqt.sh && rm install-lxqt.sh'
+proot-distro login opensuse-lxqt -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/opensuse/lxqt/install-lxqt.sh -O install-lxqt.sh && chmod +x install-lxqt.sh && ./install-lxqt.sh'
 
 echo 'To start command line session: opensuse-lxqt'
 echo 'To start X11 session: opensuse-lxqt-x11'
@@ -53,3 +53,4 @@ echo 'Default user: opensuse-lxqt'
 echo 'Default password: 123'    
 echo 'VNC server address: 127.0.0.1:5900'
 echo 'Default VNC password: 1234567890'
+rm -- "$0"

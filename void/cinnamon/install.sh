@@ -49,3 +49,4 @@ chmod +x stopvnc
 chmod +x restartvnc
 cd
 chmod +x /home/void-cinnamon/.vnc/xstartup
+rm -- "$0"

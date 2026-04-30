@@ -66,3 +66,4 @@ chmod +x stopvnc
 chmod +x restartvnc
 cd
 chmod +x /home/linuxmint-cinnamon/.vnc/xstartup
+rm -- "$0"

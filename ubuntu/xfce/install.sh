@@ -52,6 +52,7 @@ chmod +x stopvnc
 chmod +x restartvnc
 cd
 chmod +x /home/ubuntu-xfce/.vnc/xstartup
+rm -- "$0"
 
 
 

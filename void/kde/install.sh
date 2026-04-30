@@ -52,3 +52,4 @@ chmod +x stopvnc
 chmod +x restartvnc
 cd
 chmod +x /home/void-kde/.vnc/xstartup
+rm -- "$0"

@@ -34,7 +34,7 @@ PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/dow
 # Setup ubuntu-lxqt
 proot-distro login ubuntu-lts-lxqt -- /bin/sh -c 'apt update && apt install wget -y'
 
-proot-distro login ubuntu-lts-lxqt -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/ubuntu/lxqt/install.sh -O install.sh && chmod +x install.sh && ./install.sh && rm install.sh'
+proot-distro login ubuntu-lts-lxqt -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/ubuntu/lxqt/install.sh -O install.sh && chmod +x install.sh && ./install.sh'
 
 # for CLI session
 echo '#!/bin/sh
@@ -69,3 +69,4 @@ echo 'Default user: ubuntu-lxqt'
 echo 'Default password: 123'    
 echo 'VNC server address: 127.0.0.1:5900'
 echo 'Default VNC password: 1234567890'
+rm -- "$0"

@@ -41,7 +41,7 @@ proot-distro install archlinux --override-alias arch-lxde
 
 proot-distro login arch-lxde -- /bin/sh -c 'pacman -Syu --noconfirm && pacman -S --noconfirm wget'
 
-proot-distro login arch-lxde -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/arch/lxde/install.sh -O install.sh && chmod +x install.sh && ./install.sh && rm install.sh'
+proot-distro login arch-lxde -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/arch/lxde/install.sh -O install.sh && chmod +x install.sh && ./install.sh'
 
 echo 'To start command line session: arch-lxde'
 echo 'To start X11 session: arch-lxde-x11'
@@ -52,3 +52,4 @@ echo 'Default user: arch-lxde'
 echo 'Default password: 123'    
 echo 'VNC server address: 127.0.0.1:5900'
 echo 'Default VNC password: 1234567890'
+rm -- "$0"

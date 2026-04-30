@@ -53,3 +53,4 @@ chmod +x stopvnc
 chmod +x restartvnc
 cd
 chmod +x /home/arch-lxde/.vnc/xstartup
+rm -- "$0"

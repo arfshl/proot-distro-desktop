@@ -49,3 +49,4 @@ chmod +x stopvnc
 chmod +x restartvnc
 cd
 chmod +x /home/alpine-xfce/.vnc/xstartup
+rm -- "$0"

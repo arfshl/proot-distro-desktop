@@ -51,3 +51,4 @@ chmod +x stopvnc
 chmod +x restartvnc
 cd
 # chmod +x /home/opensuse-cinnamon/.vnc/xstartup
+rm -- "$0"

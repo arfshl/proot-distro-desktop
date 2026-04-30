@@ -62,3 +62,4 @@ chmod +x stopvnc
 chmod +x restartvnc
 cd
 chmod +x /home/debian-lxde/.vnc/xstartup
+rm -- "$0"

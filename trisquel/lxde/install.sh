@@ -52,3 +52,4 @@ chmod +x stopvnc
 chmod +x restartvnc
 cd
 chmod +x /home/trisquel-lxde/.vnc/xstartup
+rm -- "$0"

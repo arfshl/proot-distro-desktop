@@ -42,7 +42,7 @@ proot-distro install opensuse --override-alias opensuse-lxde
 # Setup opensuse-lxde
 proot-distro login opensuse-lxde -- /bin/sh -c 'zypper refresh && zypper -n dup && zypper -n in wget'
 
-proot-distro login opensuse-lxde -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/opensuse/lxde/install-lxde.sh -O install-lxde.sh && chmod +x install-lxde.sh && ./install-lxde.sh && rm install-lxde.sh'
+proot-distro login opensuse-lxde -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/opensuse/lxde/install-lxde.sh -O install-lxde.sh && chmod +x install-lxde.sh && ./install-lxde.sh'
 
 echo 'To start command line session: opensuse-lxde'
 echo 'To start X11 session: opensuse-lxde-x11'
@@ -53,3 +53,4 @@ echo 'Default user: opensuse-lxde'
 echo 'Default password: 123'    
 echo 'VNC server address: 127.0.0.1:5900'
 echo 'Default VNC password: 1234567890'
+rm -- "$0"

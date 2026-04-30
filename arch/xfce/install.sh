@@ -53,3 +53,4 @@ chmod +x stopvnc
 chmod +x restartvnc
 cd
 chmod +x /home/arch-xfce/.vnc/xstartup
+rm -- "$0"

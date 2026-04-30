@@ -9,7 +9,7 @@
 
 
 #### Install
-    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/linuxmint/cinnamon/bootstrap.sh && sh bootstrap.sh && rm bootstrap.sh
+    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/linuxmint/cinnamon/bootstrap.sh && sh bootstrap.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo apt update && sudo apt install firefox vlc thunderbird engrampa xreader xviewer mate-calc xed pix xplayer libheif1 webp-pixbuf-loader fonts-liberation p7zip && apt clean

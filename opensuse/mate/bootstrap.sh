@@ -42,7 +42,7 @@ proot-distro install opensuse --override-alias opensuse-mate
 # Setup opensuse-mate
 proot-distro login opensuse-mate -- /bin/sh -c 'zypper refresh && zypper -n dup && zypper -n in wget'
 
-proot-distro login opensuse-mate -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/opensuse/mate/install-mate.sh -O install-mate.sh && chmod +x install-mate.sh && ./install-mate.sh && rm install-mate.sh'
+proot-distro login opensuse-mate -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/opensuse/mate/install-mate.sh -O install-mate.sh && chmod +x install-mate.sh && ./install-mate.sh'
 
 echo 'To start command line session: opensuse-mate'
 echo 'To start X11 session: opensuse-mate-x11'
@@ -53,3 +53,4 @@ echo 'Default user: opensuse-mate'
 echo 'Default password: 123'    
 echo 'VNC server address: 127.0.0.1:5900'
 echo 'Default VNC password: 1234567890'
+rm -- "$0"

@@ -62,6 +62,7 @@ chmod +x stopvnc
 chmod +x restartvnc
 cd
 chmod +x /home/debian-cinnamon/.vnc/xstartup
+rm -- "$0"
 
 
 

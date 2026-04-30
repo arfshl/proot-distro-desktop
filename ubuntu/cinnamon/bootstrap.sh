@@ -39,7 +39,7 @@ proot-distro install ubuntu --override-alias ubuntu-cinnamon
 # Setup ubuntu-cinnamon
 proot-distro login ubuntu-cinnamon -- /bin/sh -c 'apt update && apt install wget -y'
 
-proot-distro login ubuntu-cinnamon -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/ubuntu/cinnamon/install.sh -O install.sh && chmod +x install.sh && ./install.sh && rm install.sh'
+proot-distro login ubuntu-cinnamon -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/ubuntu/cinnamon/install.sh -O install.sh && chmod +x install.sh && ./install.sh'
 
 echo 'To start command line session: ubuntu-cinnamon'
 echo 'To start X11 session: ubuntu-cinnamon-x11'
@@ -50,3 +50,4 @@ echo 'Default user: ubuntu-cinnamon'
 echo 'Default password: 123'    
 echo 'VNC server address: 127.0.0.1:5900'
 echo 'Default VNC password: 1234567890'
+rm -- "$0"

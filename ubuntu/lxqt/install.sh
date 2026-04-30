@@ -51,6 +51,7 @@ chmod +x stopvnc
 chmod +x restartvnc
 cd
 chmod +x /home/ubuntu-lxqt/.vnc/xstartup
+rm -- "$0"
 
 
 

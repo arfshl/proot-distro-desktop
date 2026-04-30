@@ -39,7 +39,7 @@ proot-distro install trisquel --override-alias trisquel-cinnamon
 # Setup trisquel-cinnamon
 proot-distro login trisquel-cinnamon -- /bin/sh -c 'apt update && apt install wget -y'
 
-proot-distro login trisquel-cinnamon -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/trisquel/cinnamon/install.sh -O install.sh && chmod +x install.sh && ./install.sh && rm install.sh'
+proot-distro login trisquel-cinnamon -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/trisquel/cinnamon/install.sh -O install.sh && chmod +x install.sh && ./install.sh'
 
 echo 'To start command line session: trisquel-cinnamon'
 echo 'To start X11 session: trisquel-cinnamon-x11'
@@ -50,3 +50,4 @@ echo 'Default user: trisquel-cinnamon'
 echo 'Default password: 123'    
 echo 'VNC server address: 127.0.0.1:5900'
 echo 'Default VNC password: 1234567890'
+rm -- "$0"

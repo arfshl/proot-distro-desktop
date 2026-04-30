@@ -61,7 +61,7 @@ PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/dow
 # Setup opensuse-tumbleweed-xfce
 proot-distro login opensuse-tumbleweed-xfce -- /bin/sh -c 'zypper refresh && zypper -n dup && zypper -n in wget'
 
-proot-distro login opensuse-tumbleweed-xfce -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/opensuse/xfce/install-xfce.sh -O install-xfce.sh && chmod +x install-xfce.sh && ./install-xfce.sh && rm install-xfce.sh'
+proot-distro login opensuse-tumbleweed-xfce -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/opensuse/xfce/install-xfce.sh -O install-xfce.sh && chmod +x install-xfce.sh && ./install-xfce.sh'
 
 echo 'To start command line session: opensuse-tumbleweed-xfce'
 echo 'To start X11 session: opensuse-tumbleweed-xfce-x11'
@@ -72,3 +72,4 @@ echo 'Default user: opensuse-xfce'
 echo 'Default password: 123'    
 echo 'VNC server address: 127.0.0.1:5900'
 echo 'Default VNC password: 1234567890'
+rm -- "$0"

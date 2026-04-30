@@ -9,7 +9,7 @@
 
 
 #### Install
-    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/void/xfce/bootstrap.sh && sh bootstrap.sh && rm bootstrap.sh
+    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/void/xfce/bootstrap.sh && sh bootstrap.sh
 
 # LXQt
 - proot-distro aliases: void-lxqt
@@ -20,7 +20,7 @@
 
 
 #### Install
-    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/void/lxqt/bootstrap.sh && sh bootstrap.sh && rm bootstrap.sh
+    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/void/lxqt/bootstrap.sh && sh bootstrap.sh
 
 
 # MATE
@@ -32,7 +32,7 @@
 
 
 #### Install
-    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/void/mate/bootstrap.sh && sh bootstrap.sh && rm bootstrap.sh
+    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/void/mate/bootstrap.sh && sh bootstrap.sh
 
 
 # LXDE
@@ -44,7 +44,7 @@
 
 
 #### Install
-    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/void/lxde/bootstrap.sh && sh bootstrap.sh && rm bootstrap.sh
+    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/void/lxde/bootstrap.sh && sh bootstrap.sh
 
 
 # Cinnamon
@@ -56,7 +56,7 @@
 
 
 #### Install
-    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/void/cinnamon/bootstrap.sh && sh bootstrap.sh && rm bootstrap.sh
+    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/void/cinnamon/bootstrap.sh && sh bootstrap.sh
 
 
 # KDE Plasma
@@ -68,7 +68,7 @@
 
 
 #### Install
-    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/void/kde/bootstrap.sh && sh bootstrap.sh && rm bootstrap.sh
+    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/void/kde/bootstrap.sh && sh bootstrap.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo xbps-install -S  firefox  vlc thunderbird  libheif webp-pixbuf-loader p7zip atril ristretto galculator xarchiver mousepad 

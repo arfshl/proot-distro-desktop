@@ -52,6 +52,7 @@ chmod +x stopvnc
 chmod +x restartvnc
 cd
 chmod +x /home/ubuntu-mate/.vnc/xstartup
+rm -- "$0"
 
 
 

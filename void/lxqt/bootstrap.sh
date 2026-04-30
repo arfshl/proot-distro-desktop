@@ -42,7 +42,7 @@ proot-distro install void --override-alias void-lxqt
 # Setup void-lxqt
 proot-distro login void-lxqt -- /bin/sh -c 'xbps-install -Su && xbps-install -S wget -y'
 
-proot-distro login void-lxqt -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/void/lxqt/install.sh -O install.sh && chmod +x install.sh && ./install.sh && rm install.sh'
+proot-distro login void-lxqt -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/void/lxqt/install.sh -O install.sh && chmod +x install.sh && ./install.sh'
 
 echo 'To start command line session: void-lxqt'
 echo 'To start X11 session: void-lxqt-x11'
@@ -53,3 +53,4 @@ echo 'Default user: void-lxqt'
 echo 'Default password: 123'    
 echo 'VNC server address: 127.0.0.1:5900'
 echo 'Default VNC password: 1234567890'
+rm -- "$0"

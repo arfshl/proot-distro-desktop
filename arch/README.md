@@ -9,7 +9,7 @@
 
 
 #### Install
-    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/arch/xfce/bootstrap.sh && sh bootstrap.sh && rm bootstrap.sh
+    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/arch/xfce/bootstrap.sh && sh bootstrap.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo pacman -Sy --needed  firefox  vlc thunderbird  libheif webp-pixbuf-loader p7zip atril ristretto galculator xarchiver mousepad 
@@ -24,7 +24,7 @@
 
 
 #### Install
-    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/arch/mate/bootstrap.sh && sh bootstrap.sh && rm bootstrap.sh
+    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/arch/mate/bootstrap.sh && sh bootstrap.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo pacman -Sy --needed firefox  vlc thunderbird  libheif webp-pixbuf-loader p7zip atril eom mate-calc engrampa pluma
@@ -40,7 +40,7 @@
 
 
 #### Install
-    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/arch/lxqt/bootstrap.sh && sh bootstrap.sh && rm bootstrap.sh
+    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/arch/lxqt/bootstrap.sh && sh bootstrap.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo pacman -Sy --needed firefox  vlc thunderbird  libheif webp-pixbuf-loader p7zip lximage-qt kcalc lxqt-archiver qpdfview featherpad
@@ -56,7 +56,7 @@
 
 
 #### Install
-    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/arch/lxde/bootstrap.sh && sh bootstrap.sh && rm bootstrap.sh
+    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/arch/lxde/bootstrap.sh && sh bootstrap.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo pacman -Sy --needed firefox  vlc thunderbird  libheif webp-pixbuf-loader p7zip atril gpicview galculator xarchiver mousepad 
@@ -70,7 +70,7 @@
 
 
 #### Install
-    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/arch/cinnamon/bootstrap.sh && sh bootstrap.sh && rm bootstrap.sh
+    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/arch/cinnamon/bootstrap.sh && sh bootstrap.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo pacman -Sy --needed firefox vlc thunderbird libheif webp-pixbuf-loader p7zip engrampa xreader mate-calc xed eom
@@ -84,7 +84,7 @@
 - VNC Server Password: 1234567890
 
 #### Install
-    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/arch/kde/bootstrap.sh && sh bootstrap.sh && rm bootstrap.sh
+    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/arch/kde/bootstrap.sh && sh bootstrap.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
      sudo pacman -Sy --needed firefox  vlc thunderbird  libheif webp-pixbuf-loader p7zip okular gwenview kcalc ark kate

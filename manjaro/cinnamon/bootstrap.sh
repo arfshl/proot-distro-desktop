@@ -42,7 +42,7 @@ proot-distro install manjaro --override-alias manjaro-cinnamon
 # Setup manjaro-cinnamon
 proot-distro login manjaro-cinnamon -- /bin/sh -c 'pacman -Sy --noconfirm wget'
 
-proot-distro login manjaro-cinnamon -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/arch/cinnamon/install.sh -O install.sh && chmod +x install.sh && ./install.sh && rm install.sh'
+proot-distro login manjaro-cinnamon -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/arch/cinnamon/install.sh -O install.sh && chmod +x install.sh && ./install.sh'
 
 echo 'To start command line session: manjaro-cinnamon'
 echo 'To start X11 session: manjaro-cinnamon-x11'
@@ -53,3 +53,4 @@ echo 'Default user: arch-cinnamon'
 echo 'Default password: 123'    
 echo 'VNC server address: 127.0.0.1:5900'
 echo 'Default VNC password: 1234567890'
+rm -- "$0"

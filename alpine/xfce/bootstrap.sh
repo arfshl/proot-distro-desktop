@@ -42,7 +42,7 @@ proot-distro install alpine --override-alias alpine-xfce
 # Setup alpine-xfce
 proot-distro login alpine-xfce -- /bin/sh -c 'apk -U upgrade && apk add wget'
 
-proot-distro login alpine-xfce -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/alpine/xfce/install.sh -O install.sh && chmod +x install.sh && ./install.sh && rm install.sh'
+proot-distro login alpine-xfce -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/alpine/xfce/install.sh -O install.sh && chmod +x install.sh && ./install.sh'
 
 echo 'To start command line session: alpine-xfce'
 echo 'To start X11 session: alpine-xfce-x11'
@@ -53,3 +53,4 @@ echo 'Default user: alpine-xfce'
 echo 'Default password: 123'    
 echo 'VNC server address: 127.0.0.1:5900'
 echo 'Default VNC password: 1234567890'
+rm -- "$0"

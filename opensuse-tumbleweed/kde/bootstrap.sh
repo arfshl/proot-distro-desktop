@@ -61,7 +61,7 @@ PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/dow
 # Setup opensuse-tumbleweed-kde
 proot-distro login opensuse-tumbleweed-kde -- /bin/sh -c 'zypper refresh && zypper -n dup && zypper -n in wget'
 
-proot-distro login opensuse-tumbleweed-kde -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/opensuse/kde/install-kde.sh -O install-kde.sh && chmod +x install-kde.sh && ./install-kde.sh && rm install-kde.sh'
+proot-distro login opensuse-tumbleweed-kde -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/opensuse/kde/install-kde.sh -O install-kde.sh && chmod +x install-kde.sh && ./install-kde.sh'
 
 echo 'To start command line session: opensuse-tumbleweed-kde'
 echo 'To start X11 session: opensuse-tumbleweed-kde-x11'
@@ -72,3 +72,4 @@ echo 'Default user: opensuse-kde'
 echo 'Default password: 123'    
 echo 'VNC server address: 127.0.0.1:5900'
 echo 'Default VNC password: 1234567890'
+rm -- "$0"

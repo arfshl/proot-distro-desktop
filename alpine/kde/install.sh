@@ -55,3 +55,4 @@ chmod +x stopvnc
 chmod +x restartvnc
 cd
 chmod +x /home/alpine-kde/.vnc/xstartup
+rm -- "$0"

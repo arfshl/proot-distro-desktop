@@ -9,7 +9,7 @@
 
 
 #### Install
-    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/fedora/xfce/bootstrap.sh && sh bootstrap.sh && rm bootstrap.sh
+    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/fedora/xfce/bootstrap.sh && sh bootstrap.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo dnf update && sudo dnf install firefox vlc thunderbird atril ristretto galculator libheif xarchiver webp-pixbuf-loader p7zip mousepad 
@@ -23,7 +23,7 @@
 
 
 #### Install
-    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/fedora/lxqt/bootstrap.sh && sh bootstrap.sh && rm bootstrap.sh
+    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/fedora/lxqt/bootstrap.sh && sh bootstrap.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo dnf update && sudo dnf install firefox vlc thunderbird lximage-qt kcalc lxqt-archiver qpdf libheif webp-pixbuf-loader p7zip featherpad 
@@ -38,7 +38,7 @@
 
 
 #### Install
-    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/fedora/mate/bootstrap.sh && sh bootstrap.sh && rm bootstrap.sh
+    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/fedora/mate/bootstrap.sh && sh bootstrap.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo dnf update && sudo dnf install firefox vlc thunderbird engrampa atril eom mate-calc pluma libheif webp-pixbuf-loader p7zip 
@@ -53,7 +53,7 @@
 
 
 #### Install
-    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/fedora/lxde/bootstrap.sh && sh bootstrap.sh && rm bootstrap.sh
+    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/fedora/lxde/bootstrap.sh && sh bootstrap.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo dnf update && sudo dnf install firefox vlc thunderbird xarchiver atril mousepad galculator gpicview libheif webp-pixbuf-loader p7zip 
@@ -68,7 +68,7 @@
 
 
 #### Install
-    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/fedora/cinnamon/bootstrap.sh && sh bootstrap.sh && rm bootstrap.sh
+    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/fedora/cinnamon/bootstrap.sh && sh bootstrap.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo dnf update && sudo dnf install firefox vlc thunderbird engrampa atril eom mate-calc pluma libheif webp-pixbuf-loader p7zip 
@@ -82,7 +82,7 @@
 
 
 #### Install
-    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/fedora/kde/bootstrap.sh && sh bootstrap.sh && rm bootstrap.sh
+    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/fedora/kde/bootstrap.sh && sh bootstrap.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo dnf update && sudo dnf install firefox vlc thunderbird gwenview kcalc ark okular libheif webp-pixbuf-loader p7zip kate
