@@ -28,11 +28,6 @@
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo apt update && sudo apt install abrowser vlc thunderbird lximage-qt kcalc lxqt-archiver qpdfview libheif1 webp-pixbuf-loader fonts-liberation p7zip featherpad && apt clean
 
-#### Remove (rootfs only)
-    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/trisquel/lxqt/remove-rootfs.sh && sh remove-rootfs.sh && rm remove-rootfs.sh
-#### Remove (full)
-    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/trisquel/lxqt/remove-full.sh && sh remove-full.sh && rm remove-full.sh
-
 ## MATE
 - proot-distro aliases: trisquel-mate
 - Username: trisquel-mate

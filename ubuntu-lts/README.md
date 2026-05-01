@@ -34,11 +34,6 @@
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo apt update && sudo apt install firefox vlc thunderbird lximage-qt kcalc lxqt-archiver qpdfview libheif1 webp-pixbuf-loader fonts-liberation p7zip featherpad && apt clean
 
-#### Remove (rootfs only)
-    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/ubuntu-lts/lxqt/remove-rootfs.sh && sh remove-rootfs.sh && rm remove-rootfs.sh
-#### Remove (full)
-    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/ubuntu-lts/lxqt/remove-full.sh && sh remove-full.sh && rm remove-full.sh
-
 ## MATE
 - proot-distro aliases: ubuntu-lts-mate
 - Username: ubuntu-mate
