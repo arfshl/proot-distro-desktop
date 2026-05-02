@@ -8,7 +8,7 @@
 
 ## XFCE
 - proot-distro aliases: alpine-edge-xfce
-- Username: alpine-edge-xfce
+- Username: alpine-xfce
 - `sudo` Password: 123
 - VNC Server Address: 127.0.0.1:5900
 - VNC Server Password: 1234567890
@@ -22,7 +22,7 @@
 
 ## LXQt
 - proot-distro aliases: alpine-edge-lxqt
-- Username: alpine-edge-lxqt
+- Username: alpine-lxqt
 - `sudo` Password: 123
 - VNC Server Address: 127.0.0.1:5900
 - VNC Server Password: 1234567890
@@ -33,7 +33,7 @@
 
 ## MATE
 - proot-distro aliases: alpine-edge-mate
-- Username: alpine-edge-mate
+- Username: alpine-mate
 - `sudo` Password: 123
 - VNC Server Address: 127.0.0.1:5900
 - VNC Server Password: 1234567890
@@ -44,7 +44,7 @@
 
 ## Cinnamon
 - proot-distro aliases: alpine-edge-cinnamon
-- Username: alpine-edge-cinnamon
+- Username: alpine-cinnamon
 - `sudo` Password: 123
 - VNC Server Address: 127.0.0.1:5900
 - VNC Server Password: 1234567890
@@ -55,7 +55,7 @@
 
 ## KDE Plasma
 - proot-distro aliases: alpine-edge-kde
-- Username: alpine-edge-kde
+- Username: alpine-kde
 - `sudo` Password: 123
 - VNC Server Address: 127.0.0.1:5900
 - VNC Server Password: 1234567890
