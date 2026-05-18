@@ -27,7 +27,7 @@ Supported Desktop Environment:
 | [Trisquel GNU/Linux Libre](https://github.com/arfshl/proot-distro-desktop/tree/main/trisquel) | XFCE LXQt MATE LXDE Cinnamon KDE
 | [Ubuntu Regular Release](https://github.com/arfshl/proot-distro-desktop/tree/main/ubuntu) | XFCE LXQt MATE LXDE Cinnamon KDE
 | [Ubuntu LTS](https://github.com/arfshl/proot-distro-desktop/tree/main/ubuntu-lts) (Recommended for beginners) |  XFCE LXQt MATE LXDE Cinnamon KDE
-| [Void Linux](https://github.com/arfshl/proot-distro-desktop/tree/main/void) | XFCE LXQt MATE LXDE Cinnamon KDE |
+| [Void Linux musl libc](https://github.com/arfshl/proot-distro-desktop/tree/main/void) | XFCE LXQt MATE LXDE Cinnamon KDE |
 
 ## Uninstalling
 ```

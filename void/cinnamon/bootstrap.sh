@@ -37,7 +37,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/void-cinnamon*
 
 # Install void under aliases
-proot-distro install ghcr.io/void-linux/void-musl:latest --override-alias void-cinnamon
+proot-distro install ghcr.io/void-linux/void-musl:latest --name void-cinnamon
 
 # Setup void-cinnamon
 proot-distro run void-cinnamon -- xbps-install -Su 

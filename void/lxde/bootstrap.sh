@@ -37,7 +37,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/void-lxde*
 
 # Install void under aliases
-proot-distro install ghcr.io/void-linux/void-musl:latest --override-alias void-lxde
+proot-distro install ghcr.io/void-linux/void-musl:latest --namw void-lxde
 
 # Setup void-lxde
 proot-distro run void-lxde -- xbps-install -Su 

@@ -37,7 +37,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/void-xfce*
 
 # Install void under aliases
-proot-distro install ghcr.io/void-linux/void-musl:latest --override-alias void-xfce
+proot-distro install ghcr.io/void-linux/void-musl:latest --name void-xfce
 
 # Setup void-xfce
 proot-distro run void-xfce -- xbps-install -Su 

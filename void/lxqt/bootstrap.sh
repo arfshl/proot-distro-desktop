@@ -37,7 +37,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/void-lxqt*
 
 # Install void under aliases
-proot-distro install ghcr.io/void-linux/void-musl:latest --override-alias void-lxqt
+proot-distro install ghcr.io/void-linux/void-musl:latest --name void-lxqt
 
 # Setup void-lxqt
 proot-distro run void-lxqt -- xbps-install -Su 

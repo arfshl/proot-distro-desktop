@@ -37,7 +37,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/void-kde*
 
 # Install void under aliases
-proot-distro install ghcr.io/void-linux/void-musl:latest --override-alias void-kde
+proot-distro install ghcr.io/void-linux/void-musl:latest --name void-kde
 
 # Setup void-kde
 proot-distro run void-kde -- xbps-install -Su 

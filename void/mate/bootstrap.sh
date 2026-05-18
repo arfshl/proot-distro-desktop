@@ -37,7 +37,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/void-mate*
 
 # Install void under aliases
-proot-distro install ghcr.io/void-linux/void-musl:latest --override-alias void-mate
+proot-distro install ghcr.io/void-linux/void-musl:latest --name void-mate
 
 # Setup void-mate
 proot-distro run void-mate -- xbps-install -Su 
