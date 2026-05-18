@@ -37,7 +37,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/artix-kde*
 
 # Install rootfs under aliases
-proot-distro install artixlinux --override-alias artix-kde
+proot-distro install artixlinux/artixlinux --name artix-kde
 
 # Setup artix-kde
 proot-distro login artix-kde -- /bin/sh -c 'pacman -Sy --noconfirm wget'

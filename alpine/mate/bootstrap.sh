@@ -37,7 +37,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/alpine-mate*
 
 # Install alpine under aliases
-proot-distro install alpine --override-alias alpine-mate
+proot-distro install alpine:latest --name alpine-mate
 
 # Setup alpine-mate
 proot-distro login alpine-mate -- /bin/sh -c 'apk -U upgrade && apk add wget'

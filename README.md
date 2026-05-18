@@ -1,5 +1,5 @@
 # PRoot Distro Desktop
-Script and custom rootfs images with desktop for PRoot Distro. Also supports additional distros.
+Script to install desktop environment for PRoot Distro.
 
 Supported Desktop Environment:
 
@@ -15,21 +15,19 @@ Supported Desktop Environment:
 | Distribution     | Flavor/Desktop Environment   |
 |------------------|------------|
 | [Alpine Linux](https://github.com/arfshl/proot-distro-desktop/tree/main/alpine) | XFCE LXQt MATE Cinnamon KDE |
-| [Alpine Linux Edge*](https://github.com/arfshl/proot-distro-desktop/tree/main/alpine-edge) | CLI XFCE LXQt MATE Cinnamon KDE |
+| [Alpine Linux Edge](https://github.com/arfshl/proot-distro-desktop/tree/main/alpine-edge) |  XFCE LXQt MATE Cinnamon KDE |
 | [Arch Linux](https://github.com/arfshl/proot-distro-desktop/tree/main/arch) | XFCE LXQt MATE LXDE Cinnamon KDE | [Debian](https://github.com/arfshl/proot-distro-desktop/tree/main/debian) | XFCE LXQt MATE LXDE Cinnamon KDE |
 | [Debian Stable](https://github.com/arfshl/proot-distro-desktop/tree/main/debian) (Recommended for beginners) | XFCE LXQt MATE LXDE Cinnamon KDE |
-| [Debian Sid*](https://github.com/arfshl/proot-distro-desktop/tree/main/debian-sid) | CLI XFCE LXQt MATE LXDE Cinnamon KDE |
-| [Debian Testing*](https://github.com/arfshl/proot-distro-desktop/tree/main/debian-testing) | CLI XFCE LXQt MATE LXDE Cinnamon KDE |
+| [Debian Sid](https://github.com/arfshl/proot-distro-desktop/tree/main/debian-sid) |  XFCE LXQt MATE LXDE Cinnamon KDE |
+| [Debian Testing](https://github.com/arfshl/proot-distro-desktop/tree/main/debian-testing) |  XFCE LXQt MATE LXDE Cinnamon KDE |
 | [Fedora](https://github.com/arfshl/proot-distro-desktop/tree/main/fedora) | XFCE LXQt MATE LXDE Cinnamon KDE |
 | [Manjaro](https://github.com/arfshl/proot-distro-desktop/tree/main/manjaro) | XFCE LXQt MATE LXDE Cinnamon KDE | 
 | [OpenSUSE Leap](https://github.com/arfshl/proot-distro-desktop/tree/main/opensuse/) |  XFCE LXQt MATE LXDE Cinnamon KDE   |
-| [OpenSUSE Tumbleweed*](https://github.com/arfshl/proot-distro-desktop/tree/main/opensuse-tumbleweed/)     |  CLI XFCE LXQt MATE LXDE Cinnamon KDE   |
+| [OpenSUSE Tumbleweed](https://github.com/arfshl/proot-distro-desktop/tree/main/opensuse-tumbleweed/)     |   XFCE LXQt MATE LXDE Cinnamon KDE   |
 | [Trisquel GNU/Linux Libre](https://github.com/arfshl/proot-distro-desktop/tree/main/trisquel) | XFCE LXQt MATE LXDE Cinnamon KDE
 | [Ubuntu Regular Release](https://github.com/arfshl/proot-distro-desktop/tree/main/ubuntu) | XFCE LXQt MATE LXDE Cinnamon KDE
-| [Ubuntu LTS*](https://github.com/arfshl/proot-distro-desktop/tree/main/ubuntu-lts) (Recommended for beginners) | CLI XFCE LXQt MATE LXDE Cinnamon KDE
+| [Ubuntu LTS](https://github.com/arfshl/proot-distro-desktop/tree/main/ubuntu-lts) (Recommended for beginners) |  XFCE LXQt MATE LXDE Cinnamon KDE
 | [Void Linux](https://github.com/arfshl/proot-distro-desktop/tree/main/void) | XFCE LXQt MATE LXDE Cinnamon KDE |
-
-#### * Using custom-built rootfs
 
 ## Uninstalling
 ```
@@ -56,7 +54,7 @@ Replace [distro aliases] with distro alias you're using, available on installati
 ## Support for android 5/6 without proot-distro, based on andronixapp/andronixorigin, and running latest distro version
 [![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=arfshl&repo=pd-andronix&theme=transparent)](https://github.com/arfshl/pd-andronix)
 
-## Custom rootfs build repo (for distro version who doesn`t supported by termux)
+## Custom rootfs build repo for android 5/6
 [![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=arfshl&repo=pd-custom-rootfs&theme=transparent)](https://github.com/arfshl/pd-custom-rootfs)
 
 ## We also have Native Termux desktop version without proot-distro here!

@@ -37,7 +37,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/manjaro-kde*
 
 # Install rootfs under aliases
-proot-distro install manjaro --override-alias manjaro-kde
+proot-distro install manjarolinux/base --name manjaro-kde
 
 # Setup manjaro-kde
 proot-distro login manjaro-kde -- /bin/sh -c 'pacman -Sy --noconfirm wget'

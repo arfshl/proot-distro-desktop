@@ -37,7 +37,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/opensuse-xfce*
 
 # Install rootfs under aliases
-proot-distro install opensuse --override-alias opensuse-xfce
+proot-distro install opensuse/leap --name opensuse-xfce
 
 # Setup opensuse-xfce
 proot-distro login opensuse-xfce -- /bin/sh -c 'zypper refresh && zypper -n dup && zypper -n in wget'

@@ -34,7 +34,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/fedora-cinnamon*
 
 # Install fedora under aliases
-proot-distro install fedora --override-alias fedora-cinnamon
+proot-distro install fedora --name fedora-cinnamon
 
 # Setup fedora-cinnamon
 proot-distro login fedora-cinnamon -- /bin/sh -c 'dnf update && dnf install wget -y'

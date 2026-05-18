@@ -37,7 +37,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/alpine-cinnamon*
 
 # Install alpine under aliases
-proot-distro install alpine --override-alias alpine-cinnamon
+proot-distro install alpine:latest --name alpine-cinnamon
 
 # Setup alpine-cinnamon
 proot-distro login alpine-cinnamon -- /bin/sh -c 'apk -U upgrade && apk add wget'

@@ -1,24 +1,5 @@
 #!/bin/sh
 # Install x11 and tur repo
-ARCH=$(uname -m)
-case "$ARCH" in
-    armhf|arm|armv7l) 
-        ARCH="armv7" 
-        ;;
-    aarch64|arm64)
-        ARCH="aarch64" 
-        ;;
-    x86_64|amd64)
-        ARCH="x86_64"
-        ;;
-    x86|i686)
-        ARCH="x86"
-        ;;
-    *)
-        echo "Unsupported architecture: $ARCH"
-        exit 1
-        ;;
-esac
 termux-setup-storage
 apt update
 apt install x11-repo tur-repo
@@ -56,7 +37,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/alpine-edge-xfce*
 
 # Install alpine under aliases
-PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/alpine-edge/alpine-edge-${ARCH}.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install alpine --override-alias alpine-edge-xfce
+proot-distro install alpine:edge --name alpine-edge-xfce
 
 # Setup alpine-edge-xfce
 proot-distro login alpine-edge-xfce -- /bin/sh -c 'apk -U upgrade && apk add wget'

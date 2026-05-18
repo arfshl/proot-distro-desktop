@@ -37,7 +37,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/manjaro-xfce*
 
 # Install rootfs under aliases
-proot-distro install manjaro --override-alias manjaro-xfce
+proot-distro install manjarolinux/base --name manjaro-xfce
 
 # Setup manjaro-xfce
 proot-distro login manjaro-xfce -- /bin/sh -c 'pacman -Sy --noconfirm wget'

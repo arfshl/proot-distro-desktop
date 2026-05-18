@@ -37,7 +37,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/artix-xfce*
 
 # Install rootfs under aliases
-proot-distro install artixlinux --override-alias artix-xfce
+proot-distro install artixlinux/artixlinux --name artix-xfce
 
 # Setup artix-xfce
 proot-distro login artix-xfce -- /bin/sh -c 'pacman -Sy --noconfirm wget'

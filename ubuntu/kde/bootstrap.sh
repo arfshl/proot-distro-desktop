@@ -34,7 +34,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/ubuntu-kde*
 
 # Install ubuntu under aliases
-proot-distro install ubuntu --override-alias ubuntu-kde
+proot-distro install ubuntu:latest --name ubuntu-kde
 
 # Setup ubuntu-kde
 proot-distro login ubuntu-kde -- /bin/sh -c 'apt update && apt install wget -y'

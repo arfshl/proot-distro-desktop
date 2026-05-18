@@ -1,10 +1,5 @@
 # OpenSUSE Tumbleweed
 
-## CLI-only (without desktop
-- proot-distro aliases: opensuse-tumbleweed
-
-      apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/opensuse-tumbleweed/cli/bootstrap.sh && sh bootstrap.sh
-
 ## XFCE
 - proot-distro aliases: opensuse-tumbleweed-xfce
 - Username: opensuse-xfce

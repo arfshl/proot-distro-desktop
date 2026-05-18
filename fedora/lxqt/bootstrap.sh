@@ -36,7 +36,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/fedora-lxqt*
 
 # Install fedora under aliases
-proot-distro install fedora --override-alias fedora-lxqt
+proot-distro install fedora --name fedora-lxqt
 
 # Setup fedora-lxqt
 proot-distro login fedora-lxqt -- /bin/sh -c 'dnf update && dnf install wget -y'

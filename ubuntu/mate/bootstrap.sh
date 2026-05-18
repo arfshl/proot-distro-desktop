@@ -36,7 +36,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/ubuntu-mate*
 
 # Install ubuntu under aliases
-proot-distro install ubuntu --override-alias ubuntu-mate
+proot-distro install ubuntu:latest --name ubuntu-mate
 
 # Setup ubuntu-mate
 proot-distro login ubuntu-mate -- /bin/sh -c 'apt update && apt install wget -y'

@@ -12,13 +12,12 @@ apt upgrade -y -o Dpkg::Options::="--force-confold"
 apt install curl wget nano proot-distro termux-x11 pulseaudio vulkan-loader-android mesa-zink virglrenderer-mesa-zink virglrenderer-android -y
 
 # Install debian under aliases
-proot-distro install debian --override-alias debian-cinnamon
+proot-distro install debian:stable --override-alias debian-cinnamon
 
-# Setup debian-kde
-proot-distro login debian-kde -- /bin/sh -c 'apt update && apt install wget -y'
+# Setup debian-cinnamon
+proot-distro login debian-cinnamon -- /bin/sh -c 'apt update && apt install wget -y'
 
-proot-distro login debian-kde -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian/cinnamon/install.sh -O install.sh && chmod +x install.sh && ./install.sh'
-
+proot-distro login debian-cinnamon -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian/cinnamon/install.sh -O install.sh && chmod +x install.sh && ./install.sh'
 
 # for CLI session
 echo '#!/bin/sh

@@ -37,7 +37,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/ubuntu-xfce*
 
 # Install ubuntu under aliases
-proot-distro install ubuntu --override-alias ubuntu-xfce
+proot-distro install ubuntu:latest --name ubuntu-xfce
 
 # Setup ubuntu-xfce
 proot-distro login ubuntu-xfce -- /bin/sh -c 'apt update && apt install wget -y'

@@ -34,7 +34,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/trisquel-kde*
 
 # Install trisquel under aliases
-proot-distro install trisquel --override-alias trisquel-kde
+proot-distro install kpengboy/trisquel --name trisquel-kde
 
 # Setup trisquel-kde
 proot-distro login trisquel-kde -- /bin/sh -c 'apt update && apt install wget -y'

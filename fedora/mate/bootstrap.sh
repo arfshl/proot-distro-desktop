@@ -36,7 +36,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/fedora-mate*
 
 # Install fedora under aliases
-proot-distro install fedora --override-alias fedora-mate
+proot-distro install fedora --name fedora-mate
 
 # Setup fedora-mate
 proot-distro login fedora-mate -- /bin/sh -c 'dnf update && dnf install wget -y'

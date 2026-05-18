@@ -37,7 +37,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/artix-lxqt*
 
 # Install rootfs under aliases
-proot-distro install artixlinux --override-alias artix-lxqt
+proot-distro install artixlinux/artixlinux --name artix-lxqt
 
 # Setup artix-lxqt
 proot-distro login artix-lxqt -- /bin/sh -c 'pacman -Sy --noconfirm wget'

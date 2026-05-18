@@ -37,7 +37,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/manjaro-lxqt*
 
 # Install rootfs under aliases
-proot-distro install manjaro --override-alias manjaro-lxqt
+proot-distro install manjarolinux/base --name manjaro-lxqt
 
 # Setup manjaro-lxqt
 proot-distro login manjaro-lxqt -- /bin/sh -c 'pacman -Sy --noconfirm wget'

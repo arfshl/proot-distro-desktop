@@ -36,7 +36,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/trisquel-mate*
 
 # Install trisquel under aliases
-proot-distro install trisquel --override-alias trisquel-mate
+proot-distro install kpengboy/trisquel --name trisquel-mate
 
 # Setup trisquel-mate
 proot-distro login trisquel-mate -- /bin/sh -c 'apt update && apt install wget -y'

@@ -36,7 +36,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/fedora-kde*
 
 # Install fedora under aliases
-proot-distro install fedora --override-alias fedora-kde
+proot-distro install fedora --name fedora-kde
 
 # Setup fedora-kde
 proot-distro login fedora-kde -- /bin/sh -c 'dnf update && dnf install wget -y'

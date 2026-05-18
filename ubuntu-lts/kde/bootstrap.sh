@@ -1,22 +1,5 @@
 #!/bin/sh
 # Install x11 and tur repo
-ARCH=$(uname -m)
-case "$ARCH" in
-    armhf|arm|armv7l) 
-        ARCH="arm" 
-        ;;
-    aarch64|arm64)
-        ARCH="aarch64" 
-        ;;
-    x86_64|amd64)
-        ARCH="x86_64"
-        ;;
-    *)
-        echo "Unsupported architecture: $ARCH"
-        exit 1
-        ;;
-esac
-
 termux-setup-storage
 apt update
 apt install x11-repo tur-repo
@@ -29,8 +12,7 @@ apt upgrade -y -o Dpkg::Options::="--force-confold"
 apt install curl wget nano proot-distro termux-x11 pulseaudio vulkan-loader-android mesa-zink virglrenderer-mesa-zink virglrenderer-android -y
 
 # Install ubuntu under aliases
-
-PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/ubuntu-lts/ubuntu-lts-$ARCH.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install ubuntu --override-alias ubuntu-lts-kde
+proot-distro install ubuntu:26.04 --name ubuntu-lts-kde
 
 # Setup ubuntu-kde
 proot-distro login ubuntu-lts-kde -- /bin/sh -c 'apt update && apt install wget -y'

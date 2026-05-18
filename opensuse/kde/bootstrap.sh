@@ -37,7 +37,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/opensuse-kde*
 
 # Install rootfs under aliases
-proot-distro install opensuse --override-alias opensuse-kde
+proot-distro install opensuse/leap --name opensuse-kde
 
 # Setup opensuse-kde
 proot-distro login opensuse-kde -- /bin/sh -c 'zypper refresh && zypper -n dup && zypper -n in wget'

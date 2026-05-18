@@ -1,21 +1,5 @@
 #!/bin/sh
 # Install x11 and tur repo
-ARCH=$(uname -m)
-case "$ARCH" in
-    armhf|arm|armv7l) 
-        ARCH="arm" 
-        ;;
-    aarch64|arm64)
-        ARCH="aarch64" 
-        ;;
-    x86_64|amd64)
-        ARCH="x86_64"
-        ;;
-    *)
-        echo "Unsupported architecture: $ARCH"
-        exit 1
-        ;;
-esac
 termux-setup-storage
 apt update
 apt install x11-repo tur-repo
@@ -50,7 +34,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/debian-sid-cinnamon*
 
 # Install debian under aliases
-PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/debian-sid/debian-sid-$ARCH.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install debian --override-alias debian-sid-cinnamon
+proot-distro install debian:sid --override-alias debian-sid-cinnamon
 
 # Setup debian-sid-cinnamon
 proot-distro login debian-sid-cinnamon -- /bin/sh -c 'apt update && apt install wget -y'

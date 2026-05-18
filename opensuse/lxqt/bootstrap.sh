@@ -37,7 +37,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/opensuse-lxqt*
 
 # Install rootfs under aliases
-proot-distro install opensuse --override-alias opensuse-lxqt
+proot-distro install opensuse/leap --name opensuse-lxqt
 
 # Setup opensuse-lxqt
 proot-distro login opensuse-lxqt -- /bin/sh -c 'zypper refresh && zypper -n dup && zypper -n in wget'

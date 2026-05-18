@@ -37,7 +37,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/alpine-xfce*
 
 # Install alpine under aliases
-proot-distro install alpine --override-alias alpine-xfce
+proot-distro install alpine:latest --name alpine-xfce
 
 # Setup alpine-xfce
 proot-distro login alpine-xfce -- /bin/sh -c 'apk -U upgrade && apk add wget'

@@ -37,7 +37,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/artix-lxde*
 
 # Install rootfs under aliases
-proot-distro install artixlinux --override-alias artix-lxde
+proot-distro install artixlinux/artixlinux --name artix-lxde
 
 # Setup artix-lxde
 proot-distro login artix-lxde -- /bin/sh -c 'pacman -Sy --noconfirm wget'

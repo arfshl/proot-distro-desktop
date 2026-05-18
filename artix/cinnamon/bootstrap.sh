@@ -37,7 +37,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/artix-cinnamon*
 
 # Install rootfs under aliases
-proot-distro install artixlinux --override-alias artix-cinnamon
+proot-distro install artixlinux/artixlinux --name artix-cinnamon
 
 # Setup artix-cinnamon
 proot-distro login artix-cinnamon -- /bin/sh -c 'pacman -Sy --noconfirm wget'

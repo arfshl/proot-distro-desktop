@@ -37,11 +37,11 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/void-kde*
 
 # Install void under aliases
-proot-distro install void --override-alias void-kde
+proot-distro install ghcr.io/void-linux/void-musl:latest --override-alias void-kde
 
 # Setup void-kde
-proot-distro login void-kde -- /bin/sh -c 'xbps-install -Su && xbps-install -S wget -y'
-
+proot-distro run void-kde -- xbps-install -Su 
+proot-distro run void-kde -- xbps-install -S wget bash -y
 proot-distro login void-kde -- /bin/sh -c 'wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/void/kde/install.sh -O install.sh && chmod +x install.sh && ./install.sh'
 
 echo 'To start command line session: void-kde'

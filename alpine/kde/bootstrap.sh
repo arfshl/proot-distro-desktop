@@ -37,7 +37,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/alpine-kde*
 
 # Install alpine under aliases
-proot-distro install alpine --override-alias alpine-kde
+proot-distro install alpine:latest --name alpine-kde
 
 # Setup alpine-kde
 proot-distro login alpine-kde -- /bin/sh -c 'apk -U upgrade && apk add wget'

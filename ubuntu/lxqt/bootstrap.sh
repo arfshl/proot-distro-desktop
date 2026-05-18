@@ -36,7 +36,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/ubuntu-lxqt*
 
 # Install ubuntu under aliases
-proot-distro install ubuntu --override-alias ubuntu-lxqt
+proot-distro install ubuntu:latest --name ubuntu-lxqt
 
 # Setup ubuntu-lxqt
 proot-distro login ubuntu-lxqt -- /bin/sh -c 'apt update && apt install wget -y'

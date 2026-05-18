@@ -37,7 +37,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/manjaro-lxde*
 
 # Install rootfs under aliases
-proot-distro install manjaro --override-alias manjaro-lxde
+proot-distro install manjarolinux/base --name manjaro-lxde
 
 # Setup manjaro-lxde
 proot-distro login manjaro-lxde -- /bin/sh -c 'pacman -Sy --noconfirm wget'

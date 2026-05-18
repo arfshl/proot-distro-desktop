@@ -42,6 +42,10 @@ echo '#!/bin/sh
 stopvnc
 startvnc' >> /usr/local/bin/restartvnc
 
+# make bash the default shell
+chsh -s /bin/bash void-xfce
+chsh -s /bin/bash root
+
 # Make it executable
 cd /usr/local/bin
 chmod +x startvnc

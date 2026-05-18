@@ -37,7 +37,15 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/arch-lxde*
 
 # Install rootfs under aliases
-proot-distro install archlinux --override-alias arch-lxde
+ARCH=$(uname -m)
+if [ "$ARCH" = "x86_64" ] || [ "$ARCH" = "i686" ]; then 
+    proot-distro install archlinux/archlinux --name arch-lxde
+elif [ "$ARCH" = "aarch64" ] || [ "$ARCH" = "arm" ]; then 
+    proot-distro install danhunsaker/archlinuxarm --name arch-lxde
+else
+    echo "Unsupported architecture: $ARCH"
+    exit 1
+fi
 
 proot-distro login arch-lxde -- /bin/sh -c 'pacman -Syu --noconfirm && pacman -S --noconfirm wget'
 

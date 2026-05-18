@@ -1,10 +1,5 @@
 # Debian Testing
 
-## CLI-only (without Desktop)
-- proot-distro aliases: debian-testing
-
-      apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian-testing/cli/bootstrap.sh && sh bootstrap.sh
-  
 ## XFCE
 - proot-distro aliases: debian-testing-xfce
 - Username: debian-xfce

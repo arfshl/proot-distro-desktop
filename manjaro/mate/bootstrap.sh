@@ -37,7 +37,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/manjaro-mate*
 
 # Install rootfs under aliases
-proot-distro install manjaro --override-alias manjaro-mate
+proot-distro install manjarolinux/base --name manjaro-mate
 
 # Setup manjaro-mate
 proot-distro login manjaro-mate -- /bin/sh -c 'pacman -Sy --noconfirm wget'

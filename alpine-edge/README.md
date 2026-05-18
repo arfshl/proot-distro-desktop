@@ -1,11 +1,5 @@
 # Alpine Linux Edge
 
-## CLI
-- proot-distro aliases: alpine-edge
-
-#### Install
-    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/alpine-edge/cli/bootstrap.sh && sh bootstrap.sh
-
 ## XFCE
 - proot-distro aliases: alpine-edge-xfce
 - Username: alpine-xfce

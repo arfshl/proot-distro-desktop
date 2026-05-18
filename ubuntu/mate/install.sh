@@ -3,6 +3,24 @@
 # Update and upgrade system
 apt update && apt upgrade -y && apt autoremove -y
 
+echo 'Adding Mozillateam PPA...'
+sudo add-apt-repository ppa:mozillateam/ppa -y
+
+echo 'Configuring APT Pinning...'
+sudo cat <<EOF > /etc/apt/preferences.d/nativeapt
+Package: *
+Pin: release o=LP-PPA-mozillateam
+Pin-Priority: 1000
+
+Package: firefox
+Pin: release o=Ubuntu
+Pin-Priority: -1
+
+Package: thunderbird
+Pin: release o=Ubuntu
+Pin-Priority: -1
+EOF
+
 # Install Desktop, VNC, and basic utility
 apt install mate-desktop-environment-core caja mate-menus mate-terminal mate-applet-brisk-menu mate-backgrounds mate-dock-applet mate-indicator-applet mate-menus pavucontrol mate-indicator-applet-common mate-tweak mate-applets ubuntu-mate-artwork ubuntu-mate-default-settings ubuntu-mate-icon-themes ubuntu-mate-themes ubuntu-mate-wallpapers ubuntu-mate-wallpapers-common ubuntu-mate-lightdm-theme dbus-x11 pulseaudio nano wget curl sudo adduser tigervnc-standalone-server -y && apt clean
 

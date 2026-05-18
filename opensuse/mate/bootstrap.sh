@@ -37,7 +37,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/opensuse-mate*
 
 # Install rootfs under aliases
-proot-distro install opensuse --override-alias opensuse-mate
+proot-distro install opensuse/leap --name opensuse-mate
 
 # Setup opensuse-mate
 proot-distro login opensuse-mate -- /bin/sh -c 'zypper refresh && zypper -n dup && zypper -n in wget'

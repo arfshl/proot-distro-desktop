@@ -37,7 +37,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/alpine-lxqt*
 
 # Install alpine under aliases
-proot-distro install alpine --override-alias alpine-lxqt
+proot-distro install alpine:latest --name alpine-lxqt
 
 # Setup alpine-lxqt
 proot-distro login alpine-lxqt -- /bin/sh -c 'apk -U upgrade && apk add wget'

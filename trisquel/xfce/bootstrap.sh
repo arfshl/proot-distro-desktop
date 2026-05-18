@@ -37,7 +37,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/trisquel-xfce*
 
 # Install trisquel under aliases
-proot-distro install trisquel --override-alias trisquel-xfce
+proot-distro install kpengboy/trisquel --name trisquel-xfce
 
 # Setup trisquel-xfce
 proot-distro login trisquel-xfce -- /bin/sh -c 'apt update && apt install wget -y'

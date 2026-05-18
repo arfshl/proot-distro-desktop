@@ -37,7 +37,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/manjaro-cinnamon*
 
 # Install rootfs under aliases
-proot-distro install manjaro --override-alias manjaro-cinnamon
+proot-distro install manjarolinux/base --name manjaro-cinnamon
 
 # Setup manjaro-cinnamon
 proot-distro login manjaro-cinnamon -- /bin/sh -c 'pacman -Sy --noconfirm wget'

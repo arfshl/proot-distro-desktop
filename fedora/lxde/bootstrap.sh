@@ -36,7 +36,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/fedora-lxde*
 
 # Install fedora under aliases
-proot-distro install fedora --override-alias fedora-lxde
+proot-distro install fedora --name fedora-lxde
 
 # Setup fedora-lxde
 proot-distro login fedora-lxde-- /bin/sh -c 'dnf update && dnf install wget -y'

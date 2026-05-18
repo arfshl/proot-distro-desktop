@@ -1,10 +1,5 @@
 # Debian Sid
 
-## CLI-only (without Desktop)
-- proot-distro aliases: debian-sid
-
-      apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian-sid/cli/bootstrap.sh && sh bootstrap.sh
-
 ## XFCE
 - proot-distro aliases: debian-sid-xfce
 - Username: debian-xfce

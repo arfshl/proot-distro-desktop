@@ -37,7 +37,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/fedora-xfce*
 
 # Install rootfs under aliases
-proot-distro install fedora --override-alias fedora-xfce
+proot-distro install fedora --name fedora-xfce
 
 # Setup fedora-xfce
 proot-distro login fedora-xfce -- /bin/sh -c 'dnf update && dnf install wget -y'

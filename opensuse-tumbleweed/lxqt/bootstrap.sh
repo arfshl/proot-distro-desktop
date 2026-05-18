@@ -1,24 +1,6 @@
 #!/bin/sh
 # Install x11 and tur repo
-ARCH=$(uname -m)
-case "$ARCH" in
-    armhf|arm|armv7l) 
-        ARCH="arm" 
-        ;;
-    aarch64|arm64)
-        ARCH="aarch64" 
-        ;;
-    x86_64|amd64)
-        ARCH="x86_64"
-        ;;
-    i386|x86|i686)
-        ARCH="x86"
-        ;;
-    *)
-        echo "Unsupported architecture: $ARCH"
-        exit 1
-        ;;
-esac
+
 termux-setup-storage
 apt update
 apt install x11-repo tur-repo
@@ -56,7 +38,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/opensuse-tumbleweed-lxqt*
 
 # Install rootfs under aliases
-PD_OVERRIDE_TARBALL_URL="https://github.com/arfshl/pd-custom-rootfs/releases/download/opensuse-tumbleweed/opensuse-tumbleweed-$ARCH.tar.xz" PD_OVERRIDE_TARBALL_SHA256="" proot-distro install opensuse --override-alias opensuse-tumbleweed-lxqt
+proot-distro install opensuse/tumbleweed --name opensuse-tumbleweed-lxqt
 
 # Setup opensuse-tumbleweed-lxqt
 proot-distro login opensuse-tumbleweed-lxqt -- /bin/sh -c 'zypper refresh && zypper -n dup && zypper -n in wget'

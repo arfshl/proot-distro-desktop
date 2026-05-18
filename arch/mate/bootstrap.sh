@@ -37,7 +37,15 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/arch-mate*
 
 # Install rootfs under aliases
-proot-distro install archlinux --override-alias arch-mate
+ARCH=$(uname -m)
+if [ "$ARCH" = "x86_64" ] || [ "$ARCH" = "i686" ]; then 
+    proot-distro install archlinux/archlinux --name arch-mate
+elif [ "$ARCH" = "aarch64" ] || [ "$ARCH" = "arm" ]; then 
+    proot-distro install danhunsaker/archlinuxarm --name arch-mate
+else
+    echo "Unsupported architecture: $ARCH"
+    exit 1
+fi
 
 proot-distro login arch-mate -- /bin/sh -c 'pacman -Syu --noconfirm && pacman -S --noconfirm wget'
 

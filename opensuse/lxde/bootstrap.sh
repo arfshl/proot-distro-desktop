@@ -37,7 +37,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/opensuse-lxde*
 
 # Install rootfs under aliases
-proot-distro install opensuse --override-alias opensuse-lxde
+proot-distro install opensuse/leap --name opensuse-lxde
 
 # Setup opensuse-lxde
 proot-distro login opensuse-lxde -- /bin/sh -c 'zypper refresh && zypper -n dup && zypper -n in wget'

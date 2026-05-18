@@ -37,7 +37,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/artix-mate*
 
 # Install rootfs under aliases
-proot-distro install artixlinux --override-alias artix-mate
+proot-distro install artixlinux/artixlinux --name artix-mate
 
 # Setup artix-mate
 proot-distro login artix-mate -- /bin/sh -c 'pacman -Sy --noconfirm wget'

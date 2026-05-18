@@ -3,6 +3,24 @@
 # Update and upgrade system
 apt update && apt upgrade -y && apt autoremove -y
 
+echo 'Adding Mozillateam PPA...'
+sudo add-apt-repository ppa:mozillateam/ppa -y
+
+echo 'Configuring APT Pinning...'
+sudo cat <<EOF > /etc/apt/preferences.d/nativeapt
+Package: *
+Pin: release o=LP-PPA-mozillateam
+Pin-Priority: 1000
+
+Package: firefox
+Pin: release o=Ubuntu
+Pin-Priority: -1
+
+Package: thunderbird
+Pin: release o=Ubuntu
+Pin-Priority: -1
+EOF
+
 # Install Desktop, VNC, and basic utility
 apt update && apt upgrade -y && apt install lxde-core pcmanfm lxterminal lxappearance pavucontrol lxappearance-obconf lxde-settings-daemon dbus-x11 pulseaudio nano wget curl sudo adduser tigervnc-standalone-server -y && apt clean
 
