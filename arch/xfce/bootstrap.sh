@@ -41,7 +41,7 @@ ARCH=$(uname -m)
 if [ "$ARCH" = "x86_64" ] || [ "$ARCH" = "i686" ]; then 
     proot-distro install archlinux/archlinux --name arch-xfce
 elif [ "$ARCH" = "aarch64" ] || [ "$ARCH" = "arm" ]; then 
-    proot-distro install danhunsaker/archlinuxarm --name arch-xfce
+    proot-distro install ghcr.io/arfshl/archlinuxarm-docker:latest --name arch-xfce
 else
     echo "Unsupported architecture: $ARCH"
     exit 1

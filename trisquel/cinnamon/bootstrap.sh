@@ -34,7 +34,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/trisquel-cinnamon*
 
 # Install trisquel under aliases
-proot-distro install kpengboy/trisquel --name trisquel-cinnamon
+proot-distro install ghcr.io/arfshl/trisquel-docker:latest --name trisquel-cinnamon
 
 # Setup trisquel-cinnamon
 proot-distro login trisquel-cinnamon -- /bin/sh -c 'apt update && apt install wget -y'

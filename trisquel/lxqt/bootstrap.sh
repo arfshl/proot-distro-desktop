@@ -36,7 +36,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/trisquel-lxqt*
 
 # Install trisquel under aliases
-proot-distro install kpengboy/trisquel --name trisquel-lxqt
+proot-distro install ghcr.io/arfshl/trisquel-docker:latest --name trisquel-lxqt
 
 # Setup trisquel-lxqt
 proot-distro login trisquel-lxqt -- /bin/sh -c 'apt update && apt install wget -y'
