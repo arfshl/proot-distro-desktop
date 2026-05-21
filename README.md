@@ -54,9 +54,6 @@ Replace [distro aliases] with distro alias you're using, available on installati
 ## Support for android 5/6 without proot-distro, based on andronixapp/andronixorigin, and running latest distro version
 [![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=arfshl&repo=pd-andronix&theme=transparent)](https://github.com/arfshl/pd-andronix)
 
-## Custom rootfs build repo for android 5/6
-[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=arfshl&repo=pd-custom-rootfs&theme=transparent)](https://github.com/arfshl/pd-custom-rootfs)
-
 ## We also have Native Termux desktop version without proot-distro here!
 [![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=arfshl&repo=termux-desktop&theme=transparent)](https://github.com/arfshl/termux-desktop)
 
