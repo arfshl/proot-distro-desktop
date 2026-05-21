@@ -34,7 +34,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/trisquel-kde*
 
 # Install trisquel under aliases
-proot-distro install ghcr.io/arfshl/trisquel-docker:latest --name trisquel-kde
+proot-distro install arfshl/trisquel:latest --name trisquel-kde
 
 # Setup trisquel-kde
 proot-distro login trisquel-kde -- /bin/sh -c 'apt update && apt install wget -y'

@@ -16,7 +16,7 @@ Supported Desktop Environment:
 |------------------|----------------------------|----------------|-----------------|
 | [Alpine Linux](https://github.com/arfshl/proot-distro-desktop/tree/main/alpine) | XFCE LXQt MATE Cinnamon KDE | `arm` `aarch64` `x86` `x86_64` | `alpine:latest` |
 | [Alpine Linux Edge](https://github.com/arfshl/proot-distro-desktop/tree/main/alpine-edge) |  XFCE LXQt MATE Cinnamon KDE | `arm` `aarch64` `x86` `x86_64` | `alpine:edge` |
-| [Arch Linux](https://github.com/arfshl/proot-distro-desktop/tree/main/arch) | XFCE LXQt MATE LXDE Cinnamon KDE | `arm` `aarch64` `x86_64` | `archlinux/archlinux` `ghcr.io/arfshl/archlinuxarm-docker:latest` |
+| [Arch Linux](https://github.com/arfshl/proot-distro-desktop/tree/main/arch) | XFCE LXQt MATE LXDE Cinnamon KDE | `arm` `aarch64` `x86_64` | `archlinux/archlinux` `arfshl/archlinuxarm:latest` |
 | [Debian Stable](https://github.com/arfshl/proot-distro-desktop/tree/main/debian) (Recommended for beginners) | XFCE LXQt MATE LXDE Cinnamon KDE | `arm` `aarch64` `x86_64` | `debian:stable` |
 | [Debian Sid](https://github.com/arfshl/proot-distro-desktop/tree/main/debian-sid) |  XFCE LXQt MATE LXDE Cinnamon KDE | `arm` `aarch64` `x86_64` | `debian:sid` |
 | [Debian Testing](https://github.com/arfshl/proot-distro-desktop/tree/main/debian-testing) |  XFCE LXQt MATE LXDE Cinnamon KDE | `arm` `aarch64` `x86_64` | `debian:testing` |
@@ -24,7 +24,7 @@ Supported Desktop Environment:
 | [Manjaro](https://github.com/arfshl/proot-distro-desktop/tree/main/manjaro) | XFCE LXQt MATE LXDE Cinnamon KDE | `aarch64` `x86_64` | `manjarolinux/base` | 
 | [OpenSUSE Leap](https://github.com/arfshl/proot-distro-desktop/tree/main/opensuse/) |  XFCE LXQt MATE LXDE Cinnamon KDE   | `aarch64` `x86_64` | `opensuse/leap` |
 | [OpenSUSE Tumbleweed](https://github.com/arfshl/proot-distro-desktop/tree/main/opensuse-tumbleweed/)     |   XFCE LXQt MATE LXDE Cinnamon KDE   | `aarch64` `x86` `x86_64` | `opensuse/tumbleweed` |
-| [Trisquel GNU/Linux Libre](https://github.com/arfshl/proot-distro-desktop/tree/main/trisquel) | XFCE LXQt MATE LXDE Cinnamon KDE | `arm` `aarch64` `x86_64` | `ghcr.io/arfshl/trisquel-docker:latest` |
+| [Trisquel GNU/Linux Libre](https://github.com/arfshl/proot-distro-desktop/tree/main/trisquel) | XFCE LXQt MATE LXDE Cinnamon KDE | `arm` `aarch64` `x86_64` | `arfshl/trisquel:latest` |
 | [Ubuntu Regular Release](https://github.com/arfshl/proot-distro-desktop/tree/main/ubuntu) | XFCE LXQt MATE LXDE Cinnamon KDE | `arm` `aarch64` `x86_64` | `ubuntu:rolling` |
 | [Ubuntu LTS](https://github.com/arfshl/proot-distro-desktop/tree/main/ubuntu-lts) (Recommended for beginners) |  XFCE LXQt MATE LXDE Cinnamon KDE | `arm` `aarch64` `x86_64` | `ubuntu:latest` |
 | [Void Linux musl libc](https://github.com/arfshl/proot-distro-desktop/tree/main/void) | XFCE LXQt MATE LXDE Cinnamon KDE | `arm` `aarch64` `x86_64` | `ghcr.io/void-linux/void-musl:latest` |
