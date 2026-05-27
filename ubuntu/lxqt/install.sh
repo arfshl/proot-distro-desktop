@@ -1,4 +1,5 @@
 #!/bin/sh
+set -euo
 # Update and upgrade system
 apt update && apt upgrade -y && apt autoremove -y
 

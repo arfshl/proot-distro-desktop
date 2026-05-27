@@ -1,3 +1,5 @@
+#!/bin/sh
+set -euo
 sudo apk add chromium
 sudo sed -i 's|chromium --incognito %U|chromium --incognito --no-sandbox %U|' /usr/share/applications/chromium.desktop
 sudo sed -i 's|chromium %U|chromium --no-sandbox %U|' /usr/share/applications/chromium.desktop

@@ -1,4 +1,5 @@
 #!/bin/sh
+set -euo
 
 # Install Desktop, VNC, and basic utility
 xbps-install -S kde-plasma dbus-x11 pulseaudio nano wget curl sudo adduser xdg-user-dirs tigervnc pavucontrol-qt xorg -y

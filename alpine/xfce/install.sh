@@ -1,5 +1,5 @@
 #!/bin/sh
-
+set -euo
 # Install Desktop, VNC, and basic utility
 apk add xfce4 xfce4-terminal dbus-x11 pulseaudio nano wget curl sudo adduser xdg-user-dirs xdg-user-dirs-gtk xfce4-whiskermenu-plugin tigervnc xorg pavucontrol -y
 

@@ -1,5 +1,5 @@
 #!/bin/sh
-
+set -euo
 # Update and upgrade system
 apk -U upgrade
 

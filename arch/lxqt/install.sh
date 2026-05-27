@@ -1,4 +1,5 @@
 #!/bin/sh
+set -euo
 
 # Install Desktop, VNC, and basic utility
 pacman -Syu --noconfirm

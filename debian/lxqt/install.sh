@@ -1,4 +1,5 @@
 #!/bin/sh
+set -euo
 
 # Add mozilla official repository 
 apt install sudo -y

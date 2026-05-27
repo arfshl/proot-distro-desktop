@@ -1,4 +1,5 @@
 #!/bin/sh
+set -euo
 # Install Chromium ARM from Debian Repository
 sudo apt update && sudo apt install chromium -y && apt clean
 sudo sed -i 's|chromium --incognito %U|chromium --incognito --no-sandbox %U|' /usr/share/applications/chromium.desktop

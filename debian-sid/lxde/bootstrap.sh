@@ -1,4 +1,5 @@
 #!/bin/sh
+set -euo
 # Install x11 and tur repo
 ARCH=$(uname -m)
 case "$ARCH" in
