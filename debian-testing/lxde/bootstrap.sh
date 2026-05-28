@@ -37,7 +37,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/debian-testing-lxde*
 
 # Install debian under aliases
-proot-distro install debian:testing --override-alias debian-testing-lxde
+proot-distro install debian:testing --name debian-testing-lxde
 
 # Setup debian-testing-lxde
 proot-distro login debian-testing-lxde -- /bin/sh -c 'apt update && apt install wget -y'

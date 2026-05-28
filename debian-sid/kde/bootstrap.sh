@@ -35,7 +35,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/debian-sid-kde*
 
 # Install debian under aliases
-proot-distro install debian:sid --override-alias debian-sid-kde
+proot-distro install debian:sid --name debian-sid-kde
 
 # Setup debian-sid-kde
 proot-distro login debian-sid-kde -- /bin/sh -c 'apt update && apt install wget -y'

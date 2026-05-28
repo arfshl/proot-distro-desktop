@@ -38,7 +38,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/debian-testing-xfce*
 
 # Install debian under aliases
-proot-distro install debian:testing --override-alias debian-testing-xfce
+proot-distro install debian:testing --name debian-testing-xfce
 
 # Setup debian-testing-xfce
 proot-distro login debian-testing-xfce -- /bin/sh -c 'apt update && apt install wget -y'

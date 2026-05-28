@@ -35,7 +35,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/debian-sid-cinnamon*
 
 # Install debian under aliases
-proot-distro install debian:sid --override-alias debian-sid-cinnamon
+proot-distro install debian:sid --name debian-sid-cinnamon
 
 # Setup debian-sid-cinnamon
 proot-distro login debian-sid-cinnamon -- /bin/sh -c 'apt update && apt install wget -y'

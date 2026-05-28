@@ -38,7 +38,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/debian-sid-xfce*
 
 # Install rootfs under aliases
-proot-distro install debian:sid --override-alias debian-sid-xfce
+proot-distro install debian:sid --name debian-sid-xfce
 
 # Setup debian-sid-xfce
 proot-distro login debian-sid-xfce -- /bin/sh -c 'apt update && apt install wget -y'

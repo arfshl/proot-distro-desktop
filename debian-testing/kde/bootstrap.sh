@@ -35,7 +35,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/debian-testing-kde*
 
 # Install debian under aliases
-proot-distro install debian:testing --override-alias debian-testing-kde
+proot-distro install debian:testing --name debian-testing-kde
 
 # Setup debian-testing-kde
 proot-distro login debian-testing-kde -- /bin/sh -c 'apt update && apt install wget -y'

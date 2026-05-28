@@ -13,7 +13,7 @@ apt upgrade -y -o Dpkg::Options::="--force-confold"
 apt install curl wget nano proot-distro termux-x11 pulseaudio vulkan-loader-android mesa-zink virglrenderer-mesa-zink virglrenderer-android -y
 
 # Install debian under aliases
-proot-distro install debian:testing --override-alias debian-testing-cinnamon
+proot-distro install debian:testing --name debian-testing-cinnamon
 
 # Setup debian-testing-cinnamon
 proot-distro login debian-testing-cinnamon -- /bin/sh -c 'apt update && apt install wget -y'

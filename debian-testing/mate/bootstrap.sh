@@ -37,7 +37,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/debian-testing-mate*
 
 # Install debian under aliases
-proot-distro install debian:testing --override-alias debian-testing-mate
+proot-distro install debian:testing --name debian-testing-mate
 
 # Setup debian-testing-mate
 proot-distro login debian-testing-mate -- /bin/sh -c 'apt update && apt install wget -y'

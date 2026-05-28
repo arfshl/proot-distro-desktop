@@ -53,7 +53,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/debian-sid-lxde*
 
 # Install debian under aliases
-proot-distro install debian:sid --override-alias debian-sid-lxde
+proot-distro install debian:sid --name debian-sid-lxde
 
 # Setup debian-sid-lxde
 proot-distro login debian-sid-lxde -- /bin/sh -c 'apt update && apt install wget -y'

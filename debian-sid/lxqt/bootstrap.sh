@@ -37,7 +37,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/debian-sid-lxqt*
 
 # Install debian under aliases
-proot-distro install debian:sid --override-alias debian-sid-lxqt
+proot-distro install debian:sid --name debian-sid-lxqt
 
 # Setup debian-sid-lxqt
 proot-distro login debian-sid-lxqt -- /bin/sh -c 'apt update && apt install wget -y'
