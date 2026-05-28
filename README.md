@@ -1,6 +1,10 @@
 # PRoot Distro Desktop
 Script to install desktop environment for PRoot Distro.
 
+- China mainland user who can't access main docker registry goes [here.](https://github.com/arfshl/pd-desktop-cn)
+- Support for android 5/6 without proot-distro is [here.](https://github.com/arfshl/pd-andronix)
+- Bare-metal Termux desktop without proot-distro is [here.](https://github.com/arfshl/termux-desktop)
+
 Supported Desktop Environment:
 
 - XFCE, MATE, LXQt, LXDE (stable and worked well)
@@ -50,6 +54,8 @@ apt remove proot-distro termux-x11 pulseaudio vulkan-loader-android mesa-zink vi
 
 Replace [distro aliases] with distro alias you're using, available on installation page
 ```
+## China mainland version utilitized [DaoCloud image mirror](https://github.com/DaoCloud/public-image-mirror)
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=arfshl&repo=pd-desktop-cn&theme=transparent)](https://github.com/arfshl/pd-desktop-cn)
 
 ## Support for android 5/6 without proot-distro, based on andronixapp/andronixorigin, and running latest distro version
 [![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=arfshl&repo=pd-andronix&theme=transparent)](https://github.com/arfshl/pd-andronix)
