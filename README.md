@@ -58,11 +58,11 @@ Replace [distro aliases] with distro alias you're using, available on installati
 ## China mainland version utilitized [DaoCloud image mirror](https://github.com/DaoCloud/public-image-mirror)
 [![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=arfshl&repo=pd-desktop-cn&theme=transparent)](https://github.com/arfshl/pd-desktop-cn)
 
+## Lightweight implementation of proot with bash script w/o proot-distro. Fork of andronixapp/andronixorigin.
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=arfshl&repo=pd-andronix&theme=transparent)](https://github.com/arfshl/pd-andronix)
+
 ## Support for android 5/6 without proot-distro, based on andronixapp/andronixorigin, and running latest distro version
 [![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=arfshl&repo=pd-21&theme=transparent)](https://github.com/arfshl/pd-21)
-
-## Fork of [andronixapp/andronixorigin](https://github.com/andronixapp/andronixorigin) with more up-to-date distros
-[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=arfshl&repo=pd-andronix&theme=transparent)](https://github.com/arfshl/pd-andronix)
 
 ## We also have Native Termux desktop version without proot-distro here!
 [![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=arfshl&repo=termux-desktop&theme=transparent)](https://github.com/arfshl/termux-desktop)
