@@ -2,7 +2,8 @@
 Script to install desktop environment for PRoot Distro.
 
 - China mainland user who can't access main docker registry goes [here.](https://github.com/arfshl/pd-desktop-cn)
-- Support for android 5/6 without proot-distro is [here.](https://github.com/arfshl/pd-andronix)
+- Fork of [andronixapp/andronixorigin](https://github.com/andronixapp/andronixorigin) with more up-to-date distros [here](https://github.com/arfshl/pd-andronix)
+- Support for android 5/6 without proot-distro is [here.](https://github.com/arfshl/pd-21)
 - Bare-metal Termux desktop without proot-distro is [here.](https://github.com/arfshl/termux-desktop)
 
 Supported Desktop Environment:
@@ -58,6 +59,9 @@ Replace [distro aliases] with distro alias you're using, available on installati
 [![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=arfshl&repo=pd-desktop-cn&theme=transparent)](https://github.com/arfshl/pd-desktop-cn)
 
 ## Support for android 5/6 without proot-distro, based on andronixapp/andronixorigin, and running latest distro version
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=arfshl&repo=pd-21&theme=transparent)](https://github.com/arfshl/pd-21)
+
+## Fork of [andronixapp/andronixorigin](https://github.com/andronixapp/andronixorigin) with more up-to-date distros
 [![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=arfshl&repo=pd-andronix&theme=transparent)](https://github.com/arfshl/pd-andronix)
 
 ## We also have Native Termux desktop version without proot-distro here!
