@@ -1,5 +1,5 @@
-#!/bin/sh
-set -euo
+#!/usr/bin/env bash
+set -euo pipefail
 # Update and upgrade system
 apt update && apt upgrade -y && apt autoremove -y
 
@@ -70,7 +70,6 @@ chmod +x stopvnc
 chmod +x restartvnc
 cd
 chmod +x /home/ubuntu-lxqt/.vnc/xstartup
-rm -- "$0"
 
 
 

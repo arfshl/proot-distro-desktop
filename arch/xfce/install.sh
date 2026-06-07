@@ -1,5 +1,5 @@
-#!/bin/sh
-set -euo
+#!/usr/bin/env bash
+set -euo pipefail
 
 # Install Desktop, VNC, and basic utility
 pacman -Syu --noconfirm
@@ -54,4 +54,3 @@ chmod +x stopvnc
 chmod +x restartvnc
 cd
 chmod +x /home/arch-xfce/.vnc/xstartup
-rm -- "$0"

@@ -1,5 +1,5 @@
-#!/bin/sh
-set -euo
+#!/usr/bin/env bash
+set -euo pipefail
 # Install Desktop, VNC, and basic utility
 apk add mate-desktop-environment mate-tweak mate-terminal dbus-x11 pulseaudio nano wget curl sudo adduser xdg-user-dirs xdg-user-dirs-gtk tigervnc xorg pavucontrol -y
 
@@ -49,4 +49,3 @@ chmod +x stopvnc
 chmod +x restartvnc
 cd
 chmod +x /home/alpine-mate/.vnc/xstartup
-rm -- "$0"

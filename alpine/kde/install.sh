@@ -1,5 +1,5 @@
-#!/bin/sh
-set -euo
+#!/usr/bin/env bash
+set -euo pipefail
 # Update and upgrade system
 apk -U upgrade
 
@@ -55,4 +55,3 @@ chmod +x stopvnc
 chmod +x restartvnc
 cd
 chmod +x /home/alpine-kde/.vnc/xstartup
-rm -- "$0"

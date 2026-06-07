@@ -1,5 +1,5 @@
 # Install Desktop, VNC, and basic utility
-set -euo
+set -euo pipefail
 dnf update
 dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 dnf config-manager setopt fedora-cisco-openh264.enabled=1
@@ -65,4 +65,3 @@ chmod +x stopvnc
 chmod +x restartvnc
 cd
 chmod +x /home/fedora-kde/.vnc/xstartup
-rm -- "$0"

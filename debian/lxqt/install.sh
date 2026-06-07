@@ -1,5 +1,5 @@
-#!/bin/sh
-set -euo
+#!/usr/bin/env bash
+set -euo pipefail
 
 # Add mozilla official repository 
 apt install sudo -y
@@ -64,7 +64,6 @@ chmod +x stopvnc
 chmod +x restartvnc
 cd
 chmod +x /home/debian-lxqt/.vnc/xstartup
-rm -- "$0"
 
 
 

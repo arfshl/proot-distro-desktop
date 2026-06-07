@@ -1,5 +1,5 @@
-#!/bin/sh
-set -euo
+#!/usr/bin/env bash
+set -euo pipefail
 
 # Install Desktop, VNC, and basic utility
 zypper refresh
@@ -51,4 +51,3 @@ chmod +x stopvnc
 chmod +x restartvnc
 cd
 # chmod +x /home/opensuse-mate/.vnc/xstartup
-rm -- "$0"

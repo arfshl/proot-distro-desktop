@@ -9,7 +9,7 @@
 
 
 #### Install
-    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/void/xfce/bootstrap.sh && sh bootstrap.sh && rm ~/bootstrap.sh
+    curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/void/xfce/bootstrap.sh | bash
 
 # LXQt
 - proot-distro aliases: void-lxqt
@@ -20,7 +20,7 @@
 
 
 #### Install
-    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/void/lxqt/bootstrap.sh && sh bootstrap.sh && rm ~/bootstrap.sh
+    curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/void/lxqt/bootstrap.sh | bash
 
 
 # MATE
@@ -32,7 +32,7 @@
 
 
 #### Install
-    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/void/mate/bootstrap.sh && sh bootstrap.sh && rm ~/bootstrap.sh
+    curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/void/mate/bootstrap.sh | bash
 
 
 # LXDE
@@ -44,7 +44,7 @@
 
 
 #### Install
-    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/void/lxde/bootstrap.sh && sh bootstrap.sh && rm ~/bootstrap.sh
+    curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/void/lxde/bootstrap.sh | bash
 
 
 # Cinnamon
@@ -56,7 +56,7 @@
 
 
 #### Install
-    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/void/cinnamon/bootstrap.sh && sh bootstrap.sh && rm ~/bootstrap.sh
+    curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/void/cinnamon/bootstrap.sh | bash
 
 
 # KDE Plasma
@@ -68,10 +68,10 @@
 
 
 #### Install
-    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/void/kde/bootstrap.sh && sh bootstrap.sh && rm ~/bootstrap.sh
+    curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/void/kde/bootstrap.sh | bash
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo xbps-install -S  firefox  vlc thunderbird  libheif webp-pixbuf-loader p7zip atril ristretto galculator xarchiver mousepad 
 
 ## Installing Chromium
-    sudo su && wget https://github.com/arfshl/proot-distro-desktop/raw/refs/heads/main/void/install-chromium.sh && sh install-chromium.sh && rm install-chromium.sh
+    sudo su && curl -fssL https://github.com/arfshl/proot-distro-desktop/raw/refs/heads/main/void/install-chromium.sh | bash

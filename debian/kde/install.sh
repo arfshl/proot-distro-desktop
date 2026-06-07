@@ -1,5 +1,5 @@
-#!/bin/sh
-set -euo
+#!/usr/bin/env bash
+set -euo pipefail
 # Add mozilla official repository 
 apt install sudo -y
 echo 'Adding Mozilla Repository...'
@@ -66,7 +66,6 @@ chmod +x stopvnc
 chmod +x restartvnc
 cd
 chmod +x /home/debian-kde/.vnc/xstartup
-rm -- "$0"
 
 
 

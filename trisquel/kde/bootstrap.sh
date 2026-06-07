@@ -1,5 +1,5 @@
-#!/bin/sh
-set -euo
+#!/usr/bin/env bash
+set -euo pipefail
 # Install x11 and tur repo
 termux-setup-storage
 apt update
@@ -20,7 +20,7 @@ proot-distro login trisquel-kde --user trisquel-kde' >> /data/data/com.termux/fi
 
 # for X11 session
 cat <<'EOF' > /data/data/com.termux/files/usr/bin/trisquel-kde-x11
-#!/bin/sh
+#!/usr/bin/env bash
 LD_PRELOAD=/system/lib64/libskcodec.so
 pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" --exit-idle-time=-1
 export XDG_RUNTIME_DIR=${TMPDIR}
@@ -51,4 +51,3 @@ echo 'Default user: trisquel-kde'
 echo 'Default password: 123'    
 echo 'VNC server address: 127.0.0.1:5900'
 echo 'Default VNC password: 1234567890'
-rm -- "$0"

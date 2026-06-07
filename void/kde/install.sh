@@ -1,5 +1,5 @@
-#!/bin/sh
-set -euo
+#!/usr/bin/env bash
+set -euo pipefail
 
 # Install Desktop, VNC, and basic utility
 xbps-install -S kde-plasma dbus-x11 pulseaudio nano wget curl sudo adduser xdg-user-dirs tigervnc pavucontrol-qt xorg -y
@@ -57,4 +57,3 @@ chmod +x stopvnc
 chmod +x restartvnc
 cd
 chmod +x /home/void-kde/.vnc/xstartup
-rm -- "$0"

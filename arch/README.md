@@ -7,12 +7,11 @@
 - VNC Server Address: 127.0.0.1:5900
 - VNC Server Password: 1234567890
 
-
 #### Install
-    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/arch/xfce/bootstrap.sh && sh bootstrap.sh && rm ~/bootstrap.sh
+curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/arch/xfce/bootstrap.sh | bash
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
-    sudo pacman -Sy --needed  firefox  vlc thunderbird  libheif webp-pixbuf-loader p7zip atril ristretto galculator xarchiver mousepad 
+sudo pacman -Sy --needed  firefox  vlc thunderbird  libheif webp-pixbuf-loader p7zip atril ristretto galculator xarchiver mousepad 
 
 
 ## MATE
@@ -22,13 +21,11 @@
 - VNC Server Address: 127.0.0.1:5900
 - VNC Server Password: 1234567890
 
-
 #### Install
-    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/arch/mate/bootstrap.sh && sh bootstrap.sh && rm ~/bootstrap.sh
+curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/arch/mate/bootstrap.sh | bash
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
-    sudo pacman -Sy --needed firefox  vlc thunderbird  libheif webp-pixbuf-loader p7zip atril eom mate-calc engrampa pluma
-
+sudo pacman -Sy --needed firefox  vlc thunderbird  libheif webp-pixbuf-loader p7zip atril eom mate-calc engrampa pluma
 
 
 ## LXQt
@@ -38,15 +35,13 @@
 - VNC Server Address: 127.0.0.1:5900
 - VNC Server Password: 1234567890
 
-
 #### Install
-    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/arch/lxqt/bootstrap.sh && sh bootstrap.sh && rm ~/bootstrap.sh
+curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/arch/lxqt/bootstrap.sh | bash
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
-    sudo pacman -Sy --needed firefox  vlc thunderbird  libheif webp-pixbuf-loader p7zip lximage-qt kcalc lxqt-archiver qpdfview featherpad
+sudo pacman -Sy --needed firefox  vlc thunderbird  libheif webp-pixbuf-loader p7zip lximage-qt kcalc lxqt-archiver qpdfview featherpad
 
 
-    
 ## LXDE
 - proot-distro aliases: arch-lxde
 - Username: arch-lxde
@@ -54,12 +49,11 @@
 - VNC Server Address: 127.0.0.1:5900
 - VNC Server Password: 1234567890
 
-
 #### Install
-    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/arch/lxde/bootstrap.sh && sh bootstrap.sh && rm ~/bootstrap.sh
+curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/arch/lxde/bootstrap.sh | bash
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
-    sudo pacman -Sy --needed firefox  vlc thunderbird  libheif webp-pixbuf-loader p7zip atril gpicview galculator xarchiver mousepad 
+sudo pacman -Sy --needed firefox  vlc thunderbird  libheif webp-pixbuf-loader p7zip atril gpicview galculator xarchiver mousepad 
 
 ## Cinnamon
 - proot-distro aliases: arch-cinnamon
@@ -68,12 +62,11 @@
 - VNC Server Address: 127.0.0.1:5900
 - VNC Server Password: 1234567890
 
-
 #### Install
-    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/arch/cinnamon/bootstrap.sh && sh bootstrap.sh && rm ~/bootstrap.sh
+curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/arch/cinnamon/bootstrap.sh | bash
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
-    sudo pacman -Sy --needed firefox vlc thunderbird libheif webp-pixbuf-loader p7zip engrampa xreader mate-calc xed eom
+sudo pacman -Sy --needed firefox vlc thunderbird libheif webp-pixbuf-loader p7zip engrampa xreader mate-calc xed eom
 
 
 ## KDE Plasma (Heavy)
@@ -84,10 +77,10 @@
 - VNC Server Password: 1234567890
 
 #### Install
-    apt update && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/arch/kde/bootstrap.sh && sh bootstrap.sh && rm ~/bootstrap.sh
+curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/arch/kde/bootstrap.sh | bash
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
-     sudo pacman -Sy --needed firefox  vlc thunderbird  libheif webp-pixbuf-loader p7zip okular gwenview kcalc ark kate
+sudo pacman -Sy --needed firefox  vlc thunderbird  libheif webp-pixbuf-loader p7zip okular gwenview kcalc ark kate
 
 ## Installing Chromium
-    sudo su && wget https://github.com/arfshl/proot-distro-desktop/raw/refs/heads/main/arch/install-chromium.sh && sh install-chromium.sh && rm install-chromium.sh
+sudo su && curl -fssL https://github.com/arfshl/proot-distro-desktop/raw/refs/heads/main/arch/install-chromium.sh | bash
