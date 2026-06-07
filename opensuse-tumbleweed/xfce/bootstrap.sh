@@ -2,7 +2,6 @@
 set -euo pipefail
 # Install x11 and tur repo
 
-termux-setup-storage
 apt update
 apt install x11-repo tur-repo
 apt update
@@ -41,7 +40,6 @@ chmod +x /data/data/com.termux/files/usr/bin/opensuse-tumbleweed-xfce*
 # Install rootfs under aliases
 proot-distro install opensuse/tumbleweed --name#!/bin/sh
 # Install x11 and tur repo
-termux-setup-storage
 apt update
 apt install x11-repo tur-repo
 apt update

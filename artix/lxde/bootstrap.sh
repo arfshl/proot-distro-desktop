@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
 # Install x11 and tur repo
-termux-setup-storage
 apt update
 apt install x11-repo tur-repo
 apt update

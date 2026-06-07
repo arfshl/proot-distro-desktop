@@ -17,7 +17,6 @@ case "$ARCH" in
         exit 1
         ;;
 esac
-termux-setup-storage
 apt update
 apt install x11-repo tur-repo
 apt update
