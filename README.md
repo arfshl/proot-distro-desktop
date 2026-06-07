@@ -2,8 +2,8 @@
 Script to install desktop environment for PRoot Distro.
 
 - China mainland user who can't access main docker registry goes [here.](https://github.com/arfshl/pd-desktop-cn)
-- Fork of [andronixapp/andronixorigin](https://github.com/andronixapp/andronixorigin) with more up-to-date distros [here](https://github.com/arfshl/pd-andronix)
-- Support for android 5/6 without proot-distro is [here.](https://github.com/arfshl/pd-21)
+- Fork of [andronixapp/andronixorigin](https://github.com/andronixapp/andronixorigin) with more up-to-date distros [here](https://github.com/arfshl/termux-proot-script)
+- Support for android 5/6 without proot-distro is [here.](https://github.com/arfshl/termux21-proot-script)
 - Bare-metal Termux desktop without proot-distro is [here.](https://github.com/arfshl/termux-desktop)
 
 Supported Desktop Environment:
