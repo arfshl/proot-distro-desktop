@@ -22,7 +22,7 @@ Supported Desktop Environment:
 | [Alpine Linux](https://github.com/arfshl/proot-distro-desktop/tree/main/alpine) | XFCE LXQt MATE Cinnamon KDE | `arm` `aarch64` `x86` `x86_64` | `alpine:latest` |
 | [Alpine Linux Edge](https://github.com/arfshl/proot-distro-desktop/tree/main/alpine-edge) |  XFCE LXQt MATE Cinnamon KDE | `arm` `aarch64` `x86` `x86_64` | `alpine:edge` |
 | [Arch Linux](https://github.com/arfshl/proot-distro-desktop/tree/main/arch) | XFCE LXQt MATE LXDE Cinnamon KDE | `arm` `aarch64` `x86_64` | `archlinux/archlinux` `arfshl/archlinuxarm:latest` |
-| [Debian Stable](https://github.com/arfshl/proot-distro-desktop/tree/main/debian) (Recommended for beginners) | XFCE LXQt MATE LXDE Cinnamon KDE | `arm` `aarch64` `x86_64` | `debian:stable` |
+| [Debian Stable](https://github.com/arfshl/proot-distro-desktop/tree/main/debian) (Recommended for beginners) | XFCE LXQt MATE LXDE Cinnamon KDE | `arm` `aarch64` `x86_64` | `debian:latest` |
 | [Debian Sid](https://github.com/arfshl/proot-distro-desktop/tree/main/debian-sid) |  XFCE LXQt MATE LXDE Cinnamon KDE | `arm` `aarch64` `x86_64` | `debian:sid` |
 | [Debian Testing](https://github.com/arfshl/proot-distro-desktop/tree/main/debian-testing) |  XFCE LXQt MATE LXDE Cinnamon KDE | `arm` `aarch64` `x86_64` | `debian:testing` |
 | [Fedora](https://github.com/arfshl/proot-distro-desktop/tree/main/fedora) | XFCE LXQt MATE LXDE Cinnamon KDE | `aarch64` `x86_64` | `fedora:latest` |

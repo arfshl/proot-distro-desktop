@@ -12,7 +12,7 @@ apt upgrade -y -o Dpkg::Options::="--force-confold"
 apt install curl wget nano proot-distro termux-x11 pulseaudio vulkan-loader-android mesa-zink virglrenderer-mesa-zink virglrenderer-android -y
 
 # Install debian under aliases
-proot-distro install debian:stable --name debian-cinnamon
+proot-distro install debian:latest --name debian-cinnamon
 
 # Setup debian-cinnamon
 proot-distro login debian-cinnamon -- /bin/sh -c 'apt update && apt install wget -y'

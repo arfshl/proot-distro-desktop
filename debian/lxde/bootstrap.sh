@@ -36,7 +36,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/debian-lxde*
 
 # Setup debian-lxde
-proot-distro install debian:stable --name debian-lxde
+proot-distro install debian:latest --name debian-lxde
 
 proot-distro login debian-lxde -- /bin/sh -c 'apt update && apt install wget -y'
 

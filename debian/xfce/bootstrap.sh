@@ -37,7 +37,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/debian-xfce*
 
 # Setup debian-xfce
-proot-distro install debian:stable --name debian-xfce
+proot-distro install debian:latest --name debian-xfce
 
 proot-distro login debian-xfce -- /bin/sh -c 'apt update && apt install wget -y'
 

@@ -36,7 +36,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/debian-mate*
 
 # Setup debian-mate
-proot-distro install debian:stable --name debian-mate
+proot-distro install debian:latest --name debian-mate
 
 proot-distro login debian-mate -- /bin/sh -c 'apt update && apt install wget -y'
 
