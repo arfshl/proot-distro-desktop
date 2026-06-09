@@ -1,0 +1,25 @@
+name: Mirror to Codeberg
+
+on:
+  push:
+    branches:
+      - '**'
+    tags:
+      - '**'
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Get Repo Name
+        run: echo "REPONAME=${GITHUB_REPOSITORY##*/}" >> $GITHUB_ENV
+      
+      - name: Push mirror
+        run: |
+          git remote add codeberg https://arfshl:${{ secrets.CODEBERG_TOKEN }}@codeberg.org/arfshl/${REPONAME}.git
+          git push --mirror codeberg
