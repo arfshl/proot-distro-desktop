@@ -2,6 +2,7 @@
 set -euo pipefail
 # Update and upgrade system
 apt update && apt upgrade -y && apt autoremove -y
+apt install sudo -y
 
 echo 'Adding Mozillateam PPA...'
 sudo add-apt-repository ppa:mozillateam/ppa -y
