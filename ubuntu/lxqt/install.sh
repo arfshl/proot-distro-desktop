@@ -22,7 +22,7 @@ Pin-Priority: -1
 EOF
 
 # Install Desktop, VNC, and basic utility
-apt update && apt upgrade -y && apt install lxqt-core lxqt-config qterminal lubuntu-artwork sddm-theme-lubuntu lubuntu-default-settings dbus-x11 pulseaudio nano wget curl sudo adduser pavucontrol-qt tigervnc-standalone-server -y && apt clean
+apt update && apt upgrade -y && apt install lubuntu-desktop-minimal lxqt-core lxqt-config qterminal lubuntu-artwork sddm-theme-lubuntu lubuntu-default-settings dbus-x11 pulseaudio nano wget curl sudo adduser pavucontrol-qt tigervnc-standalone-server -y && apt clean
 
 # Adding user and password
 sudo adduser --disabled-password --gecos "ubuntu-lxqt" ubuntu-lxqt && echo 'ubuntu-lxqt:123' | chpasswd && echo 'ubuntu-lxqt ALL=(ALL:ALL) ALL' >> /etc/sudoers.d/user

@@ -12,7 +12,7 @@ apt upgrade -y -o Dpkg::Options::="--force-confold"
 apt install curl wget nano proot-distro termux-x11 pulseaudio vulkan-loader-android mesa-zink virglrenderer-mesa-zink virglrenderer-android -y
 
 # Install ubuntu under aliases
-proot-distro install ubuntu:26.04 --name ubuntu-lts-lxde
+proot-distro install ubuntu:latest --name ubuntu-lts-lxde
 
 # Setup ubuntu-lxde
 proot-distro login ubuntu-lts-lxde -- /bin/sh -c 'apt update && apt install wget -y'

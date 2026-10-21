@@ -36,7 +36,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/ubuntu-lxde*
 
 # Install ubuntu under aliases
-proot-distro install ubuntu:latest --name ubuntu-lxde
+proot-distro install ubuntu:rolling --name ubuntu-lxde
 
 # Setup ubuntu-lxde
 proot-distro login ubuntu-lxde -- /bin/sh -c 'apt update && apt install wget -y'

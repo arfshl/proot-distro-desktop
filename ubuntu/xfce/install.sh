@@ -23,7 +23,7 @@ Pin-Priority: -1
 EOF
 
 # Install Desktop, VNC, and basic utility
-apt install xfce4 xfce4-terminal dbus-x11 pulseaudio nano wget curl sudo adduser xdg-user-dirs xdg-user-dirs-gtk xubuntu-wallpapers xfce4-whiskermenu-plugin xubuntu-icon-theme xubuntu-default-settings xubuntu-artwork pavucontrol tigervnc-standalone-server -y && apt clean
+apt install xubuntu-desktop-minimal xfce4 xfce4-terminal dbus-x11 pulseaudio nano wget curl sudo adduser xdg-user-dirs xdg-user-dirs-gtk xubuntu-wallpapers xfce4-whiskermenu-plugin xubuntu-icon-theme xubuntu-default-settings xubuntu-artwork pavucontrol tigervnc-standalone-server -y && apt clean
 
 # Adding user and password
 sudo adduser --disabled-password --gecos "ubuntu-xfce" ubuntu-xfce && echo 'ubuntu-xfce:123' | chpasswd && echo 'ubuntu-xfce ALL=(ALL:ALL) ALL' >> /etc/sudoers.d/user
