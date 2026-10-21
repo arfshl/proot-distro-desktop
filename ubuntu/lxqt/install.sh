@@ -4,14 +4,20 @@ set -euo pipefail
 apt update && apt upgrade -y && apt autoremove -y
 apt install sudo software-properties-common -y
 
-echo 'Adding Mozillateam PPA...'
-sudo add-apt-repository ppa:mozillateam/ppa -y
+echo 'Adding Mozilla Repository...'
+wget -q https://packages.mozilla.org/apt/repo-signing-key.gpg -O- | sudo tee /etc/apt/keyrings/packages.mozilla.org.asc > /dev/null
+sudo echo 'deb [signed-by=/etc/apt/keyrings/packages.mozilla.org.asc] https://packages.mozilla.org/apt mozilla main' >> /etc/apt/sources.list.d/mozilla.list
+sudo echo 'deb [signed-by=/etc/apt/keyrings/packages.mozilla.org.asc] https://packages.mozilla.org/apt thunderbird-deb main' >> /etc/apt/sources.list.d/mozilla.list
 
 echo 'Configuring APT Pinning...'
 sudo cat <<EOF > /etc/apt/preferences.d/nativeapt
 Package: *
 Pin: release o=LP-PPA-mozillateam
-Pin-Priority: 1000
+Pin-Priority: 800
+
+Package: *
+Pin: origin packages.mozilla.org
+Pin-Priority: 1001
 
 Package: firefox
 Pin: release o=Ubuntu
