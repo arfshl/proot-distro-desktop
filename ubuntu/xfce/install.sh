@@ -1,6 +1,15 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+# elementary-xfce-icon-theme workaround
+# thanks to https://github.com/Willie169/fix-elementary-xfce-icon-theme
+apt update
+apt install wget -y
+wget http://ports.ubuntu.com/pool/universe/e/elementary-xfce/elementary-xfce-icon-theme_0.19-1_all.deb
+apt install ./elementary-xfce-icon-theme_0.19-1_all.deb -y --allow-downgrades --allow-change-held-packages
+rm elementary-xfce-icon-theme_0.19-1_all.deb
+apt-mark hold elementary-xfce-icon-theme
+
 # Update and upgrade system
 apt update && apt upgrade -y && apt autoremove -y
 apt install sudo software-properties-common -y

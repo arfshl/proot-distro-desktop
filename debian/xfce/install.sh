@@ -1,7 +1,21 @@
 #!/usr/bin/env bash
 set -euo pipefail
+
+# elementary-xfce-icon-theme workaround
+# thanks to https://github.com/Willie169/fix-elementary-xfce-icon-theme
+apt update
+apt install wget -y
+wget http://ports.ubuntu.com/pool/universe/e/elementary-xfce/elementary-xfce-icon-theme_0.19-1_all.deb
+apt install ./elementary-xfce-icon-theme_0.19-1_all.deb -y --allow-downgrades --allow-change-held-packages
+rm elementary-xfce-icon-theme_0.19-1_all.deb
+apt-mark hold elementary-xfce-icon-theme
+
+# Update and upgrade system
+apt update && apt upgrade -y && apt autoremove -y
+apt install sudo software-properties-common -y
+
 # Add mozilla official repository 
-apt install sudo -y
+
 echo 'Adding Mozilla Repository...'
 wget -q https://packages.mozilla.org/apt/repo-signing-key.gpg -O- | sudo tee /etc/apt/keyrings/packages.mozilla.org.asc > /dev/null
 sudo echo 'deb [signed-by=/etc/apt/keyrings/packages.mozilla.org.asc] https://packages.mozilla.org/apt mozilla main' >> /etc/apt/sources.list.d/mozilla.list
@@ -10,9 +24,6 @@ sudo echo 'Package: *
 Pin: origin packages.mozilla.org
 Pin-Priority: 1001' >> /etc/apt/preferences.d/mozilla
 echo 'Done'
-
-# Update and upgrade system
-apt update && apt upgrade -y && apt autoremove -y
 
 # Install Desktop, VNC, and basic utility
 apt install xfce4 xfce4-terminal dbus-x11 pulseaudio nano wget curl sudo adduser xdg-user-dirs xdg-user-dirs-gtk xfce4-whiskermenu-plugin tigervnc-standalone-server -y && apt clean
