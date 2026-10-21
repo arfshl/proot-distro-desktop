@@ -30,6 +30,10 @@ Pin-Priority: -1
 Package: thunderbird
 Pin: release o=Ubuntu
 Pin-Priority: -1
+
+Package: chromium-browser
+Pin: release o=Ubuntu
+Pin-Priority: -1
 EOF
 
 # Install Desktop, VNC, and basic utility

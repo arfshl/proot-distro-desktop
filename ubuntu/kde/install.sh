@@ -27,6 +27,10 @@ Pin-Priority: -1
 Package: thunderbird
 Pin: release o=Ubuntu
 Pin-Priority: -1
+
+Package: chromium-browser
+Pin: release o=Ubuntu
+Pin-Priority: -1
 EOF
 
 # Install X11 Support for Quokka and Higher
