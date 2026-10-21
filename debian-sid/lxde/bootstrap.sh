@@ -18,7 +18,7 @@ case "$ARCH" in
         ;;
 esac
 apt update
-apt install x11-repo tur-repo
+apt install x11-repo tur-repo -y
 apt update
 
 # Update installed package but keep configuration
