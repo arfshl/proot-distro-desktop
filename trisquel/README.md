@@ -9,7 +9,7 @@
 
 
 #### Install
-    curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/trisquel/xfce/bootstrap.sh | bash
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/trisquel/xfce/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo apt update && sudo apt install abrowser vlc thunderbird atril ristretto galculator libheif1 xarchiver webp-pixbuf-loader fonts-liberation p7zip mousepad && apt clean
@@ -23,7 +23,7 @@
 
 
 #### Install
-    curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/trisquel/lxqt/bootstrap.sh | bash
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/trisquel/lxqt/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo apt update && sudo apt install abrowser vlc thunderbird lximage-qt kcalc lxqt-archiver qpdfview libheif1 webp-pixbuf-loader fonts-liberation p7zip featherpad && apt clean
@@ -37,7 +37,7 @@
 
 
 #### Install
-    curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/trisquel/mate/bootstrap.sh | bash
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/trisquel/mate/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo apt update && sudo apt install abrowser vlc thunderbird engrampa atril eom mate-calc pluma libheif1 webp-pixbuf-loader fonts-liberation p7zip && apt clean
@@ -52,7 +52,7 @@
 
 
 #### Install
-    curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/trisquel/lxde/bootstrap.sh | bash
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/trisquel/lxde/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo apt update && sudo apt install abrowser vlc thunderbird xarchiver atril mousepad galculator gpicview libheif1 webp-pixbuf-loader fonts-liberation p7zip && apt clean
@@ -67,7 +67,7 @@
 
 
 #### Install
-    curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/trisquel/cinnamon/bootstrap.sh | bash
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/trisquel/cinnamon/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo apt update && sudo apt install abrowser vlc thunderbird engrampa atril eom mate-calc pluma libheif1 webp-pixbuf-loader fonts-liberation p7zip && apt clean
@@ -81,13 +81,13 @@
 - VNC Server Password: 1234567890
 
 #### Install
-    curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/trisquel/kde/bootstrap.sh | bash
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/trisquel/kde/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo apt update && sudo apt install abrowser vlc thunderbird okular gwenview kcalc ark kate libheif1 webp-pixbuf-loader fonts-liberation p7zip && apt clean
 
 ## Installing Chromium
-    sudo su && curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/trisquel/chromium-install.sh | bash
+    sudo su && curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/trisquel/chromium-install.sh && bash bootstrap.sh && rm bootstrap.sh
 
 ## Disable apt Pager
 

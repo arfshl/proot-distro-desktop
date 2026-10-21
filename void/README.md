@@ -9,7 +9,7 @@
 
 
 #### Install
-    curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/void/xfce/bootstrap.sh | bash
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/void/xfce/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
 # LXQt
 - proot-distro aliases: void-lxqt
@@ -20,7 +20,7 @@
 
 
 #### Install
-    curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/void/lxqt/bootstrap.sh | bash
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/void/lxqt/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
 
 # MATE
@@ -32,7 +32,7 @@
 
 
 #### Install
-    curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/void/mate/bootstrap.sh | bash
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/void/mate/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
 
 # LXDE
@@ -44,7 +44,7 @@
 
 
 #### Install
-    curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/void/lxde/bootstrap.sh | bash
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/void/lxde/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
 
 # Cinnamon
@@ -56,7 +56,7 @@
 
 
 #### Install
-    curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/void/cinnamon/bootstrap.sh | bash
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/void/cinnamon/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
 
 # KDE Plasma
@@ -68,10 +68,10 @@
 
 
 #### Install
-    curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/void/kde/bootstrap.sh | bash
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/void/kde/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo xbps-install -S  firefox  vlc thunderbird  libheif webp-pixbuf-loader p7zip atril ristretto galculator xarchiver mousepad 
 
 ## Installing Chromium
-    sudo su && curl -fssL https://github.com/arfshl/proot-distro-desktop/raw/refs/heads/main/void/install-chromium.sh | bash
+    sudo su && curl -LO https://github.com/arfshl/proot-distro-desktop/raw/refs/heads/main/void/install-chromium.sh && bash bootstrap.sh && rm bootstrap.sh

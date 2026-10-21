@@ -8,7 +8,7 @@
 - VNC Server Password: 1234567890
 
 #### Install
-    curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/fedora/xfce/bootstrap.sh | bash
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/fedora/xfce/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo dnf update -y
@@ -22,7 +22,7 @@
 - VNC Server Password: 1234567890
 
 #### Install
-    curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/fedora/lxqt/bootstrap.sh | bash
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/fedora/lxqt/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo dnf update -y
@@ -36,7 +36,7 @@
 - VNC Server Password: 1234567890
 
 #### Install
-    curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/fedora/mate/bootstrap.sh | bash
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/fedora/mate/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo dnf update -y
@@ -50,7 +50,7 @@
 - VNC Server Password: 1234567890
 
 #### Install
-    curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/fedora/lxde/bootstrap.sh | bash
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/fedora/lxde/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo dnf update -y
@@ -64,7 +64,7 @@
 - VNC Server Password: 1234567890
 
 #### Install
-    curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/fedora/cinnamon/bootstrap.sh | bash
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/fedora/cinnamon/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo dnf update -y
@@ -78,7 +78,7 @@
 - VNC Server Password: 1234567890
 
 #### Install
-    curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/fedora/kde/bootstrap.sh | bash
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/fedora/kde/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo dnf update -y

@@ -9,7 +9,7 @@
 
 
 #### Install
-    curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/alpine/xfce/bootstrap.sh | bash
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/alpine/xfce/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo apk add firefox vlc thunderbird  libheif webp-pixbuf-loader p7zip atril ristretto galculator xarchiver mousepad
@@ -23,7 +23,7 @@
 
 
 #### Install
-    curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/alpine/lxqt/bootstrap.sh | bash
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/alpine/lxqt/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
 ## MATE
 - proot-distro aliases: alpine-mate
@@ -34,7 +34,7 @@
 
 
 #### Install
-    curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/alpine/mate/bootstrap.sh | bash
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/alpine/mate/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
 ## Cinnamon
 - proot-distro aliases: alpine-cinnamon
@@ -45,7 +45,7 @@
 
 
 #### Install
-    curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/alpine/cinnamon/bootstrap.sh | bash
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/alpine/cinnamon/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
 ## KDE Plasma
 - proot-distro aliases: alpine-kde
@@ -56,7 +56,7 @@
 
 
 #### Install
-    curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/alpine/kde/bootstrap.sh | bash
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/alpine/kde/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
 ## Installing Chromium
-    sudo su && curl -fssL https://github.com/arfshl/proot-distro-desktop/raw/refs/heads/main/alpine/install-chromium.sh | bash
+    sudo su && curl -LO https://github.com/arfshl/proot-distro-desktop/raw/refs/heads/main/alpine/install-chromium.sh && bash bootstrap.sh && rm bootstrap.sh

@@ -8,7 +8,7 @@
 - VNC Server Password: 1234567890
 
 #### Install
-    curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian-testing/xfce/bootstrap.sh | bash
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian-testing/xfce/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo apt update
@@ -23,7 +23,7 @@
 - VNC Server Password: 1234567890
 
 #### Install
-    curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian-testing/lxqt/bootstrap.sh | bash
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian-testing/lxqt/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo apt update
@@ -38,7 +38,7 @@
 - VNC Server Password: 1234567890
 
 #### Install
-    curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian-testing/mate/bootstrap.sh | bash
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian-testing/mate/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo apt update
@@ -53,7 +53,7 @@
 - VNC Server Password: 1234567890
 
 #### Install
-    curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian-testing/lxde/bootstrap.sh | bash
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian-testing/lxde/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo apt update
@@ -68,7 +68,7 @@
 - VNC Server Password: 1234567890
 
 #### Install
-    curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian-testing/cinnamon/bootstrap.sh | bash
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian-testing/cinnamon/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo apt update
@@ -83,7 +83,7 @@
 - VNC Server Password: 1234567890
 
 #### Install
-    curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian-testing/kde/bootstrap.sh | bash
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian-testing/kde/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo apt update

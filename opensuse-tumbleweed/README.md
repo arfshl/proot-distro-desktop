@@ -8,7 +8,7 @@
 - VNC Server Password: 1234567890
 
 #### Install
-    curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/opensuse-tumbleweed/xfce/bootstrap.sh | bash
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/opensuse-tumbleweed/xfce/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo zypper in firefox vlc thunderbird libheif1 webp-pixbuf-loader p7zip atril ristretto galculator xarchiver mousepad
@@ -21,7 +21,7 @@
 - VNC Server Password: 1234567890
 
 #### Install
-    curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/opensuse-tumbleweed/mate/bootstrap.sh | bash
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/opensuse-tumbleweed/mate/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo zypper in firefox vlc thunderbird libheif1 webp-pixbuf-loader p7zip atril eom mate-calc engrampa pluma
@@ -34,7 +34,7 @@
 - VNC Server Password: 1234567890
 
 #### Install
-    curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/opensuse-tumbleweed/lxqt/bootstrap.sh | bash
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/opensuse-tumbleweed/lxqt/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo zypper in firefox vlc thunderbird libheif1 webp-pixbuf-loader p7zip lximage-qt kcalc lxqt-archiver qpdfview featherpad
@@ -47,7 +47,7 @@
 - VNC Server Password: 1234567890
 
 #### Install
-    curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/opensuse-tumbleweed/lxde/bootstrap.sh | bash
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/opensuse-tumbleweed/lxde/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo zypper in firefox vlc thunderbird libheif1 webp-pixbuf-loader p7zip atril gpicview galculator xarchiver mousepad
@@ -60,7 +60,7 @@
 - VNC Server Password: 1234567890
 
 #### Install
-    curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/opensuse-tumbleweed/cinnamon/bootstrap.sh | bash
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/opensuse-tumbleweed/cinnamon/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo zypper in firefox vlc thunderbird libheif1 webp-pixbuf-loader p7zip engrampa atril eom mate-calc pluma
@@ -73,10 +73,10 @@
 - VNC Server Password: 1234567890
 
 #### Install
-    curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/opensuse-tumbleweed/kde/bootstrap.sh | bash
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/opensuse-tumbleweed/kde/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo zypper in firefox vlc thunderbird libheif1 webp-pixbuf-loader p7zip okular gwenview kcalc ark kate
 
 ## Installing Chromium
-    sudo su && curl -fssL https://github.com/arfshl/proot-distro-desktop/raw/refs/heads/main/opensuse-tumbleweed/install-chromium.sh | bash
+    sudo su && curl -LO https://github.com/arfshl/proot-distro-desktop/raw/refs/heads/main/opensuse-tumbleweed/install-chromium.sh && bash bootstrap.sh && rm bootstrap.sh
