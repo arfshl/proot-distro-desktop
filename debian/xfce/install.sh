@@ -27,7 +27,7 @@ Pin-Priority: 1001' >> /etc/apt/preferences.d/mozilla
 echo 'Done'
 
 # Install Desktop, VNC, and basic utility
-apt install xfce4 xfce4-terminal dbus-x11 pulseaudio nano wget curl sudo adduser xdg-user-dirs xdg-user-dirs-gtk xfce4-whiskermenu-plugin tigervnc-standalone-server -y && apt clean
+apt install xfce4 xfce4-terminal dbus-x11 apt-transport-https gnupg pulseaudio nano wget curl sudo adduser xdg-user-dirs xdg-user-dirs-gtk xfce4-whiskermenu-plugin tigervnc-standalone-server -y && apt clean
 
 # Adding user and password
 sudo adduser --disabled-password --gecos "debian-xfce" debian-xfce && echo 'debian-xfce:123' | chpasswd && echo 'debian-xfce ALL=(ALL:ALL) ALL' >> /etc/sudoers.d/user

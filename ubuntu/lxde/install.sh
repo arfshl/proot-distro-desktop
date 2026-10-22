@@ -34,7 +34,7 @@ Pin-Priority: -1
 EOF
 
 # Install Desktop, VNC, and basic utility
-apt update && apt upgrade -y && apt install lxde-core pcmanfm lxterminal lxappearance pavucontrol lxappearance-obconf lxde-settings-daemon dbus-x11 pulseaudio nano wget curl sudo adduser tigervnc-standalone-server -y && apt clean
+apt update && apt upgrade -y && apt install apt-transport-https gnupg lxde-core pcmanfm lxterminal lxappearance pavucontrol lxappearance-obconf lxde-settings-daemon dbus-x11 pulseaudio nano wget curl sudo adduser tigervnc-standalone-server -y && apt clean
 
 # Adding user and password
 sudo adduser --disabled-password --gecos "ubuntu-lxde" ubuntu-lxde && echo 'ubuntu-lxde:123' | chpasswd && echo 'ubuntu-lxde ALL=(ALL:ALL) ALL' >> /etc/sudoers.d/user

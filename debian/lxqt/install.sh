@@ -17,7 +17,7 @@ echo 'Done'
 apt update && apt upgrade -y && apt autoremove -y
 
 # Install Desktop, VNC, and basic utility
-apt update && apt upgrade -y && apt install lxqt-core lxqt-config qterminal dbus-x11 pulseaudio nano wget curl sudo adduser pavucontrol-qt tigervnc-standalone-server -y && apt clean
+apt update && apt upgrade -y && apt install apt-transport-https gnupg lxqt-core lxqt-config qterminal dbus-x11 pulseaudio nano wget curl sudo adduser pavucontrol-qt tigervnc-standalone-server -y && apt clean
 
 # Adding user and password
 sudo adduser --disabled-password --gecos "debian-lxqt" debian-lxqt && echo 'debian-lxqt:123' | chpasswd && echo 'debian-lxqt ALL=(ALL:ALL) ALL' >> /etc/sudoers.d/user

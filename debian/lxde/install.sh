@@ -16,7 +16,7 @@ echo 'Done'
 apt update && apt upgrade -y && apt autoremove -y
 
 # Install Desktop, VNC, and basic utility
-apt update && apt upgrade -y && apt install lxde-core pcmanfm lxterminal lxappearance pavucontrol lxappearance-obconf lxde-settings-daemon dbus-x11 pulseaudio nano wget curl sudo adduser tigervnc-standalone-server -y && apt clean
+apt update && apt upgrade -y && apt install apt-transport-https gnupg lxde-core pcmanfm lxterminal lxappearance pavucontrol lxappearance-obconf lxde-settings-daemon dbus-x11 pulseaudio nano wget curl sudo adduser tigervnc-standalone-server -y && apt clean
 
 # Adding user and password
 sudo adduser --disabled-password --gecos "debian-lxde" debian-lxde && echo 'debian-lxde:123' | chpasswd && echo 'debian-lxde ALL=(ALL:ALL) ALL' >> /etc/sudoers.d/user

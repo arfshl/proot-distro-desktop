@@ -17,7 +17,7 @@ echo 'Done'
 apt update && apt upgrade -y && apt autoremove -y
 
 # Install Desktop, VNC, and basic utility
-apt install mate-desktop-environment-core caja mate-menus mate-terminal mate-applet-brisk-menu mate-backgrounds mate-dock-applet mate-indicator-applet mate-menus pavucontrol mate-indicator-applet-common mate-tweak mate-applets dbus-x11 pulseaudio nano wget curl sudo adduser tigervnc-standalone-server -y && apt clean
+apt install mate-desktop-environment-core caja apt-transport-https gnupg mate-menus mate-terminal mate-applet-brisk-menu mate-backgrounds mate-dock-applet mate-indicator-applet mate-menus pavucontrol mate-indicator-applet-common mate-tweak mate-applets dbus-x11 pulseaudio nano wget curl sudo adduser tigervnc-standalone-server -y && apt clean
 
 # Adding user and password
 sudo adduser --disabled-password --gecos "debian-mate" debian-mate && echo 'debian-mate:123' | chpasswd && echo 'debian-mate ALL=(ALL:ALL) ALL' >> /etc/sudoers.d/user

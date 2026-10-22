@@ -34,7 +34,7 @@ Pin-Priority: -1
 EOF
 
 # Install Desktop, VNC, and basic utility
-apt install mate-desktop-environment-core caja mate-menus mate-terminal mate-applet-brisk-menu mate-backgrounds mate-dock-applet mate-indicator-applet mate-menus pavucontrol mate-indicator-applet-common mate-tweak mate-applets ubuntu-mate-artwork ubuntu-mate-default-settings ubuntu-mate-icon-themes ubuntu-mate-themes ubuntu-mate-wallpapers ubuntu-mate-wallpapers-common ubuntu-mate-lightdm-theme dbus-x11 pulseaudio nano wget curl sudo adduser tigervnc-standalone-server -y && apt clean
+apt install mate-desktop-environment-core apt-transport-https gnupg caja mate-menus mate-terminal mate-applet-brisk-menu mate-backgrounds mate-dock-applet mate-indicator-applet mate-menus pavucontrol mate-indicator-applet-common mate-tweak mate-applets ubuntu-mate-artwork ubuntu-mate-default-settings ubuntu-mate-icon-themes ubuntu-mate-themes ubuntu-mate-wallpapers ubuntu-mate-wallpapers-common ubuntu-mate-lightdm-theme dbus-x11 pulseaudio nano wget curl sudo adduser tigervnc-standalone-server -y && apt clean
 
 # Adding user and password
 sudo adduser --disabled-password --gecos "ubuntu-mate" ubuntu-mate && echo 'ubuntu-mate:123' | chpasswd && echo 'ubuntu-mate ALL=(ALL:ALL) ALL' >> /etc/sudoers.d/user

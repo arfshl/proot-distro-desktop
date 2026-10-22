@@ -37,7 +37,7 @@ Pin-Priority: -1
 EOF
 
 # Install Desktop, VNC, and basic utility
-apt update && apt upgrade -y && apt install cinnamon ubuntucinnamon-environment pavucontrol dbus-x11 pulseaudio nano wget curl sudo adduser tigervnc-standalone-server -y && apt remove file-roller -y && apt autoremove -y && apt clean
+apt update && apt upgrade -y && apt install apt-transport-https gnupg cinnamon ubuntucinnamon-environment pavucontrol dbus-x11 pulseaudio nano wget curl sudo adduser tigervnc-standalone-server -y && apt remove file-roller -y && apt autoremove -y && apt clean
 
 # Adding user and password
 sudo adduser --disabled-password --gecos "ubuntu-cinnamon" ubuntu-cinnamon && echo 'ubuntu-cinnamon:123' | chpasswd && echo 'ubuntu-cinnamon ALL=(ALL:ALL) ALL' >> /etc/sudoers.d/user
