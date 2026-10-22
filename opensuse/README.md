@@ -79,4 +79,6 @@
     sudo zypper in firefox vlc thunderbird libheif1 webp-pixbuf-loader p7zip okular gwenview kcalc ark kate
 
 ## Installing Chromium
-    sudo sh -c "$(curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/opensuse/install-chromium.sh)"
+    sudo su
+    
+    curl -LO https://github.com/arfshl/proot-distro-desktop/raw/refs/heads/main/opensuse/install-chromium.sh && bash install-chromium.sh && rm install-chromium.sh

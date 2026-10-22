@@ -74,4 +74,6 @@
     sudo xbps-install -S  firefox  vlc thunderbird  libheif webp-pixbuf-loader p7zip atril ristretto galculator xarchiver mousepad 
 
 ## Installing Chromium
-    sudo su && curl -LO https://github.com/arfshl/proot-distro-desktop/raw/refs/heads/main/void/install-chromium.sh && bash bootstrap.sh && rm bootstrap.sh
+    sudo su
+    
+    curl -LO https://github.com/arfshl/proot-distro-desktop/raw/refs/heads/main/void/install-chromium.sh && bash install-chromium.sh && rm install-chromium.sh

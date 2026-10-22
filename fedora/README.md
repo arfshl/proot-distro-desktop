@@ -85,4 +85,6 @@
     sudo dnf install -y firefox vlc thunderbird gwenview kcalc ark okular libheif webp-pixbuf-loader p7zip kate
 
 ## Installing Chromium
-    sudo sh -c "$(curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/fedora/install-chromium.sh)"
+    sudo su
+    
+    curl -LO https://github.com/arfshl/proot-distro-desktop/raw/refs/heads/main/fedora/install-chromium.sh && bash install-chromium.sh && rm install-chromium.sh

@@ -90,5 +90,16 @@
     sudo apt install -y firefox vlc thunderbird okular gwenview kcalc ark kate libheif1 webp-pixbuf-loader fonts-liberation p7zip
     sudo apt clean
 
-## Installing Chromium
-    sudo sh -c "$(curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian/chromium-install.sh)"
+## Installing Chromium-based web browser
+It is reccomended to go here, and install listed browser: https://github.com/arfshl/prootdistro-chromium-installer
+
+This script automates installation and desktop launcher patching, not only for Google Chrome but for other browser that supports ARM64, like Brave and Vivaldi
+
+However if you prefer open-source chromium, you can still install it with this script
+
+    sudo su
+    
+    curl -LO https://github.com/arfshl/proot-distro-desktop/raw/refs/heads/main/debian/install-chromium.sh && bash install-chromium.sh && rm install-chromium.sh
+
+## Disable apt Pager at Debian 13 or Ubuntu 26.04
+    echo 'Binary::apt::Pager "false";' | sudo tee -a /etc/apt/apt.conf.d/99nopager

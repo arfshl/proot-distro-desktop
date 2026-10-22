@@ -79,4 +79,6 @@
     sudo pacman -Sy --needed firefox vlc thunderbird libheif webp-pixbuf-loader p7zip okular gwenview kcalc ark kate
 
 ## Installing Chromium
-    sudo sh -c "$(curl -fssL https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/arch/install-chromium.sh)"
+    sudo su
+    
+    curl -LO https://github.com/arfshl/proot-distro-desktop/raw/refs/heads/main/arch/install-chromium.sh && bash install-chromium.sh && rm install-chromium.sh
