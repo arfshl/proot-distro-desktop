@@ -58,9 +58,6 @@ Replace [distro aliases] with distro alias you're using, available on installati
 ## China mainland version utilitized [DaoCloud image mirror](https://github.com/DaoCloud/public-image-mirror)
 [![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=arfshl&repo=pd-desktop-cn&theme=transparent)](https://github.com/arfshl/pd-desktop-cn)
 
-## Lightweight implementation of proot with bash script w/o proot-distro. Fork of andronixapp/andronixorigin.
-[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=arfshl&repo=termux-proot-script&theme=transparent)](https://github.com/arfshl/termux-proot-script)
-
 ## Support for android 5/6 without proot-distro, based on andronixapp/andronixorigin, and running latest distro version
 [![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=arfshl&repo=termux21-proot-script&theme=transparent)](https://github.com/arfshl/termux21-proot-script)
 
