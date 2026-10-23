@@ -84,7 +84,13 @@
     sudo dnf update -y
     sudo dnf install -y firefox vlc thunderbird gwenview kcalc ark okular libheif webp-pixbuf-loader p7zip kate
 
-## Installing Chromium
+## Installing Chromium-based web browser
+It is reccomended to go here, and install listed browser: https://github.com/arfshl/prootdistro-chromium-installer
+
+This script automates installation and desktop launcher patching, not only for Google Chrome but for other browser that supports ARM64, like Brave and Vivaldi
+
+However if you prefer open-source chromium, you can still install it with this script
+
     sudo su
     
     curl -LO https://github.com/arfshl/proot-distro-desktop/raw/refs/heads/main/fedora/install-chromium.sh && bash install-chromium.sh && rm install-chromium.sh
