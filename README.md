@@ -55,14 +55,15 @@ apt remove proot-distro termux-x11 pulseaudio vulkan-loader-android mesa-zink vi
 
 Replace [distro aliases] with distro alias you're using, available on installation page
 ```
-## China mainland version utilitized [DaoCloud image mirror](https://github.com/DaoCloud/public-image-mirror)
-[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=arfshl&repo=pd-desktop-cn&theme=transparent)](https://github.com/arfshl/pd-desktop-cn)
 
 ## Chromium-based browser installer
 [![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=arfshl&repo=prootdistro-chromium-installer&theme=transparent)](https://github.com/arfshl/prootdistro-chromium-installer)
 
 ## We also have Native Termux desktop version without proot-distro here!
 [![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=arfshl&repo=termux-desktop&theme=transparent)](https://github.com/arfshl/termux-desktop)
+
+## Android 5/6 Termux21 proot script
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=arfshl&repo=termux21-proot&theme=transparent)](https://github.com/arfshl/termux21-proot)
 
 # Credits
 
