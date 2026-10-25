@@ -10,6 +10,9 @@
 #### Install
     curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/artix/xfce/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
+#### Install (daocloud mirror for china mainland)
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/artix/xfce/bootstrap-cn.sh && bash bootstrap-cn.sh && rm bootstrap-cn.sh
+
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo pacman -Sy --needed firefox vlc thunderbird libheif webp-pixbuf-loader p7zip atril ristretto galculator xarchiver mousepad
 
@@ -22,6 +25,9 @@
 
 #### Install
     curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/artix/mate/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
+
+#### Install (daocloud mirror for china mainland)
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/artix/mate/bootstrap-cn.sh && bash bootstrap-cn.sh && rm bootstrap-cn.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo pacman -Sy --needed firefox vlc thunderbird libheif webp-pixbuf-loader p7zip atril eom mate-calc engrampa pluma
@@ -36,6 +42,9 @@
 #### Install
     curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/artix/lxqt/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
+#### Install (daocloud mirror for china mainland)
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/artix/lxqt/bootstrap-cn.sh && bash bootstrap-cn.sh && rm bootstrap-cn.sh
+
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo pacman -Sy --needed firefox vlc thunderbird libheif webp-pixbuf-loader p7zip lximage-qt kcalc lxqt-archiver qpdfview featherpad
 
@@ -48,6 +57,9 @@
 
 #### Install
     curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/artix/lxde/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
+
+#### Install (daocloud mirror for china mainland)
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/artix/lxde/bootstrap-cn.sh && bash bootstrap-cn.sh && rm bootstrap-cn.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo pacman -Sy --needed firefox vlc thunderbird libheif webp-pixbuf-loader p7zip atril gpicview galculator xarchiver mousepad
@@ -62,6 +74,9 @@
 #### Install
     curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/artix/cinnamon/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
+#### Install (daocloud mirror for china mainland)
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/artix/cinnamon/bootstrap-cn.sh && bash bootstrap-cn.sh && rm bootstrap-cn.sh
+
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo pacman -Sy --needed firefox vlc thunderbird libheif webp-pixbuf-loader p7zip engrampa xreader mate-calc xed eom
 
@@ -74,6 +89,9 @@
 
 #### Install
     curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/artix/kde/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
+
+#### Install (daocloud mirror for china mainland)
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/artix/kde/bootstrap-cn.sh && bash bootstrap-cn.sh && rm bootstrap-cn.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo pacman -Sy --needed firefox vlc thunderbird libheif webp-pixbuf-loader p7zip okular gwenview kcalc ark kate

@@ -11,6 +11,9 @@
 #### Install
     curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/alpine/xfce/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
+#### Install (daocloud mirror for china mainland)
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/alpine/xfce/bootstrap-cn.sh && bash bootstrap-cn.sh && rm bootstrap-cn.sh
+
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo apk add firefox vlc thunderbird  libheif webp-pixbuf-loader p7zip atril ristretto galculator xarchiver mousepad
 
@@ -25,6 +28,9 @@
 #### Install
     curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/alpine/lxqt/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
+#### Install (daocloud mirror for china mainland)
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/alpine/lxqt/bootstrap-cn.sh && bash bootstrap-cn.sh && rm bootstrap-cn.sh
+
 ## MATE
 - proot-distro aliases: alpine-mate
 - Username: alpine-mate
@@ -35,6 +41,9 @@
 
 #### Install
     curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/alpine/mate/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
+
+#### Install (daocloud mirror for china mainland)
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/alpine/mate/bootstrap-cn.sh && bash bootstrap-cn.sh && rm bootstrap-cn.sh
 
 ## Cinnamon
 - proot-distro aliases: alpine-cinnamon
@@ -47,6 +56,9 @@
 #### Install
     curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/alpine/cinnamon/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
+#### Install (daocloud mirror for china mainland)
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/alpine/cinnamon/bootstrap-cn.sh && bash bootstrap-cn.sh && rm bootstrap-cn.sh
+
 ## KDE Plasma
 - proot-distro aliases: alpine-kde
 - Username: alpine-kde
@@ -57,6 +69,9 @@
 
 #### Install
     curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/alpine/kde/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
+
+#### Install (daocloud mirror for china mainland)
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/alpine/kde/bootstrap-cn.sh && bash bootstrap-cn.sh && rm bootstrap-cn.sh
 
 ## Installing Chromium
     sudo su

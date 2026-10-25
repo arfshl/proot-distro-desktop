@@ -11,6 +11,9 @@
 #### Install
     curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/trisquel/xfce/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
+#### Install (daocloud mirror for china mainland)
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/trisquel/xfce/bootstrap-cn.sh && bash bootstrap-cn.sh && rm bootstrap-cn.sh
+
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo apt update && sudo apt install abrowser vlc thunderbird atril ristretto galculator libheif1 xarchiver webp-pixbuf-loader fonts-liberation p7zip mousepad && apt clean
 
@@ -25,6 +28,9 @@
 #### Install
     curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/trisquel/lxqt/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
+#### Install (daocloud mirror for china mainland)
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/trisquel/lxqt/bootstrap-cn.sh && bash bootstrap-cn.sh && rm bootstrap-cn.sh
+
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo apt update && sudo apt install abrowser vlc thunderbird lximage-qt kcalc lxqt-archiver qpdfview libheif1 webp-pixbuf-loader fonts-liberation p7zip featherpad && apt clean
 
@@ -38,6 +44,9 @@
 
 #### Install
     curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/trisquel/mate/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
+
+#### Install (daocloud mirror for china mainland)
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/trisquel/mate/bootstrap-cn.sh && bash bootstrap-cn.sh && rm bootstrap-cn.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo apt update && sudo apt install abrowser vlc thunderbird engrampa atril eom mate-calc pluma libheif1 webp-pixbuf-loader fonts-liberation p7zip && apt clean
@@ -54,6 +63,9 @@
 #### Install
     curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/trisquel/lxde/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
+#### Install (daocloud mirror for china mainland)
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/trisquel/lxde/bootstrap-cn.sh && bash bootstrap-cn.sh && rm bootstrap-cn.sh
+
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo apt update && sudo apt install abrowser vlc thunderbird xarchiver atril mousepad galculator gpicview libheif1 webp-pixbuf-loader fonts-liberation p7zip && apt clean
 
@@ -69,6 +81,9 @@
 #### Install
     curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/trisquel/cinnamon/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
+#### Install (daocloud mirror for china mainland)
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/trisquel/cinnamon/bootstrap-cn.sh && bash bootstrap-cn.sh && rm bootstrap-cn.sh
+
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo apt update && sudo apt install abrowser vlc thunderbird engrampa atril eom mate-calc pluma libheif1 webp-pixbuf-loader fonts-liberation p7zip && apt clean
 
@@ -82,6 +97,9 @@
 
 #### Install
     curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/trisquel/kde/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
+
+#### Install (daocloud mirror for china mainland)
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/trisquel/kde/bootstrap-cn.sh && bash bootstrap-cn.sh && rm bootstrap-cn.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo apt update && sudo apt install abrowser vlc thunderbird okular gwenview kcalc ark kate libheif1 webp-pixbuf-loader fonts-liberation p7zip && apt clean

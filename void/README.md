@@ -11,6 +11,9 @@
 #### Install
     curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/void/xfce/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
+#### Install (daocloud mirror for china mainland)
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/void/xfce/bootstrap-cn.sh && bash bootstrap-cn.sh && rm bootstrap-cn.sh
+
 # LXQt
 - proot-distro aliases: void-lxqt
 - Username: void-lxqt
@@ -21,6 +24,9 @@
 
 #### Install
     curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/void/lxqt/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
+
+#### Install (daocloud mirror for china mainland)
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/void/lxqt/bootstrap-cn.sh && bash bootstrap-cn.sh && rm bootstrap-cn.sh
 
 
 # MATE
@@ -34,6 +40,9 @@
 #### Install
     curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/void/mate/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
+#### Install (daocloud mirror for china mainland)
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/void/mate/bootstrap-cn.sh && bash bootstrap-cn.sh && rm bootstrap-cn.sh
+
 
 # LXDE
 - proot-distro aliases: void-lxde
@@ -45,6 +54,9 @@
 
 #### Install
     curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/void/lxde/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
+
+#### Install (daocloud mirror for china mainland)
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/void/lxde/bootstrap-cn.sh && bash bootstrap-cn.sh && rm bootstrap-cn.sh
 
 
 # Cinnamon
@@ -58,6 +70,9 @@
 #### Install
     curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/void/cinnamon/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
+#### Install (daocloud mirror for china mainland)
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/void/cinnamon/bootstrap-cn.sh && bash bootstrap-cn.sh && rm bootstrap-cn.sh
+
 
 # KDE Plasma
 - proot-distro aliases: void-kde
@@ -69,6 +84,9 @@
 
 #### Install
     curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/void/kde/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
+
+#### Install (daocloud mirror for china mainland)
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/void/kde/bootstrap-cn.sh && bash bootstrap-cn.sh && rm bootstrap-cn.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo xbps-install -S  firefox  vlc thunderbird  libheif webp-pixbuf-loader p7zip atril ristretto galculator xarchiver mousepad 
