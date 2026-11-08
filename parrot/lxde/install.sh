@@ -19,36 +19,36 @@ apt update && apt upgrade -y && apt autoremove -y
 apt update && apt upgrade -y && apt install apt-transport-https gnupg lxde-core pcmanfm lxterminal lxappearance pavucontrol lxappearance-obconf lxde-settings-daemon dbus-x11 pulseaudio nano wget curl sudo adduser tigervnc-standalone-server -y && apt clean
 
 # Adding user and password
-sudo adduser --disabled-password --gecos "debian-lxde" debian-lxde && echo 'debian-lxde:123' | chpasswd && echo 'debian-lxde ALL=(ALL:ALL) ALL' >> /etc/sudoers.d/user
+sudo adduser --disabled-password --gecos "parrot-lxde" parrot-lxde && echo 'parrot-lxde:123' | chpasswd && echo 'parrot-lxde ALL=(ALL:ALL) ALL' >> /etc/sudoers.d/user
 
 # Setup VNC server
 # Create VNC configuration directory
-mkdir -p /home/debian-lxde/.vnc
+mkdir -p /home/parrot-lxde/.vnc
 
 # Create VNC password file (default 1234567890)
-printf "1234567890" | vncpasswd -f > /home/debian-lxde/.vnc/passwd
-chmod 600 /home/debian-lxde/.vnc/passwd
+printf "1234567890" | vncpasswd -f > /home/parrot-lxde/.vnc/passwd
+chmod 600 /home/parrot-lxde/.vnc/passwd
 
 # Create VNC startup script
 echo '#!/bin/sh
 xrdb $HOME/.Xresources
 export PULSE_SERVER=127.0.0.1
 export DISPLAY=:0
-dbus-launch --exit-with-session startlxde' >> /home/debian-lxde/.vnc/xstartup
+dbus-launch --exit-with-session startlxde' >> /home/parrot-lxde/.vnc/xstartup
 
 # Create script for starting VNC server
 echo '#!/bin/sh
-export USER=debian-lxde
-export HOME=/home/debian-lxde
+export USER=parrot-lxde
+export HOME=/home/parrot-lxde
 vncserver -name remote-desktop -localhost no :0
 echo 'VNC server address: 127.0.0.1:5900 Password: 1234567890'' >> /usr/local/bin/startvnc
 
 # Create script for stopping VNC server
 echo '#!/bin/sh
-export USER=debian-lxde
-export HOME=/home/debian-lxde
+export USER=parrot-lxde
+export HOME=/home/parrot-lxde
 vncserver -kill :0
-rm -rf /home/debian-lxde/.vnc/localhost:0.pid
+rm -rf /home/parrot-lxde/.vnc/localhost:0.pid
 rm -rf /tmp/.X0-lock
 rm -rf /tmp/.X11-unix/X0' >> /usr/local/bin/stopvnc
 
@@ -63,4 +63,4 @@ chmod +x startvnc
 chmod +x stopvnc
 chmod +x restartvnc
 cd
-chmod +x /home/debian-lxde/.vnc/xstartup
+chmod +x /home/parrot-lxde/.vnc/xstartup

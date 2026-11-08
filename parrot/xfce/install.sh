@@ -27,39 +27,39 @@ Pin-Priority: 1001' >> /etc/apt/preferences.d/mozilla
 echo 'Done'
 
 # Install Desktop, VNC, and basic utility
-apt install xfce4 xfce4-terminal dbus-x11 apt-transport-https gnupg pulseaudio nano wget curl sudo adduser xdg-user-dirs xdg-user-dirs-gtk xfce4-whiskermenu-plugin tigervnc-standalone-server -y && apt clean
+apt install parrot-desktop-xfce xfce4-terminal dbus-x11 apt-transport-https gnupg pulseaudio nano wget curl sudo adduser xdg-user-dirs xdg-user-dirs-gtk xfce4-whiskermenu-plugin tigervnc-standalone-server -y && apt clean
 
 # Adding user and password
-sudo adduser --disabled-password --gecos "debian-xfce" debian-xfce && echo 'debian-xfce:123' | chpasswd && echo 'debian-xfce ALL=(ALL:ALL) ALL' >> /etc/sudoers.d/user
+sudo adduser --disabled-password --gecos "parrot-xfce" parrot-xfce && echo 'parrot-xfce:123' | chpasswd && echo 'parrot-xfce ALL=(ALL:ALL) ALL' >> /etc/sudoers.d/user
 
 # Setup VNC server
 # Create VNC configuration directory
-mkdir -p /home/debian-xfce/.vnc
+mkdir -p /home/parrot-xfce/.vnc
 
 # Create VNC password file (default 1234567890)
-printf "1234567890" | vncpasswd -f > /home/debian-xfce/.vnc/passwd
-chmod 600 /home/debian-xfce/.vnc/passwd
+printf "1234567890" | vncpasswd -f > /home/parrot-xfce/.vnc/passwd
+chmod 600 /home/parrot-xfce/.vnc/passwd
 
 # Create VNC startup script
 echo '#!/bin/sh
 xrdb $HOME/.Xresources
 export PULSE_SERVER=127.0.0.1
 export DISPLAY=:0
-dbus-launch --exit-with-session startxfce4' >> /home/debian-xfce/.vnc/xstartup
+dbus-launch --exit-with-session startxfce4' >> /home/parrot-xfce/.vnc/xstartup
 
 # Create script for starting VNC server
 echo '#!/bin/sh
-export USER=debian-xfce
-export HOME=/home/debian-xfce
+export USER=parrot-xfce
+export HOME=/home/parrot-xfce
 vncserver -name remote-desktop -localhost no :0
 echo 'VNC server address: 127.0.0.1:5900 Password: 1234567890'' >> /usr/local/bin/startvnc
 
 # Create script for stopping VNC server
 echo '#!/bin/sh
-export USER=debian-xfce
-export HOME=/home/debian-xfce
+export USER=parrot-xfce
+export HOME=/home/parrot-xfce
 vncserver -kill :0
-rm -rf /home/debian-xfce/.vnc/localhost:0.pid
+rm -rf /home/parrot-xfce/.vnc/localhost:0.pid
 rm -rf /tmp/.X0-lock
 rm -rf /tmp/.X11-unix/X0' >> /usr/local/bin/stopvnc
 
@@ -74,7 +74,7 @@ chmod +x startvnc
 chmod +x stopvnc
 chmod +x restartvnc
 cd
-chmod +x /home/debian-xfce/.vnc/xstartup
+chmod +x /home/parrot-xfce/.vnc/xstartup
 
 
 

@@ -1,17 +1,17 @@
-# Debian Stable
+# ParrotSec Core
 
 ## XFCE
-- proot-distro aliases: debian-xfce
-- Username: debian-xfce
+- proot-distro aliases: parrot-xfce
+- Username: parrot-xfce
 - `sudo` Password: 123
 - VNC Server Address: 127.0.0.1:5900
 - VNC Server Password: 1234567890
 
 #### Install
-    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian/xfce/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/parrot/xfce/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
 #### Install (daocloud mirror for china mainland)
-    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian/xfce/bootstrap-cn.sh && bash bootstrap-cn.sh && rm bootstrap-cn.sh
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/parrot/xfce/bootstrap-cn.sh && bash bootstrap-cn.sh && rm bootstrap-cn.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo apt update
@@ -19,17 +19,17 @@
     sudo apt clean
 
 ## LXQt
-- proot-distro aliases: debian-lxqt
-- Username: debian-lxqt
+- proot-distro aliases: parrot-lxqt
+- Username: parrot-lxqt
 - `sudo` Password: 123
 - VNC Server Address: 127.0.0.1:5900
 - VNC Server Password: 1234567890
 
 #### Install
-    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian/lxqt/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/parrot/lxqt/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
 #### Install (daocloud mirror for china mainland)
-    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian/lxqt/bootstrap-cn.sh && bash bootstrap-cn.sh && rm bootstrap-cn.sh
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/parrot/lxqt/bootstrap-cn.sh && bash bootstrap-cn.sh && rm bootstrap-cn.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo apt update
@@ -37,17 +37,17 @@
     sudo apt clean
 
 ## MATE
-- proot-distro aliases: debian-mate
-- Username: debian-mate
+- proot-distro aliases: parrot-mate
+- Username: parrot-mate
 - `sudo` Password: 123
 - VNC Server Address: 127.0.0.1:5900
 - VNC Server Password: 1234567890
 
 #### Install
-    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian/mate/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/parrot/mate/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
 #### Install (daocloud mirror for china mainland)
-    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian/mate/bootstrap-cn.sh && bash bootstrap-cn.sh && rm bootstrap-cn.sh
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/parrot/mate/bootstrap-cn.sh && bash bootstrap-cn.sh && rm bootstrap-cn.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo apt update
@@ -55,17 +55,17 @@
     sudo apt clean
 
 ## LXDE
-- proot-distro aliases: debian-lxde
-- Username: debian-lxde
+- proot-distro aliases: parrot-lxde
+- Username: parrot-lxde
 - `sudo` Password: 123
 - VNC Server Address: 127.0.0.1:5900
 - VNC Server Password: 1234567890
 
 #### Install
-    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian/lxde/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/parrot/lxde/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
 #### Install (daocloud mirror for china mainland)
-    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian/lxde/bootstrap-cn.sh && bash bootstrap-cn.sh && rm bootstrap-cn.sh
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/parrot/lxde/bootstrap-cn.sh && bash bootstrap-cn.sh && rm bootstrap-cn.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo apt update
@@ -73,17 +73,17 @@
     sudo apt clean
 
 ## Cinnamon (Heavy)
-- proot-distro aliases: debian-cinnamon
-- Username: debian-cinnamon
+- proot-distro aliases: parrot-cinnamon
+- Username: parrot-cinnamon
 - `sudo` Password: 123
 - VNC Server Address: 127.0.0.1:5900
 - VNC Server Password: 1234567890
 
 #### Install
-    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian/cinnamon/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/parrot/cinnamon/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
 #### Install (daocloud mirror for china mainland)
-    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian/cinnamon/bootstrap-cn.sh && bash bootstrap-cn.sh && rm bootstrap-cn.sh
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/parrot/cinnamon/bootstrap-cn.sh && bash bootstrap-cn.sh && rm bootstrap-cn.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo apt update
@@ -91,17 +91,17 @@
     sudo apt clean
 
 ## KDE Plasma (Heavy)
-- proot-distro aliases: debian-kde
-- Username: debian-kde
+- proot-distro aliases: parrot-kde
+- Username: parrot-kde
 - `sudo` Password: 123
 - VNC Server Address: 127.0.0.1:5900
 - VNC Server Password: 1234567890
 
 #### Install
-    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian/kde/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/parrot/kde/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
 #### Install (daocloud mirror for china mainland)
-    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian/kde/bootstrap-cn.sh && bash bootstrap-cn.sh && rm bootstrap-cn.sh
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/parrot/kde/bootstrap-cn.sh && bash bootstrap-cn.sh && rm bootstrap-cn.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo apt update

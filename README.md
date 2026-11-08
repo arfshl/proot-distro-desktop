@@ -30,6 +30,7 @@ Supported Desktop Environment:
 | [Manjaro](https://github.com/arfshl/proot-distro-desktop/tree/main/manjaro) | XFCE LXQt MATE LXDE Cinnamon KDE | `aarch64` `x86_64` | `manjarolinux/base` | 
 | [OpenSUSE Leap](https://github.com/arfshl/proot-distro-desktop/tree/main/opensuse/) |  XFCE LXQt MATE LXDE Cinnamon KDE   | `aarch64` `x86_64` | `opensuse/leap` |
 | [OpenSUSE Tumbleweed](https://github.com/arfshl/proot-distro-desktop/tree/main/opensuse-tumbleweed/)     |   XFCE LXQt MATE LXDE Cinnamon KDE   | `aarch64` `x86` `x86_64` | `opensuse/tumbleweed` |
+| [ParrotSec Core](https://github.com/arfshl/proot-distro-desktop/tree/main/parrot) |  XFCE LXQt MATE LXDE Cinnamon | `arm` `aarch64` `x86_64` | `parrotsec/core:latest` |
 | [Trisquel GNU/Linux Libre](https://github.com/arfshl/proot-distro-desktop/tree/main/trisquel) | XFCE LXQt MATE LXDE Cinnamon KDE | `arm` `aarch64` `x86_64` | `arfshl/trisquel:latest` |
 | [Ubuntu Regular Release](https://github.com/arfshl/proot-distro-desktop/tree/main/ubuntu) | XFCE LXQt MATE LXDE Cinnamon KDE | `arm` `aarch64` `x86_64` | `ubuntu:rolling` |
 | [Ubuntu LTS](https://github.com/arfshl/proot-distro-desktop/tree/main/ubuntu-lts) (Recommended for beginners) |  XFCE LXQt MATE LXDE Cinnamon KDE | `arm` `aarch64` `x86_64` | `ubuntu:latest` |
