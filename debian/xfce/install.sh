@@ -12,7 +12,7 @@ apt-mark hold elementary-xfce-icon-theme
 
 # Update and upgrade system
 apt update && apt upgrade -y && apt autoremove -y
-apt install sudo software-properties-common -y
+apt install sudo -y
 
 # Add mozilla official repository 
 
