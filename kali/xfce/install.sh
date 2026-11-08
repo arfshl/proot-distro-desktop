@@ -27,7 +27,8 @@ Pin-Priority: 1001' >> /etc/apt/preferences.d/mozilla
 echo 'Done'
 
 # Install Desktop, VNC, and kali utility
-apt install kali-linux-default kali-linux-arm kali-linux-nethunter xfce4-terminal dbus-x11 apt-transport-https gnupg pulseaudio nano wget curl sudo adduser xdg-user-dirs xdg-user-dirs-gtk xfce4-whiskermenu-plugin tigervnc-standalone-server -y && apt clean
+apt install kali-linux-headless kali-nethunter-core kali-nethunter-nano -y
+apt install kali-desktop-xfce xfce4-terminal dbus-x11 apt-transport-https gnupg pulseaudio nano wget curl sudo adduser xdg-user-dirs xdg-user-dirs-gtk xfce4-whiskermenu-plugin tigervnc-standalone-server -y && apt clean
 
 # Adding user and password
 sudo adduser --disabled-password --gecos "kali-xfce" kali-xfce && echo 'kali-xfce:123' | chpasswd && echo 'kali-xfce ALL=(ALL:ALL) ALL' >> /etc/sudoers.d/user

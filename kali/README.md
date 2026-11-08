@@ -2,9 +2,8 @@
 
 ## Installed Metapackage
 - `kali-linux-headless`
-- `kali-linux-arm`
-- `kali-linux-nethunter`
-- `kali-linux-default` (On XFCE)
+- `kali-nethunter-core`
+- `kali-nethunter-nano`
 
 ## XFCE
 - proot-distro aliases: kali-xfce
