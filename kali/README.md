@@ -1,17 +1,17 @@
-# Debian Stable
+# Kali Rolling + Nethunter
 
 ## XFCE
-- proot-distro aliases: debian-xfce
-- Username: debian-xfce
+- proot-distro aliases: kali-xfce
+- Username: kali-xfce
 - `sudo` Password: 123
 - VNC Server Address: 127.0.0.1:5900
 - VNC Server Password: 1234567890
 
 #### Install
-    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian/xfce/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/kali/xfce/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
 #### Install (daocloud mirror for china mainland)
-    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian/xfce/bootstrap-cn.sh && bash bootstrap-cn.sh && rm bootstrap-cn.sh
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/kali/xfce/bootstrap-cn.sh && bash bootstrap-cn.sh && rm bootstrap-cn.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo apt update
@@ -19,17 +19,17 @@
     sudo apt clean
 
 ## LXQt
-- proot-distro aliases: debian-lxqt
-- Username: debian-lxqt
+- proot-distro aliases: kali-lxqt
+- Username: kali-lxqt
 - `sudo` Password: 123
 - VNC Server Address: 127.0.0.1:5900
 - VNC Server Password: 1234567890
 
 #### Install
-    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian/lxqt/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/kali/lxqt/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
 #### Install (daocloud mirror for china mainland)
-    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian/lxqt/bootstrap-cn.sh && bash bootstrap-cn.sh && rm bootstrap-cn.sh
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/kali/lxqt/bootstrap-cn.sh && bash bootstrap-cn.sh && rm bootstrap-cn.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo apt update
@@ -37,17 +37,17 @@
     sudo apt clean
 
 ## MATE
-- proot-distro aliases: debian-mate
-- Username: debian-mate
+- proot-distro aliases: kali-mate
+- Username: kali-mate
 - `sudo` Password: 123
 - VNC Server Address: 127.0.0.1:5900
 - VNC Server Password: 1234567890
 
 #### Install
-    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian/mate/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/kali/mate/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
 #### Install (daocloud mirror for china mainland)
-    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian/mate/bootstrap-cn.sh && bash bootstrap-cn.sh && rm bootstrap-cn.sh
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/kali/mate/bootstrap-cn.sh && bash bootstrap-cn.sh && rm bootstrap-cn.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo apt update
@@ -55,17 +55,17 @@
     sudo apt clean
 
 ## LXDE
-- proot-distro aliases: debian-lxde
-- Username: debian-lxde
+- proot-distro aliases: kali-lxde
+- Username: kali-lxde
 - `sudo` Password: 123
 - VNC Server Address: 127.0.0.1:5900
 - VNC Server Password: 1234567890
 
 #### Install
-    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian/lxde/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/kali/lxde/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
 #### Install (daocloud mirror for china mainland)
-    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian/lxde/bootstrap-cn.sh && bash bootstrap-cn.sh && rm bootstrap-cn.sh
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/kali/lxde/bootstrap-cn.sh && bash bootstrap-cn.sh && rm bootstrap-cn.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo apt update
@@ -73,39 +73,21 @@
     sudo apt clean
 
 ## Cinnamon (Heavy)
-- proot-distro aliases: debian-cinnamon
-- Username: debian-cinnamon
+- proot-distro aliases: kali-cinnamon
+- Username: kali-cinnamon
 - `sudo` Password: 123
 - VNC Server Address: 127.0.0.1:5900
 - VNC Server Password: 1234567890
 
 #### Install
-    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian/cinnamon/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/kali/cinnamon/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
 
 #### Install (daocloud mirror for china mainland)
-    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian/cinnamon/bootstrap-cn.sh && bash bootstrap-cn.sh && rm bootstrap-cn.sh
+    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/kali/cinnamon/bootstrap-cn.sh && bash bootstrap-cn.sh && rm bootstrap-cn.sh
 
 #### Install Web Browser, Media Player, Utility (Execute on rootfs)
     sudo apt update
     sudo apt install -y firefox vlc thunderbird engrampa atril eom mate-calc pluma libheif1 webp-pixbuf-loader fonts-liberation p7zip
-    sudo apt clean
-
-## KDE Plasma (Heavy)
-- proot-distro aliases: debian-kde
-- Username: debian-kde
-- `sudo` Password: 123
-- VNC Server Address: 127.0.0.1:5900
-- VNC Server Password: 1234567890
-
-#### Install
-    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian/kde/bootstrap.sh && bash bootstrap.sh && rm bootstrap.sh
-
-#### Install (daocloud mirror for china mainland)
-    curl -LO https://raw.githubusercontent.com/arfshl/proot-distro-desktop/refs/heads/main/debian/kde/bootstrap-cn.sh && bash bootstrap-cn.sh && rm bootstrap-cn.sh
-
-#### Install Web Browser, Media Player, Utility (Execute on rootfs)
-    sudo apt update
-    sudo apt install -y firefox vlc thunderbird okular gwenview kcalc ark kate libheif1 webp-pixbuf-loader fonts-liberation p7zip
     sudo apt clean
 
 ## Installing Chromium-based web browser

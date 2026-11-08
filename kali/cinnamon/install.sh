@@ -14,40 +14,42 @@ echo 'Done'
 # Update and upgrade system
 apt update && apt upgrade -y && apt autoremove -y
 
-# Install Desktop, VNC, and basic utility
-apt update && apt upgrade -y && apt install apt-transport-https gnupg cinnamon pavucontrol dbus-x11 pulseaudio nano wget curl sudo adduser tigervnc-standalone-server mate-terminal -y && apt remove file-roller -y && apt autoremove -y && apt clean
+# Install Desktop, VNC, and kali utility
+apt update && apt upgrade -y
+apt install kali-linux-headless kali-linux-arm kali-linux-nethunter -y
+apt install apt-transport-https gnupg cinnamon pavucontrol dbus-x11 pulseaudio nano wget curl sudo adduser tigervnc-standalone-server mate-terminal -y && apt remove file-roller -y && apt autoremove -y && apt clean
 
 # Adding user and password
-sudo adduser --disabled-password --gecos "debian-cinnamon" debian-cinnamon && echo 'debian-cinnamon:123' | chpasswd && echo 'debian-cinnamon ALL=(ALL:ALL) ALL' >> /etc/sudoers.d/user
+sudo adduser --disabled-password --gecos "kali-cinnamon" kali-cinnamon && echo 'kali-cinnamon:123' | chpasswd && echo 'kali-cinnamon ALL=(ALL:ALL) ALL' >> /etc/sudoers.d/user
 
 # Setup VNC server
 # Create VNC configuration directory
-mkdir -p /home/debian-cinnamon/.vnc
+mkdir -p /home/kali-cinnamon/.vnc
 
 # Create VNC password file (default 1234567890)
-printf "1234567890" | vncpasswd -f > /home/debian-cinnamon/.vnc/passwd
-chmod 600 /home/debian-cinnamon/.vnc/passwd
+printf "1234567890" | vncpasswd -f > /home/kali-cinnamon/.vnc/passwd
+chmod 600 /home/kali-cinnamon/.vnc/passwd
 
 # Create VNC startup script
 echo '#!/bin/sh
 xrdb $HOME/.Xresources
 export PULSE_SERVER=127.0.0.1
 export DISPLAY=:0
-dbus-launch --exit-with-session cinnamon-session' >> /home/debian-cinnamon/.vnc/xstartup
+dbus-launch --exit-with-session cinnamon-session' >> /home/kali-cinnamon/.vnc/xstartup
 
 # Create script for starting VNC server
 echo '#!/bin/sh
-export USER=debian-cinnamon
-export HOME=/home/debian-cinnamon
+export USER=kali-cinnamon
+export HOME=/home/kali-cinnamon
 vncserver -name remote-desktop -localhost no :0
 echo 'VNC server address: 127.0.0.1:5900 Password: 1234567890'' >> /usr/local/bin/startvnc
 
 # Create script for stopping VNC server
 echo '#!/bin/sh
-export USER=debian-cinnamon
-export HOME=/home/debian-cinnamon
+export USER=kali-cinnamon
+export HOME=/home/kali-cinnamon
 vncserver -kill :0
-rm -rf /home/debian-cinnamon/.vnc/localhost:0.pid
+rm -rf /home/kali-cinnamon/.vnc/localhost:0.pid
 rm -rf /tmp/.X0-lock
 rm -rf /tmp/.X11-unix/X0' >> /usr/local/bin/stopvnc
 
@@ -62,7 +64,7 @@ chmod +x startvnc
 chmod +x stopvnc
 chmod +x restartvnc
 cd
-chmod +x /home/debian-cinnamon/.vnc/xstartup
+chmod +x /home/kali-cinnamon/.vnc/xstartup
 
 
 

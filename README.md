@@ -26,6 +26,7 @@ Supported Desktop Environment:
 | [Debian Sid](https://github.com/arfshl/proot-distro-desktop/tree/main/debian-sid) |  XFCE LXQt MATE LXDE Cinnamon KDE | `arm` `aarch64` `x86_64` | `debian:sid` |
 | [Debian Testing](https://github.com/arfshl/proot-distro-desktop/tree/main/debian-testing) |  XFCE LXQt MATE LXDE Cinnamon KDE | `arm` `aarch64` `x86_64` | `debian:testing` |
 | [Fedora](https://github.com/arfshl/proot-distro-desktop/tree/main/fedora) | XFCE LXQt MATE LXDE Cinnamon KDE | `aarch64` `x86_64` | `fedora:latest` |
+| [Kali Rolling + Nethunter](https://github.com/arfshl/proot-distro-desktop/tree/main/kali) |  XFCE LXQt MATE LXDE Cinnamon | `arm` `aarch64` `x86_64` | `kalilinux/kali-rolling:latest` |
 | [Manjaro](https://github.com/arfshl/proot-distro-desktop/tree/main/manjaro) | XFCE LXQt MATE LXDE Cinnamon KDE | `aarch64` `x86_64` | `manjarolinux/base` | 
 | [OpenSUSE Leap](https://github.com/arfshl/proot-distro-desktop/tree/main/opensuse/) |  XFCE LXQt MATE LXDE Cinnamon KDE   | `aarch64` `x86_64` | `opensuse/leap` |
 | [OpenSUSE Tumbleweed](https://github.com/arfshl/proot-distro-desktop/tree/main/opensuse-tumbleweed/)     |   XFCE LXQt MATE LXDE Cinnamon KDE   | `aarch64` `x86` `x86_64` | `opensuse/tumbleweed` |
