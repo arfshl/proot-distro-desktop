@@ -1,9 +1,4 @@
-# Kali Rolling + Nethunter
-
-## Installed Metapackage
-- `kali-linux-headless`
-- `kali-nethunter-core`
-- `kali-nethunter-nano`
+# Kali Rolling
 
 ## XFCE
 - proot-distro aliases: kali-xfce

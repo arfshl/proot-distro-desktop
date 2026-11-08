@@ -16,8 +16,7 @@ echo 'Done'
 # Update and upgrade system
 apt update && apt upgrade -y && apt autoremove -y
 
-# Install Desktop, VNC, and kali utility
-apt install kali-linux-headless kali-nethunter-core kali-nethunter-nano -y
+# Install Desktop, VNC, and utility
 apt install kali-desktop-mate caja apt-transport-https gnupg mate-menus mate-terminal mate-applet-brisk-menu mate-backgrounds mate-dock-applet mate-indicator-applet mate-menus pavucontrol mate-indicator-applet-common mate-tweak mate-applets dbus-x11 pulseaudio nano wget curl sudo adduser tigervnc-standalone-server -y && apt clean
 
 # Adding user and password

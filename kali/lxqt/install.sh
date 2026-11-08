@@ -16,10 +16,8 @@ echo 'Done'
 # Update and upgrade system
 apt update && apt upgrade -y && apt autoremove -y
 
-# Install Desktop, VNC, and kali utility
-apt update && apt upgrade -y
-apt install kali-linux-headless kali-nethunter-core kali-nethunter-nano -y
-apt update && apt upgrade -y && apt install apt-transport-https gnupg lxqt-core lxqt-config qterminal dbus-x11 pulseaudio nano wget curl sudo adduser pavucontrol-qt tigervnc-standalone-server -y && apt clean
+# Install Desktop, VNC, and utility
+apt install apt-transport-https gnupg lxqt-core lxqt-config qterminal dbus-x11 pulseaudio nano wget curl sudo adduser pavucontrol-qt tigervnc-standalone-server -y && apt clean
 
 # Adding user and password
 sudo adduser --disabled-password --gecos "kali-lxqt" kali-lxqt && echo 'kali-lxqt:123' | chpasswd && echo 'kali-lxqt ALL=(ALL:ALL) ALL' >> /etc/sudoers.d/user

@@ -26,8 +26,10 @@ Pin: origin packages.mozilla.org
 Pin-Priority: 1001' >> /etc/apt/preferences.d/mozilla
 echo 'Done'
 
-# Install Desktop, VNC, and kali utility
-apt install kali-linux-headless kali-nethunter-core kali-nethunter-nano -y
+# Update and upgrade system
+apt update && apt upgrade -y && apt autoremove -y
+
+# Install Desktop, VNC, and utility
 apt install kali-desktop-xfce xfce4-terminal dbus-x11 apt-transport-https gnupg pulseaudio nano wget curl sudo adduser xdg-user-dirs xdg-user-dirs-gtk xfce4-whiskermenu-plugin tigervnc-standalone-server -y && apt clean
 
 # Adding user and password
