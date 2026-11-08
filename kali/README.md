@@ -1,5 +1,11 @@
 # Kali Rolling + Nethunter
 
+## Installed Metapackage
+- `kali-linux-headless`
+- `kali-linux-arm`
+- `kali-linux-nethunter`
+- `kali-linux-default` (On XFCE)
+
 ## XFCE
 - proot-distro aliases: kali-xfce
 - Username: kali-xfce
