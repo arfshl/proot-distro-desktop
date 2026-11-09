@@ -14,7 +14,7 @@ zypper refresh
 dbus-uuidgen --ensure
 
 # Adding user and password
-sudo useradd -m opensuse-xfce && echo 'opensuse-xfce:123' | chpasswd && echo 'opensuse-xfce ALL=(ALL:ALL) ALL' >> /etc/sudoers.d/user
+sudo useradd -m opensuse-xfce && echo 'opensuse-xfce:123' | chpasswd && echo 'opensuse-xfce ALL=(ALL:ALL) ALL' > /etc/sudoers.d/user
 
 
 # Setup VNC server
@@ -27,23 +27,25 @@ chmod 600 /home/opensuse-xfce/.vnc/passwd
 
 # Create script for starting VNC server
 echo "#!/bin/sh
-Xvnc -rfbauth ~/.vnc/passwd -localhost no :0 &
+export USER=opensuse-xfce
+export HOME=/home/opensuse-xfce
 export DISPLAY=:0
 export PULSE_SERVER=127.0.0.1
 dbus-launch --exit-with-session startxfce4 &
-echo 'VNC server address: 127.0.0.1:5900 Password: 1234567890'" >> /usr/local/bin/startvnc
+Xvnc -rfbauth  /home/opensuse-xfce/.vnc/passwd -localhost no :0 &
+echo 'VNC server address: 127.0.0.1:5900 Password: 1234567890'" > /usr/local/bin/startvnc
 
 # Create script for stopping VNC server
 echo '#!/bin/sh
 kill -9 $(pgrep -f "Xvnc") 2>/dev/null
 kill -9 $(pgrep -f "xfce4") 2>/dev/null
 rm -rf /tmp/.X0-lock
-rm -rf /tmp/.X11-unix/X0' >> /usr/local/bin/stopvnc
+rm -rf /tmp/.X11-unix/X0' > /usr/local/bin/stopvnc
 
 # Create script for restarting VNC server
 echo '#!/bin/sh
 stopvnc
-startvnc' >> /usr/local/bin/restartvnc
+startvnc' > /usr/local/bin/restartvnc
 
 # Make it executable
 cd /usr/local/bin

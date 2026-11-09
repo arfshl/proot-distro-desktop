@@ -23,7 +23,7 @@ proot-distro login ubuntu-lts-lxde -- /bin/sh -c 'wget https://raw.githubusercon
 echo '#!/bin/sh
 LD_PRELOAD=/system/lib64/libskcodec.so
 pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" --exit-idle-time=-1
-proot-distro login ubuntu-lts-lxde --user ubuntu-lxde' >> /data/data/com.termux/files/usr/bin/ubuntu-lts-lxde
+proot-distro login ubuntu-lts-lxde --user ubuntu-lxde' > /data/data/com.termux/files/usr/bin/ubuntu-lts-lxde
 
 # for X11 session
 cat <<'EOF' > /data/data/com.termux/files/usr/bin/ubuntu-lts-lxde-x11

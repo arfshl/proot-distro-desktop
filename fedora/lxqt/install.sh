@@ -17,7 +17,7 @@ EOF
 dnf makecache --refresh
 
 # Adding user and password
-useradd -m fedora-lxqt && echo 'fedora-lxqt:123' | chpasswd && echo 'fedora-lxqt ALL=(ALL:ALL) ALL' >> /etc/sudoers.d/user
+useradd -m fedora-lxqt && echo 'fedora-lxqt:123' | chpasswd && echo 'fedora-lxqt ALL=(ALL:ALL) ALL' > /etc/sudoers.d/user
 
 # Setup VNC server
 # Create VNC configuration directory
@@ -27,33 +27,27 @@ mkdir -p /home/fedora-lxqt/.vnc
 printf "1234567890" | vncpasswd -f > /home/fedora-lxqt/.vnc/passwd
 chmod 600 /home/fedora-lxqt/.vnc/passwd
 
-# Create VNC startup script
-echo '#!/bin/sh
-xrdb $HOME/.Xresources
-export PULSE_SERVER=127.0.0.1
-export DISPLAY=:0
-dbus-launch --exit-with-session startlxqt' >> /home/fedora-lxqt/.vnc/xstartup
-
 # Create script for starting VNC server
 echo "#!/bin/sh
 export USER=fedora-lxqt
 export HOME=/home/fedora-lxqt
-vncserver -name remote-desktop -localhost no :0
-echo 'VNC server address: 127.0.0.1:5900 Password: 1234567890'" >> /usr/local/bin/startvnc
+export DISPLAY=:0
+export PULSE_SERVER=127.0.0.1
+dbus-launch --exit-with-session startlxqt &
+Xvnc -rfbauth /home/fedora-lxqt/.vnc/passwd -localhost no :0 &
+echo 'VNC server address: 127.0.0.1:5900 Password: 1234567890'" > /usr/local/bin/startvnc
 
 # Create script for stopping VNC server
 echo '#!/bin/sh
-export USER=fedora-lxqt
-export HOME=/home/fedora-lxqt
-vncserver -kill :0
-rm -rf /home/fedora-lxqt/.vnc/localhost:0.pid
+kill -9 $(pgrep -f "Xvnc") 2>/dev/null
+kill -9 $(pgrep -f "lxqt") 2>/dev/null
 rm -rf /tmp/.X0-lock
-rm -rf /tmp/.X11-unix/X0' >> /usr/local/bin/stopvnc
+rm -rf /tmp/.X11-unix/X0' > /usr/local/bin/stopvnc
 
 # Create script for restarting VNC server
 echo '#!/bin/sh
 stopvnc
-startvnc' >> /usr/local/bin/restartvnc
+startvnc' > /usr/local/bin/restartvnc
 
 # Make it executable
 cd /usr/local/bin

@@ -16,8 +16,8 @@ apt install sudo software-properties-common -y
 
 echo 'Adding Mozilla Repository...'
 wget -q https://packages.mozilla.org/apt/repo-signing-key.gpg -O- | sudo tee /etc/apt/keyrings/packages.mozilla.org.asc > /dev/null
-sudo echo 'deb [signed-by=/etc/apt/keyrings/packages.mozilla.org.asc] https://packages.mozilla.org/apt mozilla main' >> /etc/apt/sources.list.d/mozilla.list
-sudo echo 'deb [signed-by=/etc/apt/keyrings/packages.mozilla.org.asc] https://packages.mozilla.org/apt thunderbird-deb main' >> /etc/apt/sources.list.d/mozilla.list
+sudo echo 'deb [signed-by=/etc/apt/keyrings/packages.mozilla.org.asc] https://packages.mozilla.org/apt mozilla main' > /etc/apt/sources.list.d/mozilla.list
+sudo echo 'deb [signed-by=/etc/apt/keyrings/packages.mozilla.org.asc] https://packages.mozilla.org/apt thunderbird-deb main' > /etc/apt/sources.list.d/mozilla.list
 
 echo 'Configuring APT Pinning...'
 sudo cat <<EOF > /etc/apt/preferences.d/nativeapt
@@ -46,7 +46,7 @@ EOF
 apt install xubuntu-desktop-minimal apt-transport-https gnupg xfce4 xfce4-terminal dbus-x11 pulseaudio nano wget curl sudo adduser xdg-user-dirs xdg-user-dirs-gtk xubuntu-wallpapers xfce4-whiskermenu-plugin xubuntu-icon-theme xubuntu-default-settings xubuntu-artwork pavucontrol tigervnc-standalone-server -y && apt clean
 
 # Adding user and password
-sudo adduser --disabled-password --gecos "ubuntu-xfce" ubuntu-xfce && echo 'ubuntu-xfce:123' | chpasswd && echo 'ubuntu-xfce ALL=(ALL:ALL) ALL' >> /etc/sudoers.d/user
+sudo adduser --disabled-password --gecos "ubuntu-xfce" ubuntu-xfce && echo 'ubuntu-xfce:123' | chpasswd && echo 'ubuntu-xfce ALL=(ALL:ALL) ALL' > /etc/sudoers.d/user
 
 # Setup VNC server
 # Create VNC configuration directory
@@ -61,14 +61,14 @@ echo '#!/bin/sh
 xrdb $HOME/.Xresources
 export PULSE_SERVER=127.0.0.1
 export DISPLAY=:0
-dbus-launch --exit-with-session startxfce4' >> /home/ubuntu-xfce/.vnc/xstartup
+dbus-launch --exit-with-session startxfce4' > /home/ubuntu-xfce/.vnc/xstartup
 
 # Create script for starting VNC server
 echo "#!/bin/sh
 export USER=ubuntu-xfce
 export HOME=/home/ubuntu-xfce
 vncserver -name remote-desktop -localhost no :0
-echo 'VNC server address: 127.0.0.1:5900 Password: 1234567890'" >> /usr/local/bin/startvnc
+echo 'VNC server address: 127.0.0.1:5900 Password: 1234567890'" > /usr/local/bin/startvnc
 
 # Create script for stopping VNC server
 echo '#!/bin/sh
@@ -77,12 +77,12 @@ export HOME=/home/ubuntu-xfce
 vncserver -kill :0
 rm -rf /home/ubuntu-xfce/.vnc/localhost:0.pid
 rm -rf /tmp/.X0-lock
-rm -rf /tmp/.X11-unix/X0' >> /usr/local/bin/stopvnc
+rm -rf /tmp/.X11-unix/X0' > /usr/local/bin/stopvnc
 
 # Create script for restarting VNC server
 echo '#!/bin/sh
 stopvnc
-startvnc' >> /usr/local/bin/restartvnc
+startvnc' > /usr/local/bin/restartvnc
 
 # Make it executable
 cd /usr/local/bin

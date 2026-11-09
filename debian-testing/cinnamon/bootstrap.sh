@@ -23,7 +23,7 @@ proot-distro login debian-testing-cinnamon -- /bin/sh -c 'wget https://raw.githu
 echo '#!/bin/sh
 LD_PRELOAD=/system/lib64/libskcodec.so
 pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" --exit-idle-time=-1
-proot-distro login debian-testing-cinnamon --user debian-cinnamon' >> /data/data/com.termux/files/usr/bin/debian-testing-cinnamon
+proot-distro login debian-testing-cinnamon --user debian-cinnamon' > /data/data/com.termux/files/usr/bin/debian-testing-cinnamon
 
 # for X11 session
 cat <<'EOF' > /data/data/com.termux/files/usr/bin/debian-testing-cinnamon-x11

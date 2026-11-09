@@ -8,7 +8,7 @@ apt update && apt upgrade -y && apt autoremove -y
 apt update && apt upgrade -y && apt install lxde-core pcmanfm lxterminal lxappearance pavucontrol lxappearance-obconf lxde-settings-daemon dbus-x11 pulseaudio nano wget curl sudo adduser tigervnc-standalone-server trisquel-mini-data trisquel-wallpapers -y && apt clean
 
 # Adding user and password
-sudo adduser --disabled-password --gecos "trisquel-lxde" trisquel-lxde && echo 'trisquel-lxde:123' | chpasswd && echo 'trisquel-lxde ALL=(ALL:ALL) ALL' >> /etc/sudoers.d/user
+sudo adduser --disabled-password --gecos "trisquel-lxde" trisquel-lxde && echo 'trisquel-lxde:123' | chpasswd && echo 'trisquel-lxde ALL=(ALL:ALL) ALL' > /etc/sudoers.d/user
 
 # Setup VNC server
 # Create VNC configuration directory
@@ -23,14 +23,14 @@ echo '#!/bin/sh
 xrdb $HOME/.Xresources
 export PULSE_SERVER=127.0.0.1
 export DISPLAY=:0
-dbus-launch --exit-with-session startlxde' >> /home/trisquel-lxde/.vnc/xstartup
+dbus-launch --exit-with-session startlxde' > /home/trisquel-lxde/.vnc/xstartup
 
 # Create script for starting VNC server
 echo "#!/bin/sh
 export USER=trisquel-lxde
 export HOME=/home/trisquel-lxde
 vncserver -name remote-desktop -localhost no :0
-echo 'VNC server address: 127.0.0.1:5900 Password: 1234567890'" >> /usr/local/bin/startvnc
+echo 'VNC server address: 127.0.0.1:5900 Password: 1234567890'" > /usr/local/bin/startvnc
 
 # Create script for stopping VNC server
 echo '#!/bin/sh
@@ -39,12 +39,12 @@ export HOME=/home/trisquel-lxde
 vncserver -kill :0
 rm -rf /home/trisquel-lxde/.vnc/localhost:0.pid
 rm -rf /tmp/.X0-lock
-rm -rf /tmp/.X11-unix/X0' >> /usr/local/bin/stopvnc
+rm -rf /tmp/.X11-unix/X0' > /usr/local/bin/stopvnc
 
 # Create script for restarting VNC server
 echo '#!/bin/sh
 stopvnc
-startvnc' >> /usr/local/bin/restartvnc
+startvnc' > /usr/local/bin/restartvnc
 
 # Make it executable
 cd /usr/local/bin

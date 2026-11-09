@@ -8,7 +8,7 @@ apt update && apt upgrade -y && apt autoremove -y
 apt update && apt upgrade -y && apt install cinnamon pavucontrol dbus-x11 pulseaudio nano wget curl sudo adduser tigervnc-standalone-server -y && apt remove file-roller -y && apt autoremove -y && apt clean
 
 # Adding user and password
-sudo adduser --disabled-password --gecos "trisquel-cinnamon" trisquel-cinnamon && echo 'trisquel-cinnamon:123' | chpasswd && echo 'trisquel-cinnamon ALL=(ALL:ALL) ALL' >> /etc/sudoers.d/user
+sudo adduser --disabled-password --gecos "trisquel-cinnamon" trisquel-cinnamon && echo 'trisquel-cinnamon:123' | chpasswd && echo 'trisquel-cinnamon ALL=(ALL:ALL) ALL' > /etc/sudoers.d/user
 
 # Setup VNC server
 # Create VNC configuration directory
@@ -23,14 +23,14 @@ echo '#!/bin/sh
 xrdb $HOME/.Xresources
 export PULSE_SERVER=127.0.0.1
 export DISPLAY=:0
-dbus-launch --exit-with-session cinnamon-session' >> /home/trisquel-cinnamon/.vnc/xstartup
+dbus-launch --exit-with-session cinnamon-session' > /home/trisquel-cinnamon/.vnc/xstartup
 
 # Create script for starting VNC server
 echo "#!/bin/sh
 export USER=trisquel-cinnamon
 export HOME=/home/trisquel-cinnamon
 vncserver -name remote-desktop -localhost no :0
-echo 'VNC server address: 127.0.0.1:5900 Password: 1234567890'" >> /usr/local/bin/startvnc
+echo 'VNC server address: 127.0.0.1:5900 Password: 1234567890'" > /usr/local/bin/startvnc
 
 # Create script for stopping VNC server
 echo '#!/bin/sh
@@ -39,12 +39,12 @@ export HOME=/home/trisquel-cinnamon
 vncserver -kill :0
 rm -rf /home/trisquel-cinnamon/.vnc/localhost:0.pid
 rm -rf /tmp/.X0-lock
-rm -rf /tmp/.X11-unix/X0' >> /usr/local/bin/stopvnc
+rm -rf /tmp/.X11-unix/X0' > /usr/local/bin/stopvnc
 
 # Create script for restarting VNC server
 echo '#!/bin/sh
 stopvnc
-startvnc' >> /usr/local/bin/restartvnc
+startvnc' > /usr/local/bin/restartvnc
 
 # Make it executable
 cd /usr/local/bin

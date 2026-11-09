@@ -7,8 +7,8 @@ apt install sudo software-properties-common -y
 
 echo 'Adding Mozilla Repository...'
 wget -q https://packages.mozilla.org/apt/repo-signing-key.gpg -O- | sudo tee /etc/apt/keyrings/packages.mozilla.org.asc > /dev/null
-sudo echo 'deb [signed-by=/etc/apt/keyrings/packages.mozilla.org.asc] https://packages.mozilla.org/apt mozilla main' >> /etc/apt/sources.list.d/mozilla.list
-sudo echo 'deb [signed-by=/etc/apt/keyrings/packages.mozilla.org.asc] https://packages.mozilla.org/apt thunderbird-deb main' >> /etc/apt/sources.list.d/mozilla.list
+sudo echo 'deb [signed-by=/etc/apt/keyrings/packages.mozilla.org.asc] https://packages.mozilla.org/apt mozilla main' > /etc/apt/sources.list.d/mozilla.list
+sudo echo 'deb [signed-by=/etc/apt/keyrings/packages.mozilla.org.asc] https://packages.mozilla.org/apt thunderbird-deb main' > /etc/apt/sources.list.d/mozilla.list
 
 echo 'Configuring APT Pinning...'
 sudo cat <<EOF > /etc/apt/preferences.d/nativeapt
@@ -43,7 +43,7 @@ kwriteconfig5 --file kscreensaverrc --group Daemon --key Lock false
 kwriteconfig5 --file kscreenlockerrc --group Daemon --key Autolock false
 
 # Adding user and password
-sudo adduser --disabled-password --gecos "ubuntu-kde" ubuntu-kde && echo 'ubuntu-kde:123' | chpasswd && echo 'ubuntu-kde ALL=(ALL:ALL) ALL' >> /etc/sudoers.d/user
+sudo adduser --disabled-password --gecos "ubuntu-kde" ubuntu-kde && echo 'ubuntu-kde:123' | chpasswd && echo 'ubuntu-kde ALL=(ALL:ALL) ALL' > /etc/sudoers.d/user
 
 # Setup VNC server
 # Create VNC configuration directory
@@ -58,14 +58,14 @@ echo '#!/bin/sh
 xrdb $HOME/.Xresources
 export PULSE_SERVER=127.0.0.1
 export DISPLAY=:0
-dbus-launch --exit-with-session startplasma-x11' >> /home/ubuntu-kde/.vnc/xstartup
+dbus-launch --exit-with-session startplasma-x11' > /home/ubuntu-kde/.vnc/xstartup
 
 # Create script for starting VNC server
 echo "#!/bin/sh
 export USER=ubuntu-kde
 export HOME=/home/ubuntu-kde
 vncserver -name remote-desktop -localhost no :0
-echo 'VNC server address: 127.0.0.1:5900 Password: 1234567890'" >> /usr/local/bin/startvnc
+echo 'VNC server address: 127.0.0.1:5900 Password: 1234567890'" > /usr/local/bin/startvnc
 
 # Create script for stopping VNC server
 echo '#!/bin/sh
@@ -74,12 +74,12 @@ export HOME=/home/ubuntu-kde
 vncserver -kill :0
 rm -rf /home/ubuntu-kde/.vnc/localhost:0.pid
 rm -rf /tmp/.X0-lock
-rm -rf /tmp/.X11-unix/X0' >> /usr/local/bin/stopvnc
+rm -rf /tmp/.X11-unix/X0' > /usr/local/bin/stopvnc
 
 # Create script for restarting VNC server
 echo '#!/bin/sh
 stopvnc
-startvnc' >> /usr/local/bin/restartvnc
+startvnc' > /usr/local/bin/restartvnc
 
 # Make it executable
 cd /usr/local/bin

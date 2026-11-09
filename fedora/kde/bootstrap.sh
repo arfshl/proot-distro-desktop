@@ -15,7 +15,7 @@ apt install curl wget nano proot-distro termux-x11 pulseaudio vulkan-loader-andr
 echo '#!/bin/sh
 LD_PRELOAD=/system/lib64/libskcodec.so
 pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" --exit-idle-time=-1
-proot-distro login fedora-kde --user fedora-kde' >> /data/data/com.termux/files/usr/bin/fedora-kde
+proot-distro login fedora-kde --user fedora-kde' > /data/data/com.termux/files/usr/bin/fedora-kde
 
 # for X11 session
 cat <<'EOF' > /data/data/com.termux/files/usr/bin/fedora-kde-x11

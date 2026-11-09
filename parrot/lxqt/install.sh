@@ -5,12 +5,12 @@ set -euo pipefail
 apt install sudo -y
 echo 'Adding Mozilla Repository...'
 wget -q https://packages.mozilla.org/apt/repo-signing-key.gpg -O- | sudo tee /etc/apt/keyrings/packages.mozilla.org.asc > /dev/null
-sudo echo 'deb [signed-by=/etc/apt/keyrings/packages.mozilla.org.asc] https://packages.mozilla.org/apt mozilla main' >> /etc/apt/sources.list.d/mozilla.list
-sudo echo 'deb [signed-by=/etc/apt/keyrings/packages.mozilla.org.asc] https://packages.mozilla.org/apt thunderbird-deb main' >> /etc/apt/sources.list.d/mozilla.list
+sudo echo 'deb [signed-by=/etc/apt/keyrings/packages.mozilla.org.asc] https://packages.mozilla.org/apt mozilla main' > /etc/apt/sources.list.d/mozilla.list
+sudo echo 'deb [signed-by=/etc/apt/keyrings/packages.mozilla.org.asc] https://packages.mozilla.org/apt thunderbird-deb main' > /etc/apt/sources.list.d/mozilla.list
 echo 'Configuring APT Pinning...'
 sudo echo 'Package: *
 Pin: origin packages.mozilla.org
-Pin-Priority: 1001' >> /etc/apt/preferences.d/mozilla
+Pin-Priority: 1001' > /etc/apt/preferences.d/mozilla
 echo 'Done'
 
 # Update and upgrade system
@@ -20,7 +20,7 @@ apt update && apt upgrade -y && apt autoremove -y
 apt update && apt upgrade -y && apt install apt-transport-https gnupg lxqt-core lxqt-config qterminal dbus-x11 pulseaudio nano wget curl sudo adduser pavucontrol-qt tigervnc-standalone-server -y && apt clean
 
 # Adding user and password
-sudo adduser --disabled-password --gecos "parrot-lxqt" parrot-lxqt && echo 'parrot-lxqt:123' | chpasswd && echo 'parrot-lxqt ALL=(ALL:ALL) ALL' >> /etc/sudoers.d/user
+sudo adduser --disabled-password --gecos "parrot-lxqt" parrot-lxqt && echo 'parrot-lxqt:123' | chpasswd && echo 'parrot-lxqt ALL=(ALL:ALL) ALL' > /etc/sudoers.d/user
 
 # Setup VNC server
 # Create VNC configuration directory
@@ -35,14 +35,14 @@ echo '#!/bin/sh
 xrdb $HOME/.Xresources
 export PULSE_SERVER=127.0.0.1
 export DISPLAY=:0
-dbus-launch --exit-with-session startlxqt' >> /home/parrot-lxqt/.vnc/xstartup
+dbus-launch --exit-with-session startlxqt' > /home/parrot-lxqt/.vnc/xstartup
 
 # Create script for starting VNC server
 echo '#!/bin/sh
 export USER=parrot-lxqt
 export HOME=/home/parrot-lxqt
 vncserver -name remote-desktop -localhost no :0
-echo 'VNC server address: 127.0.0.1:5900 Password: 1234567890'' >> /usr/local/bin/startvnc
+echo 'VNC server address: 127.0.0.1:5900 Password: 1234567890'' > /usr/local/bin/startvnc
 
 # Create script for stopping VNC server
 echo '#!/bin/sh
@@ -51,12 +51,12 @@ export HOME=/home/parrot-lxqt
 vncserver -kill :0
 rm -rf /home/parrot-lxqt/.vnc/localhost:0.pid
 rm -rf /tmp/.X0-lock
-rm -rf /tmp/.X11-unix/X0' >> /usr/local/bin/stopvnc
+rm -rf /tmp/.X11-unix/X0' > /usr/local/bin/stopvnc
 
 # Create script for restarting VNC server
 echo '#!/bin/sh
 stopvnc
-startvnc' >> /usr/local/bin/restartvnc
+startvnc' > /usr/local/bin/restartvnc
 
 # Make it executable
 cd /usr/local/bin
